@@ -1,0 +1,13 @@
+{
+  "items": [
+    {
+      "path": "week1-dart-fundamentals",
+      "title": "Dart Semaine 1 - Fondamentaux"
+    },
+    {
+      "path": "week2-control-flow",
+      "title": "Dart Semaine 2 - Control Flow"
+    }
+  ]
+}
+
