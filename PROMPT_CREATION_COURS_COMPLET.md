@@ -154,14 +154,14 @@ Vous devez voir:
 [résultat attendu]
 ```
 
-**SI VOUS VOYEZ ÇA:** ✓ Parfait! Continuez!
-**SI VOUS NE VOYEZ PAS ÇA:** ✗ Relisez l'étape précédente.
+**SI VOUS VOYEZ ÇA:** Parfait! Continuez!
+**SI VOUS NE VOYEZ PAS ÇA:** Relisez l'étape précédente.
 ```
 
 #### E. Encouragements et émotions positives
 
 ```markdown
-**SI ÇA MARCHE:** 🎉 Bravo! Vous venez de...
+**SI ÇA MARCHE:** Bravo! Vous venez de...
 **FÉLICITATIONS:** Vous savez maintenant...
 **EXCELLENT:** Vous progressez super bien!
 ```
@@ -171,7 +171,7 @@ Vous devez voir:
 Toujours inclure une section sur les erreurs courantes:
 
 ```markdown
-## ⚠️ ATTENTION: Erreur courante numéro X
+## ATTENTION: Erreur courante numéro X
 
 **PIÈGE:** [Description du piège]
 
@@ -227,7 +227,7 @@ Avant de continuer, comprenons:
 [sortie exacte]
 ```
 
-**SI VOUS VOYEZ ÇA:** 🎉 [Encouragement]
+**SI VOUS VOYEZ ÇA:** [Encouragement]
 ```
 
 ### 8. RÉCAPITULATIFS ET AIDE-MÉMOIRES
@@ -254,7 +254,7 @@ Avant de continuer, comprenons:
 Inclure des sections comme:
 
 ```markdown
-## Conseil de professeur expérimenté
+## Conseil professionnel
 
 [Conseil pratique basé sur l'expérience]
 
@@ -357,11 +357,11 @@ Vous DEVEZ voir (venv) au début de votre ligne.
 [sortie]
 ```
 
-**SI VOUS VOYEZ ÇA:** 🎉 Bravo!
+**SI VOUS VOYEZ ÇA:** Bravo!
 
 ---
 
-## ⚠️ ATTENTION: Erreurs courantes
+## ATTENTION: Erreurs courantes
 
 **Erreur #1:** [Description]
 **Solution:** [Solution]
@@ -383,7 +383,7 @@ Vous DEVEZ voir (venv) au début de votre ligne.
 
 ---
 
-## Conseil de professeur
+## Conseil
 
 [Conseil d'expérience]
 
@@ -392,8 +392,8 @@ Vous DEVEZ voir (venv) au début de votre ligne.
 ## Prêt pour la suite?
 
 Vous savez maintenant:
-- ✅ [Compétence 1]
-- ✅ [Compétence 2]
+- [Compétence 1]
+- [Compétence 2]
 
 **Bravo!** Cliquez sur "Continuer" →
 ```
@@ -466,17 +466,17 @@ Vous savez maintenant:
 
 ### Pour les encouragements
 ```markdown
-**BRAVO!** 🎉
-**EXCELLENT!** ✨
-**SUPER!** 💪
-**FÉLICITATIONS!** 🎊
+**Bien.** 
+**Bien.** 
+**Bien.** 
+**Félicitations.** 
 **Vous progressez super bien!**
 ```
 
 ### Pour les avertissements
 ```markdown
-**⚠️ ATTENTION:**
-**⚠️ PIÈGE:**
+** ATTENTION:**
+** PIÈGE:**
 **IMPORTANT:**
 **RÈGLE D'OR:**
 ```
@@ -485,7 +485,7 @@ Vous savez maintenant:
 
 ## EXEMPLES DE MAUVAISES vs BONNES PRATIQUES
 
-### ❌ MAUVAIS
+### MAUVAIS
 
 ```markdown
 # Variables
@@ -506,7 +506,7 @@ Créez un fichier et testez.
 - Pas de gestion de nano
 - Pas de vérification
 
-### ✅ BON
+### BON
 
 ```markdown
 # Étape 1 : Les Variables
@@ -572,7 +572,7 @@ print(age)
 25
 ```
 
-**SI VOUS VOYEZ 25:** 🎉 Bravo! Votre première variable fonctionne!
+**SI VOUS VOYEZ 25:** Bravo! Votre première variable fonctionne!
 ```
 
 ---
@@ -615,7 +615,7 @@ print(age)
 
 ## VOCABULAIRE À UTILISER / À ÉVITER
 
-### ✅ À UTILISER
+### À UTILISER
 
 - "Tapez" au lieu de "entrez"
 - "Appuyez sur Entrée" au lieu de "validez"
@@ -624,7 +624,7 @@ print(age)
 - "Ligne de commande" au lieu de "prompt"
 - "Exécuter" au lieu de "lancer" ou "run"
 
-### ❌ À ÉVITER
+### À ÉVITER
 
 - Jargon: "parser", "compiler", "runtime"
 - Anglicismes non expliqués: "debug", "print"
@@ -637,37 +637,37 @@ print(age)
 
 ```json
 {
-  "title": "Python Semaine X - Titre en Français",
-  "description": "Description claire du contenu",
-  "details": {
-    "intro": {
-      "text": "intro.md"
-    },
-    "steps": [
-      {
-        "title": "Étape 0 : Préparer l'Environnement Python",
-        "text": "step0.md"
-      },
-      {
-        "title": "Étape 1 : Premier Concept",
-        "text": "step1.md"
-      }
-    ],
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "exemple.py",
-          "target": "/root/"
-        }
-      ]
-    }
+ "title": "Python Semaine X - Titre en Français",
+ "description": "Description claire du contenu",
+ "details": {
+  "intro": {
+   "text": "intro.md"
   },
-  "backend": {
-    "imageid": "python:3.11"
+  "steps": [
+   {
+    "title": "Étape 0 : Préparer l'Environnement Python",
+    "text": "step0.md"
+   },
+   {
+    "title": "Étape 1 : Premier Concept",
+    "text": "step1.md"
+   }
+  ],
+  "finish": {
+   "text": "finish.md"
+  },
+  "assets": {
+   "host01": [
+    {
+     "file": "exemple.py",
+     "target": "/root/"
+    }
+   ]
   }
+ },
+ "backend": {
+  "imageid": "python:3.11"
+ }
 }
 ```
 
@@ -710,23 +710,23 @@ Si tu es une IA qui utilise ce prompt:
 **ÉTAPE PAR ÉTAPE:**
 
 **1. Positionnez votre curseur:**
-   - Appuyez sur la flèche ↓ (bas) trois fois
-   - Arrêtez-vous à la ligne `age = 25`
-   - Appuyez sur la flèche → (droite) jusqu'à la FIN de la ligne
+  - Appuyez sur la flèche ↓ (bas) trois fois
+  - Arrêtez-vous à la ligne `age = 25`
+  - Appuyez sur la flèche → (droite) jusqu'à la FIN de la ligne
 
 **2. Créez une nouvelle ligne:**
-   - Appuyez sur Entrée
-   - Vous voyez le curseur passer à la ligne suivante
+  - Appuyez sur Entrée
+  - Vous voyez le curseur passer à la ligne suivante
 
 **3. Tapez cette nouvelle ligne:**
-   ```python
-   ville = "Paris"
-   ```
-   
-   **ATTENTION:**
-   - GARDEZ les guillemets `" "`
-   - Pas de majuscule à ville
-   - Majuscule à Paris (c'est un nom propre)
+  ```python
+  ville = "Paris"
+  ```
+  
+  **ATTENTION:**
+  - GARDEZ les guillemets `" "`
+  - Pas de majuscule à ville
+  - Majuscule à Paris (c'est un nom propre)
 
 **VÉRIFICATION:**
 Votre fichier doit maintenant avoir:
@@ -750,5 +750,5 @@ Chaque phrase, chaque instruction, chaque exemple doit être pensé pour quelqu'
 
 Un étudiant qui termine ton lab doit se sentir **CAPABLE** et **FIER** de ce qu'il a accompli.
 
-**C'EST PARTI! Crée le meilleur cours Python du monde!** 🚀
+**C'EST PARTI! Crée le meilleur cours Python du monde!** 
 

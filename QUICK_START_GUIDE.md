@@ -10,21 +10,21 @@ Vous avez maintenant un lab professionnel, prêt pour des millions d'utilisateur
 
 ```
 InskillFlowLabs - Python Basics/
-├── README.md                                    # Documentation principale
-├── Instructions_Creation_Labs_KillerCoda.txt   # Guide détaillé
-├── QUICK_START_GUIDE.md                        # Ce fichier
-└── week1-variables-inputs-datatypes/           # ⭐ VOTRE LAB COMPLET
-    ├── index.json                              # Configuration KillerCoda
-    ├── intro.md                                # Introduction engageante
-    ├── step1.md                                # Variables & Assignment
-    ├── step2.md                                # Data Types
-    ├── step3.md                                # User Inputs
-    ├── step4.md                                # Challenge pratique
-    ├── finish.md                               # Conclusion & solutions
-    └── assets/                                 # Fichiers Python d'exemple
-        ├── example_variables.py
-        ├── example_datatypes.py
-        └── example_input.py
+├── README.md                  # Documentation principale
+├── Instructions_Creation_Labs_KillerCoda.txt  # Guide détaillé
+├── QUICK_START_GUIDE.md            # Ce fichier
+└── week1-variables-inputs-datatypes/      # VOTRE LAB COMPLET
+  ├── index.json               # Configuration KillerCoda
+  ├── intro.md                # Introduction engageante
+  ├── step1.md                # Variables & Assignment
+  ├── step2.md                # Data Types
+  ├── step3.md                # User Inputs
+  ├── step4.md                # Challenge pratique
+  ├── finish.md                # Conclusion & solutions
+  └── assets/                 # Fichiers Python d'exemple
+    ├── example_variables.py
+    ├── example_datatypes.py
+    └── example_input.py
 ```
 
 ---
@@ -83,12 +83,12 @@ git push -u origin main
 - **Bas de page:** Terminal Linux avec Python 3.11
 
 ### Parcours d'apprentissage:
-1. ✅ **Intro** - Bienvenue et vue d'ensemble (2 min)
-2. ✅ **Step 1** - Variables et assignation (8 min)
-3. ✅ **Step 2** - Types de données (10 min)
-4. ✅ **Step 3** - Inputs utilisateur (10 min)
-5. ✅ **Step 4** - Challenge pratique (15 min)
-6. ✅ **Finish** - Solutions et ressources (5 min)
+1. **Intro** - Bienvenue et vue d'ensemble (2 min)
+2. **Step 1** - Variables et assignation (8 min)
+3. **Step 2** - Types de données (10 min)
+4. **Step 3** - Inputs utilisateur (10 min)
+5. **Step 4** - Challenge pratique (15 min)
+6. **Finish** - Solutions et ressources (5 min)
 
 **Total:** ~45 minutes d'apprentissage actif
 
@@ -207,7 +207,7 @@ Votre lab est conçu pour:
 - **Auto-hébergé** - KillerCoda gère l'infrastructure
 - **Gratuit** - Pour vous et vos étudiants
 - **Scalable** - Des millions d'utilisateurs possibles
-- **Multi-langue** - Traduisez facilement les .md files  
+- **Multi-langue** - Traduisez facilement les .md files 
 
 ---
 
@@ -250,7 +250,7 @@ Avant de publier:
 
 ---
 
-## FÉLICITATIONS!
+## Félicitations.
 
 Vous avez créé quelque chose de **professionnel** et **scalable**!
 
@@ -265,7 +265,7 @@ Vous avez créé quelque chose de **professionnel** et **scalable**!
 - Des milliers d'étudiants
 - Usage international
 - Tous les devices
-- Apprentissage instantané  
+- Apprentissage instantané 
 
 ---
 
@@ -279,6 +279,6 @@ Vous avez créé quelque chose de **professionnel** et **scalable**!
 
 ---
 
-*Créé pour InSkillFlowLabs*  
+*Créé pour InSkillFlowLabs* 
 *Prêt à changer des vies avec la programmation Python!*
 

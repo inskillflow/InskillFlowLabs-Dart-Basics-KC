@@ -8,7 +8,7 @@
 
 ---
 
-## Opérateurs de Comparaison 🔍
+## Opérateurs de Comparaison 
 
 ### Les 6 Opérateurs Essentiels
 
@@ -33,31 +33,31 @@
 
 ```dart
 void main() {
-  int a = 10;
-  int b = 5;
-  
-  print('=== OPÉRATEURS DE COMPARAISON ===');
-  print('a = $a, b = $b');
-  print('');
-  
-  // Égal
-  print('a == b : ${a == b}');   // false
-  
-  // Différent
-  print('a != b : ${a != b}');   // true
-  
-  // Plus grand
-  print('a > b : ${a > b}');     // true
-  
-  // Plus petit
-  print('a < b : ${a < b}');     // false
-  
-  // Plus grand ou égal
-  print('a >= b : ${a >= b}');   // true
-  print('a >= 10 : ${a >= 10}'); // true
-  
-  // Plus petit ou égal
-  print('b <= 5 : ${b <= 5}');   // true
+ int a = 10;
+ int b = 5;
+ 
+ print('=== OPÉRATEURS DE COMPARAISON ===');
+ print('a = $a, b = $b');
+ print('');
+ 
+ // Égal
+ print('a == b : ${a == b}');  // false
+ 
+ // Différent
+ print('a != b : ${a != b}');  // true
+ 
+ // Plus grand
+ print('a > b : ${a > b}');   // true
+ 
+ // Plus petit
+ print('a < b : ${a < b}');   // false
+ 
+ // Plus grand ou égal
+ print('a >= b : ${a >= b}');  // true
+ print('a >= 10 : ${a >= 10}'); // true
+ 
+ // Plus petit ou égal
+ print('b <= 5 : ${b <= 5}');  // true
 }
 ```
 
@@ -71,7 +71,7 @@ void main() {
 
 ---
 
-## Opérateurs Logiques 🧠
+## Opérateurs Logiques 
 
 ### Pour Combiner Plusieurs Conditions
 
@@ -89,7 +89,7 @@ void main() {
 
 ```dart
 if (conditionA && conditionB) {
-  // Exécuté seulement si A ET B sont vrais
+ // Exécuté seulement si A ET B sont vrais
 }
 ```
 
@@ -123,31 +123,31 @@ Pour entrer dans un club VIP :
 import 'dart:io';
 
 void main() {
-  print('=== VÉRIFICATEUR D\'ACCÈS ===');
+ print('=== VÉRIFICATEUR D\'ACCÈS ===');
+ 
+ print('Avez-vous un billet? (oui/non)');
+ String? aBillet = stdin.readLineSync();
+ 
+ print('Quel est votre âge?');
+ String? inputAge = stdin.readLineSync();
+ int age = int.parse(inputAge ?? '0');
+ 
+ // Les DEUX conditions doivent être vraies
+ if (aBillet == 'oui' && age >= 18) {
+  print('');
+  print(' Accès autorisé ! Bienvenue !');
+ } else {
+  print('');
+  print(' Accès refusé');
   
-  print('Avez-vous un billet? (oui/non)');
-  String? aBillet = stdin.readLineSync();
-  
-  print('Quel est votre âge?');
-  String? inputAge = stdin.readLineSync();
-  int age = int.parse(inputAge ?? '0');
-  
-  // Les DEUX conditions doivent être vraies
-  if (aBillet == 'oui' && age >= 18) {
-    print('');
-    print('✓ Accès autorisé ! Bienvenue !');
-  } else {
-    print('');
-    print('✗ Accès refusé');
-    
-    // Expliquer pourquoi
-    if (aBillet != 'oui') {
-      print('Raison: Pas de billet');
-    }
-    if (age < 18) {
-      print('Raison: Âge insuffisant');
-    }
+  // Expliquer pourquoi
+  if (aBillet != 'oui') {
+   print('Raison: Pas de billet');
   }
+  if (age < 18) {
+   print('Raison: Âge insuffisant');
+  }
+ }
 }
 ```
 
@@ -158,10 +158,10 @@ void main() {
 3. `dart operateur_et.dart`{{execute}}
 
 **Testez les 4 cas :**
-1. Billet: oui, Âge: 20 → **Accès** ✓
-2. Billet: oui, Âge: 16 → **Refusé** ✗
-3. Billet: non, Âge: 20 → **Refusé** ✗
-4. Billet: non, Âge: 16 → **Refusé** ✗
+1. Billet: oui, Âge: 20 → **Accès** 
+2. Billet: oui, Âge: 16 → **Refusé** 
+3. Billet: non, Âge: 20 → **Refusé** 
+4. Billet: non, Âge: 16 → **Refusé** 
 
 ---
 
@@ -171,7 +171,7 @@ void main() {
 
 ```dart
 if (conditionA || conditionB) {
-  // Exécuté si A OU B est vrai (ou les deux)
+ // Exécuté si A OU B est vrai (ou les deux)
 }
 ```
 
@@ -205,33 +205,33 @@ Pour avoir un tarif réduit :
 import 'dart:io';
 
 void main() {
-  print('=== CALCULATEUR DE TARIF ===');
+ print('=== CALCULATEUR DE TARIF ===');
+ 
+ print('Êtes-vous étudiant? (oui/non)');
+ String? estEtudiant = stdin.readLineSync();
+ 
+ print('Quel est votre âge?');
+ String? inputAge = stdin.readLineSync();
+ int age = int.parse(inputAge ?? '0');
+ 
+ double prixNormal = 12.00;
+ double prixReduit = 8.00;
+ 
+ // Une des DEUX conditions suffit
+ if (estEtudiant == 'oui' || age >= 65) {
+  print('');
+  print(' Tarif réduit: $prixReduit €');
   
-  print('Êtes-vous étudiant? (oui/non)');
-  String? estEtudiant = stdin.readLineSync();
-  
-  print('Quel est votre âge?');
-  String? inputAge = stdin.readLineSync();
-  int age = int.parse(inputAge ?? '0');
-  
-  double prixNormal = 12.00;
-  double prixReduit = 8.00;
-  
-  // Une des DEUX conditions suffit
-  if (estEtudiant == 'oui' || age >= 65) {
-    print('');
-    print('✓ Tarif réduit: $prixReduit €');
-    
-    if (estEtudiant == 'oui') {
-      print('Raison: Étudiant');
-    }
-    if (age >= 65) {
-      print('Raison: Senior');
-    }
-  } else {
-    print('');
-    print('Tarif normal: $prixNormal €');
+  if (estEtudiant == 'oui') {
+   print('Raison: Étudiant');
   }
+  if (age >= 65) {
+   print('Raison: Senior');
+  }
+ } else {
+  print('');
+  print('Tarif normal: $prixNormal €');
+ }
 }
 ```
 
@@ -242,9 +242,9 @@ void main() {
 3. `dart operateur_ou.dart`{{execute}}
 
 **Testez :**
-- Étudiant: oui, Âge: 20 → **Réduit** ✓
-- Étudiant: non, Âge: 70 → **Réduit** ✓
-- Étudiant: oui, Âge: 70 → **Réduit** ✓ (les deux!)
+- Étudiant: oui, Âge: 20 → **Réduit** 
+- Étudiant: non, Âge: 70 → **Réduit** 
+- Étudiant: oui, Âge: 70 → **Réduit** (les deux!)
 - Étudiant: non, Âge: 30 → **Normal**
 
 ---
@@ -255,10 +255,10 @@ void main() {
 
 ```dart
 bool estMajeur = true;
-bool estMineur = !estMajeur;  // false
+bool estMineur = !estMajeur; // false
 
 if (!estMineur) {
-  // Si PAS mineur (donc majeur)
+ // Si PAS mineur (donc majeur)
 }
 ```
 
@@ -279,25 +279,25 @@ SI PAS pluie → sortir sans parapluie
 
 ```dart
 void main() {
-  bool estConnecte = false;
-  bool estAdmin = true;
-  
-  print('=== VÉRIFICATION ACCÈS ===');
-  
-  // SI PAS connecté
-  if (!estConnecte) {
-    print('✗ Veuillez vous connecter');
-  }
-  
-  // SI PAS admin
-  if (!estAdmin) {
-    print('✗ Accès réservé aux administrateurs');
-  }
-  
-  // SI connecté ET admin
-  if (estConnecte && estAdmin) {
-    print('✓ Accès complet autorisé');
-  }
+ bool estConnecte = false;
+ bool estAdmin = true;
+ 
+ print('=== VÉRIFICATION ACCÈS ===');
+ 
+ // SI PAS connecté
+ if (!estConnecte) {
+  print(' Veuillez vous connecter');
+ }
+ 
+ // SI PAS admin
+ if (!estAdmin) {
+  print(' Accès réservé aux administrateurs');
+ }
+ 
+ // SI connecté ET admin
+ if (estConnecte && estAdmin) {
+  print(' Accès complet autorisé');
+ }
 }
 ```
 
@@ -317,14 +317,14 @@ void main() {
 
 ```dart
 if ((age >= 18 && haPermis) || (age >= 16 && isAccompagne)) {
-  print('Peut conduire');
+ print('Peut conduire');
 }
 ```
 
 **Traduction :**
 ```
 SI (majeur ET a permis) OU (16+ ET accompagné)
-  ALORS peut conduire
+ ALORS peut conduire
 ```
 
 ### Priorité des Opérateurs
@@ -349,43 +349,43 @@ SI (majeur ET a permis) OU (16+ ET accompagné)
 import 'dart:io';
 
 void main() {
-  print('=== VÉRIFICATEUR DE LIVRAISON ===');
+ print('=== VÉRIFICATEUR DE LIVRAISON ===');
+ 
+ print('Montant du panier (€):');
+ String? inputMontant = stdin.readLineSync();
+ double montant = double.parse(inputMontant ?? '0');
+ 
+ print('Êtes-vous membre Premium? (oui/non)');
+ String? inputPremium = stdin.readLineSync();
+ bool isPremium = inputPremium == 'oui';
+ 
+ print('Code postal (2 chiffres):');
+ String? cp = stdin.readLineSync();
+ 
+ // Livraison gratuite SI:
+ // - (Montant > 50€ ET zone locale) OU
+ // - Membre Premium
+ bool zoneLocale = cp == '75' || cp == '92' || cp == '93';
+ bool livraisonGratuite = (montant > 50 && zoneLocale) || isPremium;
+ 
+ print('');
+ print('--- RÉSULTAT ---');
+ print('Montant: $montant €');
+ print('Premium: ${isPremium ? "Oui" : "Non"}');
+ print('Zone locale: ${zoneLocale ? "Oui" : "Non"}');
+ 
+ if (livraisonGratuite) {
+  print(' Livraison GRATUITE !');
   
-  print('Montant du panier (€):');
-  String? inputMontant = stdin.readLineSync();
-  double montant = double.parse(inputMontant ?? '0');
-  
-  print('Êtes-vous membre Premium? (oui/non)');
-  String? inputPremium = stdin.readLineSync();
-  bool isPremium = inputPremium == 'oui';
-  
-  print('Code postal (2 chiffres):');
-  String? cp = stdin.readLineSync();
-  
-  // Livraison gratuite SI:
-  // - (Montant > 50€ ET zone locale) OU
-  // - Membre Premium
-  bool zoneLocale = cp == '75' || cp == '92' || cp == '93';
-  bool livraisonGratuite = (montant > 50 && zoneLocale) || isPremium;
-  
-  print('');
-  print('--- RÉSULTAT ---');
-  print('Montant: $montant €');
-  print('Premium: ${isPremium ? "Oui" : "Non"}');
-  print('Zone locale: ${zoneLocale ? "Oui" : "Non"}');
-  
-  if (livraisonGratuite) {
-    print('✓ Livraison GRATUITE !');
-    
-    if (isPremium) {
-      print('Raison: Membre Premium');
-    } else {
-      print('Raison: Montant > 50€ en zone locale');
-    }
+  if (isPremium) {
+   print('Raison: Membre Premium');
   } else {
-    print('Livraison: 5.00 €');
-    print('Total: ${montant + 5} €');
+   print('Raison: Montant > 50€ en zone locale');
   }
+ } else {
+  print('Livraison: 5.00 €');
+  print('Total: ${montant + 5} €');
+ }
 }
 ```
 
@@ -399,13 +399,13 @@ void main() {
 
 ---
 
-## 💭 Préparation Flutter : Validation de Formulaire
+## Préparation Flutter : Validation de Formulaire
 
 ### Console (aujourd'hui)
 ```dart
 bool isValid = nom.isNotEmpty && 
-               age > 0 && 
-               email.contains('@');
+        age > 0 && 
+        email.contains('@');
 ```
 
 ### Flutter (bientôt)
@@ -413,19 +413,19 @@ bool isValid = nom.isNotEmpty &&
 final formKey = GlobalKey<FormState>();
 
 TextFormField(
-  validator: (value) {
-    if (value == null || value.isEmpty) {
-      return 'Champ requis';  // ← Validation !
-    }
-    if (!value.contains('@')) {
-      return 'Email invalide';
-    }
-    return null;  // ← Valide
-  },
+ validator: (value) {
+  if (value == null || value.isEmpty) {
+   return 'Champ requis'; // ← Validation !
+  }
+  if (!value.contains('@')) {
+   return 'Email invalide';
+  }
+  return null; // ← Valide
+ },
 )
 ```
 
-**Même logique de validation !** 📱
+**Même logique de validation !** 
 
 ---
 
@@ -438,19 +438,19 @@ String nom1 = 'Julie';
 String nom2 = 'julie';
 
 // Comparaison exacte
-print(nom1 == nom2);  // false (majuscules!)
+print(nom1 == nom2); // false (majuscules!)
 
 // Comparaison insensible à la casse
-print(nom1.toLowerCase() == nom2.toLowerCase());  // true
+print(nom1.toLowerCase() == nom2.toLowerCase()); // true
 
 // Contient
-print(nom1.contains('Jul'));  // true
+print(nom1.contains('Jul')); // true
 
 // Commence par
-print(nom1.startsWith('Ju'));  // true
+print(nom1.startsWith('Ju')); // true
 
 // Se termine par
-print(nom1.endsWith('lie'));  // true
+print(nom1.endsWith('lie')); // true
 ```
 
 ---
@@ -467,35 +467,35 @@ print(nom1.endsWith('lie'));  // true
 import 'dart:io';
 
 void main() {
-  // Liste de produits
-  List<String> produits = [
-    'iPhone 15',
-    'MacBook Pro',
-    'iPad Air',
-    'AirPods Pro',
-  ];
-  
-  print('=== RECHERCHE DE PRODUITS ===');
-  print('Que cherchez-vous?');
-  
-  String? recherche = stdin.readLineSync();
-  recherche = recherche?.toLowerCase() ?? '';
-  
-  print('');
-  print('--- RÉSULTATS ---');
-  
-  bool trouve = false;
-  
-  for (var produit in produits) {
-    if (produit.toLowerCase().contains(recherche)) {
-      print('✓ $produit');
-      trouve = true;
-    }
+ // Liste de produits
+ List<String> produits = [
+  'iPhone 15',
+  'MacBook Pro',
+  'iPad Air',
+  'AirPods Pro',
+ ];
+ 
+ print('=== RECHERCHE DE PRODUITS ===');
+ print('Que cherchez-vous?');
+ 
+ String? recherche = stdin.readLineSync();
+ recherche = recherche?.toLowerCase() ?? '';
+ 
+ print('');
+ print('--- RÉSULTATS ---');
+ 
+ bool trouve = false;
+ 
+ for (var produit in produits) {
+  if (produit.toLowerCase().contains(recherche)) {
+   print(' $produit');
+   trouve = true;
   }
-  
-  if (!trouve) {
-    print('✗ Aucun produit trouvé');
-  }
+ }
+ 
+ if (!trouve) {
+  print(' Aucun produit trouvé');
+ }
 }
 ```
 
@@ -509,22 +509,22 @@ void main() {
 
 ---
 
-## ⚠️ ATTENTION: Erreurs Courantes
+## ATTENTION: Erreurs Courantes
 
 ### Erreur #1 : Confondre && et ||
 
 **PROBLÈME :**
 ```dart
 // Veut : accès si majeur OU admin
-if (age >= 18 && isAdmin) {  // ❌ ET au lieu de OU
-  print('Accès');
+if (age >= 18 && isAdmin) { // ET au lieu de OU
+ print('Accès');
 }
 ```
 
 **CORRECT :**
 ```dart
-if (age >= 18 || isAdmin) {  // ✅ OU
-  print('Accès');
+if (age >= 18 || isAdmin) { // OU
+ print('Accès');
 }
 ```
 
@@ -534,14 +534,14 @@ if (age >= 18 || isAdmin) {  // ✅ OU
 
 **PROBLÈME :**
 ```dart
-if (a && b || c)  // ❌ Ambigu !
+if (a && b || c) // Ambigu !
 ```
 
 **CORRECT :**
 ```dart
-if ((a && b) || c)  // ✅ Clair
+if ((a && b) || c) // Clair
 // OU
-if (a && (b || c))  // ✅ Selon intention
+if (a && (b || c)) // Selon intention
 ```
 
 ---
@@ -550,15 +550,15 @@ if (a && (b || c))  // ✅ Selon intention
 
 **PROBLÈME :**
 ```dart
-if (!!estActif) {  // ❌ Confus !
-  // Code
+if (!!estActif) { // Confus !
+ // Code
 }
 ```
 
 **CORRECT :**
 ```dart
-if (estActif) {  // ✅ Simple
-  // Code
+if (estActif) { // Simple
+ // Code
 }
 ```
 
@@ -568,25 +568,25 @@ if (estActif) {  // ✅ Simple
 
 ### ET (&&)
 ```
-true  && true  = true
-true  && false = false
-false && true  = false
+true && true = true
+true && false = false
+false && true = false
 false && false = false
 ```
 **Les DEUX doivent être vrais**
 
 ### OU (||)
 ```
-true  || true  = true
-true  || false = true
-false || true  = true
+true || true = true
+true || false = true
+false || true = true
 false || false = false
 ```
 **AU MOINS UN doit être vrai**
 
 ### NON (!)
 ```
-!true  = false
+!true = false
 !false = true
 ```
 **Inverse la valeur**
@@ -597,27 +597,27 @@ false || false = false
 
 ### Comparaison
 ```dart
-==    // Égal
-!=    // Différent
->     // Plus grand
-<     // Plus petit
->=    // Plus grand ou égal
-<=    // Plus petit ou égal
+==  // Égal
+!=  // Différent
+>   // Plus grand
+<   // Plus petit
+>=  // Plus grand ou égal
+<=  // Plus petit ou égal
 ```
 
 ### Logiques
 ```dart
-&&    // ET (les deux)
-||    // OU (au moins un)
-!     // NON (inverse)
+&&  // ET (les deux)
+||  // OU (au moins un)
+!   // NON (inverse)
 ```
 
 ### Combinaisons
 ```dart
-if (a && b)         // Les deux vrais
-if (a || b)         // Au moins un vrai
-if ((a && b) || c)  // (a ET b) OU c
-if (!(a && b))      // NON (a ET b)
+if (a && b)     // Les deux vrais
+if (a || b)     // Au moins un vrai
+if ((a && b) || c) // (a ET b) OU c
+if (!(a && b))   // NON (a ET b)
 ```
 
 ---
@@ -626,33 +626,33 @@ if (!(a && b))      // NON (a ET b)
 
 ```dart
 // COMPARAISON
-age == 18    // Exactement 18
-age != 18    // Pas 18
-age > 18     // Plus de 18
-age >= 18    // 18 ou plus
+age == 18  // Exactement 18
+age != 18  // Pas 18
+age > 18   // Plus de 18
+age >= 18  // 18 ou plus
 
 // LOGIQUE
-(a && b)     // Les DEUX
-(a || b)     // AU MOINS UN
-!a           // PAS a
+(a && b)   // Les DEUX
+(a || b)   // AU MOINS UN
+!a      // PAS a
 
 // PRIORITÉ
-1. ( )       // Parenthèses
-2. !         // NON
-3. &&        // ET
-4. ||        // OU
+1. ( )    // Parenthèses
+2. !     // NON
+3. &&    // ET
+4. ||    // OU
 ```
 
 ---
 
-## Conseil de Professeur
+## Conseil
 
 ### Utilisez des Variables Booléennes !
 
 **Moins lisible :**
 ```dart
 if ((age >= 18 && haPermis) || (age >= 16 && isAccompagne)) {
-  // Code
+ // Code
 }
 ```
 
@@ -662,11 +662,11 @@ bool peutConduireSeul = age >= 18 && haPermis;
 bool peutConduireAccompagne = age >= 16 && isAccompagne;
 
 if (peutConduireSeul || peutConduireAccompagne) {
-  // Code
+ // Code
 }
 ```
 
-**C'est BEAUCOUP plus clair !** 📖
+**C'est BEAUCOUP plus clair !** 
 
 ---
 
@@ -692,7 +692,7 @@ bool result = (true && false) || true;
 **Réponse:**
 ```dart
 if (age >= 18 && age <= 65) {
-  print('Accès autorisé');
+ print('Accès autorisé');
 }
 ```
 </details>
@@ -720,19 +720,19 @@ Créez un validateur qui vérifie :
 - Contient au moins un chiffre OU
 - Contient un caractère spécial
 
-**Utilisez `&&` et `||` !** 🔐
+**Utilisez `&&` et `||` !** 
 
 ---
 
 ## Prêt pour Switch ?
 
 Vous maîtrisez maintenant :
-- ✅ Tous les opérateurs de comparaison
-- ✅ Opérateurs logiques (&&, ||, !)
-- ✅ Combiner des conditions complexes
-- ✅ Tables de vérité
+- Tous les opérateurs de comparaison
+- Opérateurs logiques (&&, ||, !)
+- Combiner des conditions complexes
+- Tables de vérité
 
-**PROCHAINE ÉTAPE :** Switch pour gérer plusieurs choix ! 🎛️
+**PROCHAINE ÉTAPE :** Switch pour gérer plusieurs choix ! 
 
 **Cliquez sur "Continuer" pour l'Étape 3 !** →
 

@@ -1,123 +1,123 @@
-# 🎯 Cours Dart Complet pour KillerCoda
+# Cours Dart Complet pour KillerCoda
 
 ## Vue d'Ensemble
 
 Ce repository contient un **cours Dart complet** conçu pour la plateforme **KillerCoda**, entièrement en **français**, avec une approche **ultra-pédagogique** pour les débutants absolus.
 
-**Date de création :** Octobre 2025  
-**Statut :** ✅ Week 1 COMPLÈTE  
-**Langue :** 🇫🇷 100% Français  
-**Public :** Débutants complets en programmation  
+**Date de création :** Octobre 2025 
+**Statut :** Week 1 COMPLÈTE 
+**Langue :** 100% Français 
+**Public :** Débutants complets en programmation 
 
 ---
 
-## 📁 Structure du Projet
+## Structure du Projet
 
 ```
 InskillFlowLabs - Dart Basics/
-├── README_DART_COURSE.md                          # ← Vous êtes ici
-├── PLAN_COURS_DART_FLUTTER.md                    # Analyse technique Dart/Flutter
-├── PROMPT_CREATION_COURS_COMPLET.md              # Template de création de cours
-├── QUICK_START_GUIDE.md                          # Guide de démarrage
-├── ENVIRONNEMENT_VIRTUEL_IMPLEMENTATION.txt      # Documentation Python (référence)
-├── MODIFICATIONS_PEDAGOGIQUES.txt                # Modifications pédagogiques
-├── NANO_INSTRUCTIONS_COMPLET.txt                 # Guide complet de nano
+├── README_DART_COURSE.md             # ← Vous êtes ici
+├── PLAN_COURS_DART_FLUTTER.md          # Analyse technique Dart/Flutter
+├── PROMPT_CREATION_COURS_COMPLET.md       # Template de création de cours
+├── QUICK_START_GUIDE.md             # Guide de démarrage
+├── ENVIRONNEMENT_VIRTUEL_IMPLEMENTATION.txt   # Documentation Python (référence)
+├── MODIFICATIONS_PEDAGOGIQUES.txt        # Modifications pédagogiques
+├── NANO_INSTRUCTIONS_COMPLET.txt         # Guide complet de nano
 │
-└── week1-dart-fundamentals/                      # ⭐ LAB DART SEMAINE 1
-    ├── README.md                                 # Documentation du lab
-    ├── index.json                                # Configuration KillerCoda
-    ├── intro.md                                  # Introduction (800+ lignes)
-    ├── step0.md                                  # Installation Dart (600+ lignes)
-    ├── step1.md                                  # Variables et types (900+ lignes)
-    ├── step2.md                                  # Fonctions (900+ lignes)
-    ├── step3.md                                  # I/O Console (800+ lignes)
-    ├── step4.md                                  # Défi pratique (600+ lignes)
-    ├── finish.md                                 # Conclusion (700+ lignes)
-    └── assets/                                   # Fichiers d'exemple
-        ├── example_hello.dart                    # Premier programme
-        ├── example_variables.dart                # Exemples variables
-        └── example_functions.dart                # Exemples fonctions
+└── week1-dart-fundamentals/           # LAB DART SEMAINE 1
+  ├── README.md                 # Documentation du lab
+  ├── index.json                # Configuration KillerCoda
+  ├── intro.md                 # Introduction (800+ lignes)
+  ├── step0.md                 # Installation Dart (600+ lignes)
+  ├── step1.md                 # Variables et types (900+ lignes)
+  ├── step2.md                 # Fonctions (900+ lignes)
+  ├── step3.md                 # I/O Console (800+ lignes)
+  ├── step4.md                 # Défi pratique (600+ lignes)
+  ├── finish.md                 # Conclusion (700+ lignes)
+  └── assets/                  # Fichiers d'exemple
+    ├── example_hello.dart          # Premier programme
+    ├── example_variables.dart        # Exemples variables
+    └── example_functions.dart        # Exemples fonctions
 ```
 
 **Total :** ~5500 lignes de contenu pédagogique + 3 fichiers Dart d'exemple
 
 ---
 
-## 🎓 Cours Disponible
+## Cours Disponible
 
-### ✅ Dart Semaine 1 - Fondamentaux du Langage
+### Dart Semaine 1 - Fondamentaux du Langage
 
 **Contenu complet et prêt à publier !**
 
 | Étape | Titre | Durée | Statut |
 |-------|-------|-------|--------|
-| **Intro** | Bienvenue dans le cours Dart | 5 min | ✅ |
-| **Step 0** | Installation de Dart sur Linux | 10 min | ✅ |
-| **Step 1** | Variables et Types de Données | 15 min | ✅ |
-| **Step 2** | Fonctions en Dart | 15 min | ✅ |
-| **Step 3** | Entrées et Sorties Console | 15 min | ✅ |
-| **Step 4** | Défi Pratique - Calculateur Personnel | 20 min | ✅ |
-| **Finish** | Conclusion, Résumé, Ressources | 5 min | ✅ |
+| **Intro** | Bienvenue dans le cours Dart | 5 min | |
+| **Step 0** | Installation de Dart sur Linux | 10 min | |
+| **Step 1** | Variables et Types de Données | 15 min | |
+| **Step 2** | Fonctions en Dart | 15 min | |
+| **Step 3** | Entrées et Sorties Console | 15 min | |
+| **Step 4** | Défi Pratique - Calculateur Personnel | 20 min | |
+| **Finish** | Conclusion, Résumé, Ressources | 5 min | |
 
-**Durée totale :** 1h30 - 2h  
-**Niveau :** Débutant complet  
-**Exercices :** 15+ exercices guidés  
-**Projet final :** Calculateur personnel complet  
+**Durée totale :** 1h30 - 2h 
+**Niveau :** Débutant complet 
+**Exercices :** 15+ exercices guidés 
+**Projet final :** Calculateur personnel complet 
 
 ---
 
-## 🎯 Objectifs d'Apprentissage
+## Objectifs d'Apprentissage
 
 ### À la fin de la Semaine 1, l'étudiant saura :
 
 #### Compétences Techniques
-✅ Installer et configurer Dart SDK  
-✅ Utiliser `nano` en ligne de commande  
-✅ Créer et exécuter des programmes Dart  
-✅ Déclarer des variables (`int`, `double`, `String`, `bool`)  
-✅ Effectuer des calculs mathématiques  
-✅ Créer des fonctions avec paramètres et retour  
-✅ Lire des entrées utilisateur (`stdin`)  
-✅ Convertir les types de données  
-✅ Créer des programmes interactifs complets  
+ Installer et configurer Dart SDK 
+ Utiliser `nano` en ligne de commande 
+ Créer et exécuter des programmes Dart 
+ Déclarer des variables (`int`, `double`, `String`, `bool`) 
+ Effectuer des calculs mathématiques 
+ Créer des fonctions avec paramètres et retour 
+ Lire des entrées utilisateur (`stdin`) 
+ Convertir les types de données 
+ Créer des programmes interactifs complets 
 
 #### Compétences Conceptuelles
-✅ Comprendre la syntaxe de base de Dart  
-✅ Structurer un programme en fonctions  
-✅ Organiser le code de manière lisible  
-✅ Débugger les erreurs courantes  
-✅ Suivre les bonnes pratiques Dart  
+ Comprendre la syntaxe de base de Dart 
+ Structurer un programme en fonctions 
+ Organiser le code de manière lisible 
+ Débugger les erreurs courantes 
+ Suivre les bonnes pratiques Dart 
 
 ---
 
-## 🌟 Points Forts du Cours
+## Points Forts du Cours
 
-### 1. 🇫🇷 100% Français
+### 1. 100% Français
 - Instructions en français
 - Commentaires en français
 - Exemples contextualisés pour francophones
 - Vocabulaire adapté aux débutants
 
-### 2. 📚 Ultra-Pédagogique
+### 2. Ultra-Pédagogique
 - Explications étape par étape
 - Analogies du quotidien
 - "CE QUI SE PASSE" après chaque commande
 - "VÉRIFICATION" après chaque étape importante
 - Sections "Erreurs courantes" avec solutions
 
-### 3. 🎯 Approche Pratique
+### 3. Approche Pratique
 - Learning by doing
 - 15+ exercices progressifs
 - Défi final complet
 - Code à taper (pas juste lire)
 
-### 4. 🔧 Adapté à KillerCoda
+### 4. Adapté à KillerCoda
 - Commandes `{{execute}}` interactives
 - Utilisation de `nano` (pas d'éditeur graphique)
 - Terminal Linux uniquement
 - Pas d'installation locale requise
 
-### 5. 🎓 Progression Logique
+### 5. Progression Logique
 - Du plus simple au plus complexe
 - Chaque concept construit sur les précédents
 - Révisions régulières
@@ -125,7 +125,7 @@ InskillFlowLabs - Dart Basics/
 
 ---
 
-## 🚀 Comment Publier sur KillerCoda
+## Comment Publier sur KillerCoda
 
 ### Étape 1 : Créer un Repository GitHub
 
@@ -165,11 +165,11 @@ git push -u origin main
 5. KillerCoda détecte `week1-dart-fundamentals/index.json`
 6. Publier !
 
-**Vous obtenez une URL publique immédiatement !** 🎉
+**Vous obtenez une URL publique immédiatement !** 
 
 ---
 
-## 📊 Comparaison Python vs Dart
+## Comparaison Python vs Dart
 
 | Aspect | Python (référence) | Dart (ce cours) |
 |--------|-------------------|-----------------|
@@ -182,7 +182,7 @@ git push -u origin main
 
 ---
 
-## 🎓 Approche Pédagogique
+## Approche Pédagogique
 
 ### Philosophie
 
@@ -197,11 +197,11 @@ Ce cours suit la philosophie : **"Main dans la main"**
 
 ### Exemple de Micro-Étape
 
-❌ **Mauvais :**
+ **Mauvais :**
 > "Créez un fichier et ajoutez du code."
 
-✅ **Bon :**
-> **ÉTAPE 1.1 - Ouvrir nano**  
+ **Bon :**
+> **ÉTAPE 1.1 - Ouvrir nano** 
 > `nano variables.dart`{{execute}}
 > 
 > **CE QUI SE PASSE :**
@@ -209,20 +209,20 @@ Ce cours suit la philosophie : **"Main dans la main"**
 > - Vous voyez "GNU nano" en haut
 > - C'est l'éditeur nano, vous pouvez maintenant taper
 > 
-> **ÉTAPE 1.2 - Taper le code**  
+> **ÉTAPE 1.2 - Taper le code** 
 > Tapez exactement ce code...
 > 
-> **ÉTAPE 1.3 - Sauvegarder**  
+> **ÉTAPE 1.3 - Sauvegarder** 
 > 1. Appuyez sur Ctrl+O
 > 2. Appuyez sur Entrée
 > 3. Vous voyez : [ Wrote X lines ]
 > 
-> **ÉTAPE 1.4 - Quitter**  
+> **ÉTAPE 1.4 - Quitter** 
 > Appuyez sur Ctrl+X
 
 ---
 
-## 🛠️ Outils et Technologies
+## Outils et Technologies
 
 ### Environnement
 - **KillerCoda** - Plateforme d'apprentissage
@@ -236,69 +236,69 @@ Ce cours suit la philosophie : **"Main dans la main"**
 ### Commandes Principales
 ```bash
 # Dart
-dart --version         # Vérifier l'installation
-dart nomfichier.dart   # Exécuter un programme
+dart --version     # Vérifier l'installation
+dart nomfichier.dart  # Exécuter un programme
 
 # nano
-nano fichier.dart      # Ouvrir/créer un fichier
-Ctrl+O puis Entrée     # Sauvegarder
-Ctrl+X                 # Quitter
+nano fichier.dart   # Ouvrir/créer un fichier
+Ctrl+O puis Entrée   # Sauvegarder
+Ctrl+X         # Quitter
 
 # Système
-apt-get install dart   # Installer Dart
-export PATH="..."      # Configurer PATH
+apt-get install dart  # Installer Dart
+export PATH="..."   # Configurer PATH
 ```
 
 ---
 
-## 📖 Ressources Incluses
+## Ressources Incluses
 
 ### Documentation Complète
-- ✅ `README.md` dans week1-dart-fundamentals/
-- ✅ Commentaires détaillés dans tous les fichiers
-- ✅ Aide-mémoires visuels
-- ✅ Solutions des exercices
+- `README.md` dans week1-dart-fundamentals/
+- Commentaires détaillés dans tous les fichiers
+- Aide-mémoires visuels
+- Solutions des exercices
 
 ### Fichiers d'Exemple
-- ✅ `example_hello.dart` - Premier programme simple
-- ✅ `example_variables.dart` - Tous les types de variables
-- ✅ `example_functions.dart` - Différents types de fonctions
+- `example_hello.dart` - Premier programme simple
+- `example_variables.dart` - Tous les types de variables
+- `example_functions.dart` - Différents types de fonctions
 
 ### Guides de Référence
-- ✅ `NANO_INSTRUCTIONS_COMPLET.txt` - Guide complet de nano
-- ✅ `PLAN_COURS_DART_FLUTTER.md` - Analyse technique
-- ✅ `PROMPT_CREATION_COURS_COMPLET.md` - Template pour créer d'autres cours
+- `NANO_INSTRUCTIONS_COMPLET.txt` - Guide complet de nano
+- `PLAN_COURS_DART_FLUTTER.md` - Analyse technique
+- `PROMPT_CREATION_COURS_COMPLET.md` - Template pour créer d'autres cours
 
 ---
 
-## 🔮 Cours Futurs (À Créer)
+## Cours Futurs (À Créer)
 
-### 📅 Roadmap
+### Roadmap
 
 | Semaine | Titre | Contenu Principal | Statut |
 |---------|-------|-------------------|--------|
-| **Week 1** | Fondamentaux | Variables, Fonctions, I/O | ✅ FAIT |
-| **Week 2** | Control Flow | if/else, switch, opérateurs logiques | 📝 À créer |
-| **Week 3** | Collections | Lists, Sets, Maps, itération | 📝 À créer |
-| **Week 4** | Boucles | for, while, break, continue | 📝 À créer |
-| **Week 5** | POO | Classes, objets, héritage, mixins | 📝 À créer |
-| **Week 6** | Async & Projets | Future, async/await, projet final | 📝 À créer |
+| **Week 1** | Fondamentaux | Variables, Fonctions, I/O | FAIT |
+| **Week 2** | Control Flow | if/else, switch, opérateurs logiques | À créer |
+| **Week 3** | Collections | Lists, Sets, Maps, itération | À créer |
+| **Week 4** | Boucles | for, while, break, continue | À créer |
+| **Week 5** | POO | Classes, objets, héritage, mixins | À créer |
+| **Week 6** | Async & Projets | Future, async/await, projet final | À créer |
 
 **Pour créer les semaines suivantes :**
 Utilisez le template dans `PROMPT_CREATION_COURS_COMPLET.md`
 
 ---
 
-## 🎯 Public Cible
+## Public Cible
 
 ### Qui Devrait Suivre ce Cours ?
 
-✅ **Débutants absolus** en programmation  
-✅ **Francophones** cherchant un cours en français  
-✅ Futurs développeurs **Flutter** (mobiles)  
-✅ **Étudiants** en reconversion  
-✅ Personnes **curieuses** de la tech  
-✅ Développeurs venant d'autres langages  
+ **Débutants absolus** en programmation 
+ **Francophones** cherchant un cours en français 
+ Futurs développeurs **Flutter** (mobiles) 
+ **Étudiants** en reconversion 
+ Personnes **curieuses** de la tech 
+ Développeurs venant d'autres langages 
 
 ### Pré-requis
 
@@ -312,7 +312,7 @@ Utilisez le template dans `PROMPT_CREATION_COURS_COMPLET.md`
 
 ---
 
-## 📈 Statistiques du Projet
+## Statistiques du Projet
 
 ### Contenu Créé
 - **Fichiers Markdown :** 8 (intro + 5 steps + finish + README)
@@ -333,7 +333,7 @@ Utilisez le template dans `PROMPT_CREATION_COURS_COMPLET.md`
 
 ---
 
-## 🤝 Contribution et Support
+## Contribution et Support
 
 ### Comment Contribuer
 
@@ -350,30 +350,30 @@ Utilisez le template dans `PROMPT_CREATION_COURS_COMPLET.md`
 
 ---
 
-## 📜 Licence et Attribution
+## Licence et Attribution
 
 ### Dart
-Dart est un langage open-source créé par **Google LLC**.  
+Dart est un langage open-source créé par **Google LLC**. 
 Licence : BSD 3-Clause
 
 ### KillerCoda
 Plateforme d'apprentissage interactive pour les technologies cloud-native.
 
 ### Ce Cours
-Créé avec ❤️ pour la communauté francophone.  
+Créé avec ️ pour la communauté francophone. 
 Libre d'utilisation à des fins éducatives.
 
 ---
 
-## 🎓 Certificat de Compétence
+## Certificat de Compétence
 
 Les étudiants qui terminent ce cours peuvent revendiquer :
 
 **Compétences acquises :**
-- ✅ Programmation Dart niveau débutant
-- ✅ Syntaxe et structures de base
-- ✅ Création de programmes interactifs
-- ✅ Bonnes pratiques de développement
+- Programmation Dart niveau débutant
+- Syntaxe et structures de base
+- Création de programmes interactifs
+- Bonnes pratiques de développement
 
 **Prochaine étape recommandée :**
 - Dart Semaine 2 - Control Flow
@@ -381,7 +381,7 @@ Les étudiants qui terminent ce cours peuvent revendiquer :
 
 ---
 
-## 📞 Contact et Informations
+## Contact et Informations
 
 ### Créateur
 Cours créé dans le cadre du projet **InSkillFlowLabs**
@@ -393,11 +393,11 @@ Octobre 2025
 1.0 - Dart Week 1 Complete
 
 ### Statut
-✅ **Prêt pour publication sur KillerCoda**
+ **Prêt pour publication sur KillerCoda**
 
 ---
 
-## 🚀 Prochaines Actions
+## Prochaines Actions
 
 ### Pour Publier (5 minutes)
 1. Créer un repository GitHub public
@@ -413,22 +413,22 @@ Octobre 2025
 
 ---
 
-## 🎉 Conclusion
+## Conclusion
 
 **Ce cours Dart est :**
-- ✅ Complet et prêt à utiliser
-- ✅ Pédagogiquement solide
-- ✅ Adapté aux débutants
-- ✅ 100% français
-- ✅ Gratuit et accessible
-- ✅ Scalable à des millions d'utilisateurs
+- Complet et prêt à utiliser
+- Pédagogiquement solide
+- Adapté aux débutants
+- 100% français
+- Gratuit et accessible
+- Scalable à des millions d'utilisateurs
 
-**Il ne reste plus qu'à le publier !** 🚀
+**Il ne reste plus qu'à le publier !** 
 
 ---
 
-*Dernière mise à jour : Octobre 2025*  
-*Version : 1.0*  
-*Statut : Ready for Production ✅*
+*Dernière mise à jour : Octobre 2025* 
+*Version : 1.0* 
+*Statut : Ready for Production *
 
 

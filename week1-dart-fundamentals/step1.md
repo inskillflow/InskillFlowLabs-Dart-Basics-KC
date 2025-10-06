@@ -30,7 +30,7 @@ Puis réessayez `dart --version`
 
 ---
 
-## Qu'est-ce qu'une Variable? 📦
+## Qu'est-ce qu'une Variable? 
 
 ### Analogie Simple
 
@@ -65,7 +65,7 @@ var solde = 150.50;
 
 Dart a plusieurs "types de boîtes" pour différents types d'informations.
 
-### 1. `int` - Nombres Entiers 🔢
+### 1. `int` - Nombres Entiers 
 
 **Exemples:**
 - Age: 25
@@ -85,7 +85,7 @@ int zero = 0;
 
 ---
 
-### 2. `double` - Nombres Décimaux 🔢.🔢
+### 2. `double` - Nombres Décimaux .
 
 **Exemples:**
 - Prix: 19.99
@@ -103,14 +103,14 @@ double taille = 1.75;
 double temperature = -3.5;
 ```
 
-**⚠️ ATTENTION:**
+** ATTENTION:**
 En Dart, on utilise un **POINT** pas une virgule!
-- ✅ `19.99` (correct)
-- ❌ `19,99` (erreur!)
+- `19.99` (correct)
+- `19,99` (erreur!)
 
 ---
 
-### 3. `String` - Texte 📝
+### 3. `String` - Texte 
 
 **Exemples:**
 - Nom: "Julie"
@@ -136,7 +136,7 @@ Les deux fonctionnent! Mais soyez cohérent.
 
 ---
 
-### 4. `bool` - Vrai ou Faux ✅❌
+### 4. `bool` - Vrai ou Faux 
 
 **Exemples:**
 - Est majeur? true
@@ -154,22 +154,22 @@ bool estEnLigne = false;
 bool aPaye = true;
 ```
 
-**⚠️ ATTENTION:**
-- ✅ `true` et `false` (minuscules)
-- ❌ `True` et `False` (majuscules = erreur!)
-- ❌ `'true'` (avec guillemets = String, pas bool!)
+** ATTENTION:**
+- `true` et `false` (minuscules)
+- `True` et `False` (majuscules = erreur!)
+- `'true'` (avec guillemets = String, pas bool!)
 
 ---
 
-### 5. `var` - Laisse Dart Deviner 🤔
+### 5. `var` - Laisse Dart Deviner 
 
 **Dart est intelligent!** Il peut deviner le type.
 
 ```dart
-var age = 25;           // Dart comprend: int
-var nom = 'Julie';      // Dart comprend: String
-var prix = 19.99;       // Dart comprend: double
-var estActif = true;    // Dart comprend: bool
+var age = 25;      // Dart comprend: int
+var nom = 'Julie';   // Dart comprend: String
+var prix = 19.99;    // Dart comprend: double
+var estActif = true;  // Dart comprend: bool
 ```
 
 **Quand utiliser `var`?**
@@ -186,13 +186,13 @@ var estActif = true;    // Dart comprend: bool
 
 ## Règles de Nommage des Variables
 
-### ✅ CE QUI EST PERMIS:
+### CE QUI EST PERMIS:
 
 ```dart
-var age = 25;              // Simple et clair
-var nomComplet = 'Julie';  // camelCase (recommandé!)
-var prix_total = 100;      // snake_case (possible)
-var nombre2 = 10;          // Chiffres OK (pas au début!)
+var age = 25;       // Simple et clair
+var nomComplet = 'Julie'; // camelCase (recommandé!)
+var prix_total = 100;   // snake_case (possible)
+var nombre2 = 10;     // Chiffres OK (pas au début!)
 ```
 
 **Convention Dart:** **camelCase**
@@ -200,18 +200,18 @@ var nombre2 = 10;          // Chiffres OK (pas au début!)
 - Mots suivants: première lettre en majuscule
 - Exemples: `monAge`, `prixTotal`, `nomComplet`
 
-### ❌ CE QUI EST INTERDIT:
+### CE QUI EST INTERDIT:
 
 ```dart
-var 2nombre = 10;          // ❌ Ne peut pas commencer par un chiffre
-var prix-total = 100;      // ❌ Pas de tiret
-var nom complet = 'Julie'; // ❌ Pas d'espace
-var class = 5;             // ❌ "class" est un mot réservé
+var 2nombre = 10;     // Ne peut pas commencer par un chiffre
+var prix-total = 100;   // Pas de tiret
+var nom complet = 'Julie'; // Pas d'espace
+var class = 5;       // "class" est un mot réservé
 ```
 
 ---
 
-## EXERCICE 1 : Créer vos Premières Variables 🎯
+## EXERCICE 1 : Créer vos Premières Variables 
 
 ### Objectif
 Créer un fichier avec plusieurs variables de différents types.
@@ -235,17 +235,17 @@ Dans nano, tapez ce code **EXACTEMENT:**
 
 ```dart
 void main() {
-  // Variables de différents types
-  int age = 25;
-  String nom = 'Julie';
-  double taille = 1.75;
-  bool estEtudiant = true;
-  
-  // Afficher les variables
-  print('Nom: $nom');
-  print('Age: $age ans');
-  print('Taille: $taille m');
-  print('Est étudiant: $estEtudiant');
+ // Variables de différents types
+ int age = 25;
+ String nom = 'Julie';
+ double taille = 1.75;
+ bool estEtudiant = true;
+ 
+ // Afficher les variables
+ print('Nom: $nom');
+ print('Age: $age ans');
+ print('Taille: $taille m');
+ print('Est étudiant: $estEtudiant');
 }
 ```
 
@@ -302,11 +302,11 @@ Taille: 1.75 m
 Est étudiant: true
 ```
 
-**SI VOUS VOYEZ ÇA:** 🎉 **BRAVO!** Vos variables fonctionnent!
+**SI VOUS VOYEZ ÇA:** **Bien.** Vos variables fonctionnent!
 
 ---
 
-## EXERCICE 2 : Modifier des Variables 🔄
+## EXERCICE 2 : Modifier des Variables 
 
 ### Objectif
 Apprendre que les variables peuvent changer de valeur!
@@ -323,17 +323,17 @@ Apprendre que les variables peuvent changer de valeur!
 
 ```dart
 void main() {
-  // Créer une variable
-  var compteur = 0;
-  print('Compteur au début: $compteur');
-  
-  // Modifier la variable
-  compteur = 5;
-  print('Compteur après modification: $compteur');
-  
-  // Modifier encore
-  compteur = 10;
-  print('Compteur à la fin: $compteur');
+ // Créer une variable
+ var compteur = 0;
+ print('Compteur au début: $compteur');
+ 
+ // Modifier la variable
+ compteur = 5;
+ print('Compteur après modification: $compteur');
+ 
+ // Modifier encore
+ compteur = 10;
+ print('Compteur à la fin: $compteur');
 }
 ```
 
@@ -373,11 +373,11 @@ Compteur après modification: 5
 Compteur à la fin: 10
 ```
 
-**Vous voyez?** La variable **CHANGE** de valeur! C'est pour ça qu'on l'appelle "variable"! 🎯
+**Vous voyez?** La variable **CHANGE** de valeur! C'est pour ça qu'on l'appelle "variable"! 
 
 ---
 
-## EXERCICE 3 : Calculs avec des Variables 🧮
+## EXERCICE 3 : Calculs avec des Variables 
 
 ### Objectif
 Utiliser des variables dans des calculs.
@@ -394,20 +394,20 @@ Utiliser des variables dans des calculs.
 
 ```dart
 void main() {
-  // Informations d'un rectangle
-  int longueur = 10;
-  int largeur = 5;
-  
-  // Calculer l'aire et le périmètre
-  int aire = longueur * largeur;
-  int perimetre = 2 * (longueur + largeur);
-  
-  // Afficher les résultats
-  print('Rectangle:');
-  print('  Longueur: $longueur cm');
-  print('  Largeur: $largeur cm');
-  print('  Aire: $aire cm²');
-  print('  Périmètre: $perimetre cm');
+ // Informations d'un rectangle
+ int longueur = 10;
+ int largeur = 5;
+ 
+ // Calculer l'aire et le périmètre
+ int aire = longueur * largeur;
+ int perimetre = 2 * (longueur + largeur);
+ 
+ // Afficher les résultats
+ print('Rectangle:');
+ print(' Longueur: $longueur cm');
+ print(' Largeur: $largeur cm');
+ print(' Aire: $aire cm²');
+ print(' Périmètre: $perimetre cm');
 }
 ```
 
@@ -426,7 +426,7 @@ void main() {
 | `~/` | Division entière | `10 ~/ 3` | `3` (int) |
 | `%` | Modulo (reste) | `10 % 3` | `1` |
 
-**⚠️ ATTENTION À LA DIVISION:**
+** ATTENTION À LA DIVISION:**
 - `/` donne toujours un `double` (même si résultat entier)
 - `~/` donne toujours un `int` (partie entière)
 
@@ -445,17 +445,17 @@ void main() {
 **RÉSULTAT ATTENDU:**
 ```
 Rectangle:
-  Longueur: 10 cm
-  Largeur: 5 cm
-  Aire: 50 cm²
-  Périmètre: 30 cm
+ Longueur: 10 cm
+ Largeur: 5 cm
+ Aire: 50 cm²
+ Périmètre: 30 cm
 ```
 
-**SI VOUS VOYEZ ÇA:** 🎉 Vous savez faire des calculs avec des variables!
+**SI VOUS VOYEZ ÇA:** Vous savez faire des calculs avec des variables!
 
 ---
 
-## EXERCICE 4 : À Vous de Jouer! 🎮
+## EXERCICE 4 : À Vous de Jouer! 
 
 ### Objectif
 Créer votre propre programme avec VOS informations.
@@ -472,24 +472,24 @@ Créer votre propre programme avec VOS informations.
 
 ```dart
 void main() {
-  // VOS INFORMATIONS - MODIFIEZ LES VALEURS!
-  String prenom = 'VotrePrénom';
-  int age = 0;
-  String ville = 'VotreVille';
-  double taille = 1.70;
-  bool aimeProgammer = true;
-  
-  // Calculer l'année de naissance (approximatif)
-  int annee = 2025 - age;
-  
-  // Afficher tout
-  print('=== MON PROFIL ===');
-  print('Prénom: $prenom');
-  print('Age: $age ans');
-  print('Année de naissance: $annee');
-  print('Ville: $ville');
-  print('Taille: $taille m');
-  print('Aime programmer: $aimeProgammer');
+ // VOS INFORMATIONS - MODIFIEZ LES VALEURS!
+ String prenom = 'VotrePrénom';
+ int age = 0;
+ String ville = 'VotreVille';
+ double taille = 1.70;
+ bool aimeProgammer = true;
+ 
+ // Calculer l'année de naissance (approximatif)
+ int annee = 2025 - age;
+ 
+ // Afficher tout
+ print('=== MON PROFIL ===');
+ print('Prénom: $prenom');
+ print('Age: $age ans');
+ print('Année de naissance: $annee');
+ print('Ville: $ville');
+ print('Taille: $taille m');
+ print('Aime programmer: $aimeProgammer');
 }
 ```
 
@@ -504,7 +504,7 @@ Modifiez les valeurs pour VOUS:
 2. Changez `0` par VOTRE âge
 3. Changez `'VotreVille'` par VOTRE ville
 4. Changez `1.70` par VOTRE taille (en mètres)
-5. Changez `true` par `false` si vous n'aimez pas programmer (mais vous êtes ici, donc probablement `true`! 😄)
+5. Changez `true` par `false` si vous n'aimez pas programmer (mais vous êtes ici, donc probablement `true`! )
 
 **EXEMPLE:**
 ```dart
@@ -524,19 +524,19 @@ bool aimeProgammer = true;
 3. `dart moi.dart`{{execute}}
 
 **RÉSULTAT ATTENDU:**
-Vous devez voir VOS informations s'afficher! 🎊
+Vous devez voir VOS informations s'afficher! 
 
 **C'est VOTRE programme, avec VOS données!**
 
 ---
 
-## ⚠️ ATTENTION: Erreurs Courantes
+## ATTENTION: Erreurs Courantes
 
 ### Erreur #1: Oublier le point-virgule
 
 **CODE AVEC ERREUR:**
 ```dart
-var age = 25    // ❌ Manque ;
+var age = 25  // Manque ;
 print(age);
 ```
 
@@ -547,7 +547,7 @@ Error: Expected ';' after this.
 
 **SOLUTION:**
 ```dart
-var age = 25;   // ✅ Avec ;
+var age = 25;  // Avec ;
 print(age);
 ```
 
@@ -558,7 +558,7 @@ print(age);
 **CODE AVEC ERREUR:**
 ```dart
 int age = 25;
-age = 'vingt-cinq';  // ❌ Était int, maintenant String?
+age = 'vingt-cinq'; // Était int, maintenant String?
 ```
 
 **ERREUR DART:**
@@ -572,8 +572,8 @@ Une fois le type défini, on ne peut pas le changer!
 **SOLUTION:**
 Si vous voulez changer de type, utilisez `var` et créez une nouvelle variable:
 ```dart
-var age = 25;       // int
-var ageTexte = 'vingt-cinq';  // String (nouvelle variable!)
+var age = 25;    // int
+var ageTexte = 'vingt-cinq'; // String (nouvelle variable!)
 ```
 
 ---
@@ -582,7 +582,7 @@ var ageTexte = 'vingt-cinq';  // String (nouvelle variable!)
 
 **CODE AVEC ERREUR:**
 ```dart
-print(nom);  // ❌ Quelle est cette variable "nom"?
+print(nom); // Quelle est cette variable "nom"?
 ```
 
 **ERREUR DART:**
@@ -593,8 +593,8 @@ Error: Undefined name 'nom'.
 **SOLUTION:**
 Déclarez la variable AVANT de l'utiliser:
 ```dart
-var nom = 'Julie';  // ✅ D'abord déclarer
-print(nom);         // ✅ Puis utiliser
+var nom = 'Julie'; // D'abord déclarer
+print(nom);     // Puis utiliser
 ```
 
 ---
@@ -603,7 +603,7 @@ print(nom);         // ✅ Puis utiliser
 
 **CODE AVEC ERREUR:**
 ```dart
-String ville = Paris;  // ❌ Manque les guillemets
+String ville = Paris; // Manque les guillemets
 ```
 
 **ERREUR DART:**
@@ -613,12 +613,12 @@ Error: Undefined name 'Paris'.
 
 **SOLUTION:**
 ```dart
-String ville = 'Paris';  // ✅ Avec guillemets
+String ville = 'Paris'; // Avec guillemets
 ```
 
 ---
 
-## Interpolation de String : Plus de Détails 🔍
+## Interpolation de String : Plus de Détails 
 
 Vous avez vu `$nom` dans les `print()`. C'est très puissant!
 
@@ -626,7 +626,7 @@ Vous avez vu `$nom` dans les `print()`. C'est très puissant!
 
 ```dart
 var nom = 'Julie';
-print('Bonjour $nom!');  // Résultat: Bonjour Julie!
+print('Bonjour $nom!'); // Résultat: Bonjour Julie!
 ```
 
 ### Syntaxe avec Expressions
@@ -663,30 +663,30 @@ print('Prénom en majuscules: ${prenom.toUpperCase()}');
 
 ---
 
-## Récapitulatif : Ce que Vous Avez Appris 📚
+## Récapitulatif : Ce que Vous Avez Appris 
 
 ### Concepts Clés:
-✅ **Variable** = boîte qui stocke une valeur
-✅ **Type** = genre de données (int, String, double, bool)
-✅ **Déclaration** = créer une variable
-✅ **Assignation** = donner/changer une valeur
-✅ **Interpolation** = insérer une variable dans un texte avec `$`
+ **Variable** = boîte qui stocke une valeur
+ **Type** = genre de données (int, String, double, bool)
+ **Déclaration** = créer une variable
+ **Assignation** = donner/changer une valeur
+ **Interpolation** = insérer une variable dans un texte avec `$`
 
 ### Types de Données:
-✅ `int` = nombres entiers
-✅ `double` = nombres décimaux
-✅ `String` = texte (entre guillemets)
-✅ `bool` = true ou false
-✅ `var` = laisse Dart deviner le type
+ `int` = nombres entiers
+ `double` = nombres décimaux
+ `String` = texte (entre guillemets)
+ `bool` = true ou false
+ `var` = laisse Dart deviner le type
 
 ### Opérateurs:
-✅ `+` `-` `*` `/` `~/` `%` pour les calculs
+ `+` `-` `*` `/` `~/` `%` pour les calculs
 
 ### Règles:
-✅ Chaque instruction se termine par `;`
-✅ On ne peut pas changer le type d'une variable
-✅ Noms de variables en camelCase
-✅ Déclaration une seule fois (avec `var` ou type)
+ Chaque instruction se termine par `;`
+ On ne peut pas changer le type d'une variable
+ Noms de variables en camelCase
+ Déclaration une seule fois (avec `var` ou type)
 
 ---
 
@@ -694,40 +694,40 @@ print('Prénom en majuscules: ${prenom.toUpperCase()}');
 
 ```dart
 // DÉCLARATION (première fois)
-var nom = 'Julie';        // Avec var
-int age = 25;             // Avec type explicite
+var nom = 'Julie';    // Avec var
+int age = 25;       // Avec type explicite
 
 // UTILISATION
-print('Nom: $nom');       // Interpolation simple
-print('Dans 5 ans: ${age + 5}');  // Interpolation avec expression
+print('Nom: $nom');    // Interpolation simple
+print('Dans 5 ans: ${age + 5}'); // Interpolation avec expression
 
 // MODIFICATION
-age = 26;                 // Sans var!
+age = 26;         // Sans var!
 
 // CALCULS
-var total = 10 + 5;       // Addition
-var produit = 10 * 5;     // Multiplication
-var reste = 10 % 3;       // Modulo (reste)
+var total = 10 + 5;    // Addition
+var produit = 10 * 5;   // Multiplication
+var reste = 10 % 3;    // Modulo (reste)
 ```
 
 ---
 
-## Conseil de Professeur Expérimenté
+## Conseil professionnel
 
 ### Nommez vos variables intelligemment!
 
 **MAUVAIS NOMS:**
 ```dart
-var a = 25;        // Quoi "a"?
-var x = 'Julie';   // Pourquoi "x"?
-var truc = 100;    // "truc"? Vraiment?
+var a = 25;    // Quoi "a"?
+var x = 'Julie';  // Pourquoi "x"?
+var truc = 100;  // "truc"? Vraiment?
 ```
 
 **BONS NOMS:**
 ```dart
-var age = 25;             // Clair!
-var prenom = 'Julie';     // Explicite!
-var prixTotal = 100;      // On comprend!
+var age = 25;       // Clair!
+var prenom = 'Julie';   // Explicite!
+var prixTotal = 100;   // On comprend!
 ```
 
 **RÈGLE D'OR:**
@@ -737,13 +737,13 @@ Nommez vos variables de façon à ce que quelqu'un d'autre (ou vous dans 6 mois)
 
 ---
 
-## Mini-Quiz : Testez Vos Connaissances 🧠
+## Mini-Quiz : Testez Vos Connaissances 
 
 <details>
 <summary>Question 1: Quelle est la bonne déclaration?</summary>
 
-A) `var age = 25`  
-B) `var age = 25;`  
+A) `var age = 25` 
+B) `var age = 25;` 
 C) `age = 25;`
 
 **Réponse:** B) `var age = 25;`
@@ -754,8 +754,8 @@ C) `age = 25;`
 <details>
 <summary>Question 2: Quel type pour un prix?</summary>
 
-A) `int prix = 19.99;`  
-B) `double prix = 19.99;`  
+A) `int prix = 19.99;` 
+B) `double prix = 19.99;` 
 C) `String prix = 19.99;`
 
 **Réponse:** B) `double prix = 19.99;`
@@ -767,8 +767,8 @@ C) `String prix = 19.99;`
 <details>
 <summary>Question 3: Comment afficher une variable?</summary>
 
-A) `print(age);`  
-B) `print('Age: $age');`  
+A) `print(age);` 
+B) `print('Age: $age');` 
 C) Les deux marchent!
 
 **Réponse:** C) Les deux marchent!
@@ -788,7 +788,7 @@ Vous savez maintenant:
 - Faire des calculs
 - Afficher des résultats
 
-**PROCHAINE ÉTAPE:** Apprendre à créer des **fonctions** pour réutiliser du code! 🔧
+**PROCHAINE ÉTAPE:** Apprendre à créer des **fonctions** pour réutiliser du code! 
 
 **Cliquez sur "Continuer" pour l'Étape 2!** →
 

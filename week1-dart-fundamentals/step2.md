@@ -14,7 +14,7 @@
 
 ---
 
-## Qu'est-ce qu'une Fonction? 🔧
+## Qu'est-ce qu'une Fonction? 
 
 ### Analogie Simple
 
@@ -58,8 +58,8 @@ direBonjour('Sophie');
 
 ```dart
 returnType nomDeLaFonction(paramètres) {
-  // Code de la fonction
-  return résultat;
+ // Code de la fonction
+ return résultat;
 }
 ```
 
@@ -94,12 +94,12 @@ returnType nomDeLaFonction(paramètres) {
 
 ```dart
 void direBonjour() {
-  print('Bonjour tout le monde!');
+ print('Bonjour tout le monde!');
 }
 
 void main() {
-  direBonjour();  // Appel de la fonction
-  direBonjour();  // On peut l'appeler plusieurs fois!
+ direBonjour(); // Appel de la fonction
+ direBonjour(); // On peut l'appeler plusieurs fois!
 }
 ```
 
@@ -111,7 +111,7 @@ void main() {
 
 ---
 
-## EXERCICE 1 : Votre Première Fonction 🎯
+## EXERCICE 1 : Votre Première Fonction 
 
 ### ÉTAPE 1.1 - Créer le fichier
 
@@ -124,18 +124,18 @@ void main() {
 ```dart
 // Définir la fonction
 void afficherMessage() {
-  print('===============');
-  print('Bienvenue en Dart!');
-  print('===============');
+ print('===============');
+ print('Bienvenue en Dart!');
+ print('===============');
 }
 
 void main() {
-  // Appeler la fonction 3 fois
-  afficherMessage();
-  print('');  // Ligne vide
-  afficherMessage();
-  print('');
-  afficherMessage();
+ // Appeler la fonction 3 fois
+ afficherMessage();
+ print(''); // Ligne vide
+ afficherMessage();
+ print('');
+ afficherMessage();
 }
 ```
 
@@ -178,7 +178,7 @@ Bienvenue en Dart!
 ===============
 ```
 
-**SI VOUS VOYEZ ÇA:** 🎉 Votre première fonction marche!
+**SI VOUS VOYEZ ÇA:** Votre première fonction marche!
 
 ---
 
@@ -188,13 +188,13 @@ Bienvenue en Dart!
 
 ```dart
 void direBonjour(String prenom) {
-  print('Bonjour $prenom!');
+ print('Bonjour $prenom!');
 }
 
 void main() {
-  direBonjour('Julie');   // Bonjour Julie!
-  direBonjour('Marc');    // Bonjour Marc!
-  direBonjour('Sophie');  // Bonjour Sophie!
+ direBonjour('Julie');  // Bonjour Julie!
+ direBonjour('Marc');  // Bonjour Marc!
+ direBonjour('Sophie'); // Bonjour Sophie!
 }
 ```
 
@@ -209,7 +209,7 @@ void main() {
 
 ---
 
-## EXERCICE 2 : Fonction avec Paramètres 🎯
+## EXERCICE 2 : Fonction avec Paramètres 
 
 ### ÉTAPE 2.1 - Créer le fichier
 
@@ -222,26 +222,26 @@ void main() {
 ```dart
 // Fonction avec UN paramètre
 void presenterPersonne(String nom) {
-  print('Je m\'appelle $nom.');
+ print('Je m\'appelle $nom.');
 }
 
 // Fonction avec PLUSIEURS paramètres
 void presenterComplet(String nom, int age, String ville) {
-  print('Je m\'appelle $nom.');
-  print('J\'ai $age ans.');
-  print('J\'habite à $ville.');
-  print('---');
+ print('Je m\'appelle $nom.');
+ print('J\'ai $age ans.');
+ print('J\'habite à $ville.');
+ print('---');
 }
 
 void main() {
-  // Appeler avec un paramètre
-  presenterPersonne('Julie');
-  print('');
-  
-  // Appeler avec plusieurs paramètres
-  presenterComplet('Marc', 30, 'Paris');
-  presenterComplet('Sophie', 25, 'Lyon');
-  presenterComplet('Thomas', 35, 'Marseille');
+ // Appeler avec un paramètre
+ presenterPersonne('Julie');
+ print('');
+ 
+ // Appeler avec plusieurs paramètres
+ presenterComplet('Marc', 30, 'Paris');
+ presenterComplet('Sophie', 25, 'Lyon');
+ presenterComplet('Thomas', 35, 'Marseille');
 }
 ```
 
@@ -260,10 +260,10 @@ void main() {
 - `30` → `age`
 - `'Paris'` → `ville`
 
-**⚠️ ATTENTION À L'ORDRE:**
+** ATTENTION À L'ORDRE:**
 ```dart
-presenterComplet('Marc', 30, 'Paris');     // ✅ Correct
-presenterComplet(30, 'Marc', 'Paris');     // ❌ Erreur de type!
+presenterComplet('Marc', 30, 'Paris');   // Correct
+presenterComplet(30, 'Marc', 'Paris');   // Erreur de type!
 ```
 
 ---
@@ -292,7 +292,7 @@ J'habite à Marseille.
 ---
 ```
 
-**Vous voyez la puissance?** Une fonction, plusieurs utilisations! 🎯
+**Vous voyez la puissance?** Une fonction, plusieurs utilisations! 
 
 ---
 
@@ -302,13 +302,13 @@ J'habite à Marseille.
 
 ```dart
 int additionner(int a, int b) {
-  int resultat = a + b;
-  return resultat;
+ int resultat = a + b;
+ return resultat;
 }
 
 void main() {
-  int somme = additionner(5, 3);
-  print('5 + 3 = $somme');  // 5 + 3 = 8
+ int somme = additionner(5, 3);
+ print('5 + 3 = $somme'); // 5 + 3 = 8
 }
 ```
 
@@ -321,7 +321,7 @@ void main() {
 
 ---
 
-## EXERCICE 3 : Fonctions Mathématiques 🧮
+## EXERCICE 3 : Fonctions Mathématiques 
 
 ### ÉTAPE 3.1 - Créer le fichier
 
@@ -334,39 +334,39 @@ void main() {
 ```dart
 // Fonction qui retourne la somme
 int additionner(int a, int b) {
-  return a + b;
+ return a + b;
 }
 
 // Fonction qui retourne le produit
 int multiplier(int a, int b) {
-  return a * b;
+ return a * b;
 }
 
 // Fonction qui retourne le double d'un nombre
 int doubler(int nombre) {
-  return nombre * 2;
+ return nombre * 2;
 }
 
 // Fonction qui retourne l'aire d'un rectangle
 int calculerAire(int longueur, int largeur) {
-  int aire = longueur * largeur;
-  return aire;
+ int aire = longueur * largeur;
+ return aire;
 }
 
 void main() {
-  // Utiliser les fonctions
-  print('Addition: 5 + 3 = ${additionner(5, 3)}');
-  print('Multiplication: 5 × 3 = ${multiplier(5, 3)}');
-  print('Double de 7: ${doubler(7)}');
-  
-  // Stocker le résultat dans une variable
-  int resultat = calculerAire(10, 5);
-  print('Aire d\'un rectangle 10×5: $resultat cm²');
-  
-  // Utiliser un résultat dans un calcul
-  int somme = additionner(10, 20);
-  int doubleSomme = doubler(somme);
-  print('10 + 20 = $somme, doublé = $doubleSomme');
+ // Utiliser les fonctions
+ print('Addition: 5 + 3 = ${additionner(5, 3)}');
+ print('Multiplication: 5 × 3 = ${multiplier(5, 3)}');
+ print('Double de 7: ${doubler(7)}');
+ 
+ // Stocker le résultat dans une variable
+ int resultat = calculerAire(10, 5);
+ print('Aire d\'un rectangle 10×5: $resultat cm²');
+ 
+ // Utiliser un résultat dans un calcul
+ int somme = additionner(10, 20);
+ int doubleSomme = doubler(somme);
+ print('10 + 20 = $somme, doublé = $doubleSomme');
 }
 ```
 
@@ -408,19 +408,19 @@ Aire d'un rectangle 10×5: 50 cm²
 
 ---
 
-## Fonction avec Retour de Type `String` 📝
+## Fonction avec Retour de Type `String` 
 
 ```dart
 String creerMessage(String nom, int age) {
-  return 'Bonjour $nom, vous avez $age ans!';
+ return 'Bonjour $nom, vous avez $age ans!';
 }
 
 void main() {
-  String message1 = creerMessage('Julie', 25);
-  String message2 = creerMessage('Marc', 30);
-  
-  print(message1);
-  print(message2);
+ String message1 = creerMessage('Julie', 25);
+ String message2 = creerMessage('Marc', 30);
+ 
+ print(message1);
+ print(message2);
 }
 ```
 
@@ -429,7 +429,7 @@ void main() {
 
 ---
 
-## EXERCICE 4 : Convertisseur de Température 🌡️
+## EXERCICE 4 : Convertisseur de Température ️
 
 ### Objectif
 Créer des fonctions pour convertir Celsius ↔ Fahrenheit.
@@ -448,37 +448,37 @@ Créer des fonctions pour convertir Celsius ↔ Fahrenheit.
 // Convertir Celsius en Fahrenheit
 // Formule: F = C × 9/5 + 32
 double celsiusVersFahrenheit(double celsius) {
-  double fahrenheit = celsius * 9 / 5 + 32;
-  return fahrenheit;
+ double fahrenheit = celsius * 9 / 5 + 32;
+ return fahrenheit;
 }
 
 // Convertir Fahrenheit en Celsius
 // Formule: C = (F - 32) × 5/9
 double fahrenheitVersCelsius(double fahrenheit) {
-  double celsius = (fahrenheit - 32) * 5 / 9;
-  return celsius;
+ double celsius = (fahrenheit - 32) * 5 / 9;
+ return celsius;
 }
 
 // Afficher une température avec ses deux valeurs
 void afficherTemperature(double celsius) {
-  double fahrenheit = celsiusVersFahrenheit(celsius);
-  print('$celsius°C = $fahrenheit°F');
+ double fahrenheit = celsiusVersFahrenheit(celsius);
+ print('$celsius°C = $fahrenheit°F');
 }
 
 void main() {
-  // Tester les conversions
-  print('=== CONVERSIONS DE TEMPÉRATURE ===');
-  print('');
-  
-  afficherTemperature(0);     // Point de congélation de l'eau
-  afficherTemperature(100);   // Point d'ébullition de l'eau
-  afficherTemperature(37);    // Température corporelle normale
-  afficherTemperature(-40);   // -40°C = -40°F (fait rigolo!)
-  
-  print('');
-  print('=== CONVERSION INVERSE ===');
-  double tempC = fahrenheitVersCelsius(98.6);
-  print('98.6°F = $tempC°C (température corporelle)');
+ // Tester les conversions
+ print('=== CONVERSIONS DE TEMPÉRATURE ===');
+ print('');
+ 
+ afficherTemperature(0);   // Point de congélation de l'eau
+ afficherTemperature(100);  // Point d'ébullition de l'eau
+ afficherTemperature(37);  // Température corporelle normale
+ afficherTemperature(-40);  // -40°C = -40°F (fait rigolo!)
+ 
+ print('');
+ print('=== CONVERSION INVERSE ===');
+ double tempC = fahrenheitVersCelsius(98.6);
+ print('98.6°F = $tempC°C (température corporelle)');
 }
 ```
 
@@ -516,7 +516,7 @@ void main() {
 98.6°F = 37.0°C (température corporelle)
 ```
 
-**Fun fact:** -40°C = -40°F ! C'est le seul point où les deux échelles se croisent! ❄️
+**Fun fact:** -40°C = -40°F ! C'est le seul point où les deux échelles se croisent! ️
 
 ---
 
@@ -526,17 +526,17 @@ void main() {
 
 ```dart
 void creerProfil({required String nom, required int age, String? ville}) {
-  print('Nom: $nom');
-  print('Age: $age');
-  if (ville != null) {
-    print('Ville: $ville');
-  }
+ print('Nom: $nom');
+ print('Age: $age');
+ if (ville != null) {
+  print('Ville: $ville');
+ }
 }
 
 void main() {
-  // Appel avec paramètres nommés
-  creerProfil(nom: 'Julie', age: 25, ville: 'Paris');
-  creerProfil(nom: 'Marc', age: 30);  // ville optionnel
+ // Appel avec paramètres nommés
+ creerProfil(nom: 'Julie', age: 25, ville: 'Paris');
+ creerProfil(nom: 'Marc', age: 30); // ville optionnel
 }
 ```
 
@@ -556,19 +556,19 @@ void main() {
 
 ```dart
 void direBonjour({String nom = 'Invité', String langue = 'FR'}) {
-  if (langue == 'FR') {
-    print('Bonjour $nom!');
-  } else if (langue == 'EN') {
-    print('Hello $nom!');
-  } else {
-    print('Hola $nom!');
-  }
+ if (langue == 'FR') {
+  print('Bonjour $nom!');
+ } else if (langue == 'EN') {
+  print('Hello $nom!');
+ } else {
+  print('Hola $nom!');
+ }
 }
 
 void main() {
-  direBonjour();                        // Bonjour Invité!
-  direBonjour(nom: 'Julie');            // Bonjour Julie!
-  direBonjour(nom: 'John', langue: 'EN'); // Hello John!
+ direBonjour();            // Bonjour Invité!
+ direBonjour(nom: 'Julie');      // Bonjour Julie!
+ direBonjour(nom: 'John', langue: 'EN'); // Hello John!
 }
 ```
 
@@ -576,14 +576,14 @@ void main() {
 
 ---
 
-## ⚠️ ATTENTION: Erreurs Courantes
+## ATTENTION: Erreurs Courantes
 
 ### Erreur #1: Retourner void
 
 **CODE AVEC ERREUR:**
 ```dart
 void calculer(int a, int b) {
-  return a + b;  // ❌ void ne peut pas retourner!
+ return a + b; // void ne peut pas retourner!
 }
 ```
 
@@ -594,8 +594,8 @@ Error: Can't return a value from a void function.
 
 **SOLUTION:**
 ```dart
-int calculer(int a, int b) {  // ✅ int, pas void
-  return a + b;
+int calculer(int a, int b) { // int, pas void
+ return a + b;
 }
 ```
 
@@ -606,7 +606,7 @@ int calculer(int a, int b) {  // ✅ int, pas void
 **CODE AVEC ERREUR:**
 ```dart
 int additionner(int a, int b) {
-  a + b;  // ❌ Calcule mais ne retourne pas!
+ a + b; // Calcule mais ne retourne pas!
 }
 ```
 
@@ -618,7 +618,7 @@ Error: A value of type 'int' was expected but 'void' was returned.
 **SOLUTION:**
 ```dart
 int additionner(int a, int b) {
-  return a + b;  // ✅ Avec return
+ return a + b; // Avec return
 }
 ```
 
@@ -629,7 +629,7 @@ int additionner(int a, int b) {
 **CODE AVEC ERREUR:**
 ```dart
 int diviser(int a, int b) {
-  return a / b;  // ❌ Division retourne double, pas int!
+ return a / b; // Division retourne double, pas int!
 }
 ```
 
@@ -640,8 +640,8 @@ Error: A value of type 'double' can't be returned from a function with return ty
 
 **SOLUTION:**
 ```dart
-double diviser(int a, int b) {  // ✅ double
-  return a / b;
+double diviser(int a, int b) { // double
+ return a / b;
 }
 ```
 
@@ -652,11 +652,11 @@ double diviser(int a, int b) {  // ✅ double
 **CODE AVEC ERREUR:**
 ```dart
 int additionner(int a, int b) {
-  return a + b;
+ return a + b;
 }
 
 void main() {
-  additionner(5);  // ❌ Manque un argument!
+ additionner(5); // Manque un argument!
 }
 ```
 
@@ -667,33 +667,33 @@ Error: Too few positional arguments: 2 required, 1 given.
 
 **SOLUTION:**
 ```dart
-additionner(5, 3);  // ✅ 2 arguments
+additionner(5, 3); // 2 arguments
 ```
 
 ---
 
-## Récapitulatif : Ce que Vous Avez Appris 📚
+## Récapitulatif : Ce que Vous Avez Appris 
 
 ### Concepts Clés:
-✅ **Fonction** = bloc de code réutilisable
-✅ **Paramètre** = entrée de la fonction
-✅ **Argument** = valeur passée à la fonction
-✅ **return** = sortie de la fonction
-✅ **void** = fonction qui ne retourne rien
+ **Fonction** = bloc de code réutilisable
+ **Paramètre** = entrée de la fonction
+ **Argument** = valeur passée à la fonction
+ **return** = sortie de la fonction
+ **void** = fonction qui ne retourne rien
 
 ### Types de Fonctions:
-✅ Sans paramètres, sans retour
-✅ Avec paramètres, sans retour
-✅ Sans paramètres, avec retour
-✅ Avec paramètres et retour
-✅ Paramètres nommés et optionnels
+ Sans paramètres, sans retour
+ Avec paramètres, sans retour
+ Sans paramètres, avec retour
+ Avec paramètres et retour
+ Paramètres nommés et optionnels
 
 ### Règles:
-✅ Type de retour AVANT le nom
-✅ `return` obligatoire si type ≠ `void`
-✅ Parenthèses `()` obligatoires (même vides)
-✅ Accolades `{}` délimitent le corps
-✅ Appel = nom + arguments entre `()`
+ Type de retour AVANT le nom
+ `return` obligatoire si type ≠ `void`
+ Parenthèses `()` obligatoires (même vides)
+ Accolades `{}` délimitent le corps
+ Appel = nom + arguments entre `()`
 
 ---
 
@@ -702,30 +702,30 @@ additionner(5, 3);  // ✅ 2 arguments
 ```dart
 // FONCTION COMPLÈTE
 returnType nomFonction(paramètres) {
-  // code
-  return valeur;
+ // code
+ return valeur;
 }
 
 // EXEMPLES
 
 // 1. Void (ne retourne rien)
 void afficher() {
-  print('Hello');
+ print('Hello');
 }
 
 // 2. Avec paramètres
 void saluer(String nom) {
-  print('Bonjour $nom');
+ print('Bonjour $nom');
 }
 
 // 3. Avec retour
 int additionner(int a, int b) {
-  return a + b;
+ return a + b;
 }
 
 // 4. Paramètres nommés
 void creer({required String nom, int age = 0}) {
-  print('$nom, $age ans');
+ print('$nom, $age ans');
 }
 
 // APPELS
@@ -737,30 +737,30 @@ creer(nom: 'Marc', age: 30);
 
 ---
 
-## Conseil de Professeur Expérimenté
+## Conseil professionnel
 
 ### Quand créer une fonction?
 
 **CRÉEZ une fonction si:**
-- ✅ Vous répétez le même code 2+ fois
-- ✅ Le code fait une action spécifique (calculer, afficher, etc.)
-- ✅ Le code est complexe (fonction = simplification)
-- ✅ Vous voulez tester cette partie indépendamment
+- Vous répétez le même code 2+ fois
+- Le code fait une action spécifique (calculer, afficher, etc.)
+- Le code est complexe (fonction = simplification)
+- Vous voulez tester cette partie indépendamment
 
 **NE CRÉEZ PAS de fonction si:**
-- ❌ Code utilisé une seule fois
-- ❌ Code très simple (1-2 lignes)
-- ❌ Fonction trop générique (fait trop de choses)
+- Code utilisé une seule fois
+- Code très simple (1-2 lignes)
+- Fonction trop générique (fait trop de choses)
 
 **RÈGLE D'OR:** Une fonction = Une tâche bien définie!
 
 **Exemple:**
-- ✅ `calculerAire(longueur, largeur)` - tâche claire
-- ❌ `faireDesTrucs()` - trop vague!
+- `calculerAire(longueur, largeur)` - tâche claire
+- `faireDesTrucs()` - trop vague!
 
 ---
 
-## Exercice Bonus : Validateur d'Âge 🎯
+## Exercice Bonus : Validateur d'Âge 
 
 ### À Vous de Jouer!
 
@@ -769,43 +769,43 @@ Créez un fichier `validateur.dart` avec:
 **1. Une fonction qui vérifie si quelqu'un est majeur:**
 ```dart
 bool estMajeur(int age) {
-  // Retourne true si age >= 18, sinon false
+ // Retourne true si age >= 18, sinon false
 }
 ```
 
 **2. Une fonction qui affiche un message selon l'âge:**
 ```dart
 void afficherStatut(String nom, int age) {
-  // Si majeur: "nom est majeur"
-  // Sinon: "nom est mineur"
+ // Si majeur: "nom est majeur"
+ // Sinon: "nom est mineur"
 }
 ```
 
 **3. Dans main(), testez avec plusieurs personnes**
 
-**Solution cachée ci-dessous** ⬇️
+**Solution cachée ci-dessous** ️
 
 <details>
 <summary>Cliquez pour voir la solution</summary>
 
 ```dart
 bool estMajeur(int age) {
-  return age >= 18;
+ return age >= 18;
 }
 
 void afficherStatut(String nom, int age) {
-  if (estMajeur(age)) {
-    print('$nom ($age ans) est majeur.');
-  } else {
-    print('$nom ($age ans) est mineur.');
-  }
+ if (estMajeur(age)) {
+  print('$nom ($age ans) est majeur.');
+ } else {
+  print('$nom ($age ans) est mineur.');
+ }
 }
 
 void main() {
-  afficherStatut('Julie', 25);
-  afficherStatut('Marc', 17);
-  afficherStatut('Sophie', 18);
-  afficherStatut('Thomas', 12);
+ afficherStatut('Julie', 25);
+ afficherStatut('Marc', 17);
+ afficherStatut('Sophie', 18);
+ afficherStatut('Thomas', 12);
 }
 ```
 </details>
@@ -821,7 +821,7 @@ Vous savez maintenant:
 - Réutiliser du code
 - Organiser votre programme
 
-**PROCHAINE ÉTAPE:** Apprendre à interagir avec l'utilisateur! 💬
+**PROCHAINE ÉTAPE:** Apprendre à interagir avec l'utilisateur! 
 
 **Cliquez sur "Continuer" pour l'Étape 3!** →
 

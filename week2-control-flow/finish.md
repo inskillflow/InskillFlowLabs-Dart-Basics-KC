@@ -1,18 +1,18 @@
-# 🎉 Félicitations ! Semaine 2 Terminée ! 🎉
+# Félicitations ! Semaine 2 Terminée ! 
 
-## Vous Avez Réussi ! 🏆
+## Vous Avez Réussi ! 
 
 **Regardez tout ce que vous avez appris :**
 
-✅ Structures if/else  
-✅ Conditions multiples (if/else if/else)  
-✅ Tous les opérateurs de comparaison  
-✅ Opérateurs logiques (&&, ||, !)  
-✅ Structure switch/case  
-✅ Conditions imbriquées  
-✅ Projet complet (système de notes)  
+ Structures if/else 
+ Conditions multiples (if/else if/else) 
+ Tous les opérateurs de comparaison 
+ Opérateurs logiques (&&, ||, !) 
+ Structure switch/case 
+ Conditions imbriquées 
+ Projet complet (système de notes) 
 
-**EN UNE SEULE SEMAINE !** 🚀
+**EN UNE SEULE SEMAINE !** 
 
 ---
 
@@ -21,50 +21,50 @@
 ### If/Else
 ```dart
 if (condition) {
-  // Si vrai
+ // Si vrai
 } else if (autreCondition) {
-  // Si autre vrai
+ // Si autre vrai
 } else {
-  // Si toutes fausses
+ // Si toutes fausses
 }
 ```
 
 ### Opérateurs de Comparaison
 ```dart
-==    // Égal
-!=    // Différent
->     // Plus grand
-<     // Plus petit
->=    // Plus grand ou égal
-<=    // Plus petit ou égal
+==  // Égal
+!=  // Différent
+>   // Plus grand
+<   // Plus petit
+>=  // Plus grand ou égal
+<=  // Plus petit ou égal
 ```
 
 ### Opérateurs Logiques
 ```dart
-&&    // ET (les deux vrais)
-||    // OU (au moins un vrai)
-!     // NON (inverse)
+&&  // ET (les deux vrais)
+||  // OU (au moins un vrai)
+!   // NON (inverse)
 ```
 
 ### Switch
 ```dart
 switch (variable) {
-  case valeur1:
-    // Code
-    break;
-  case valeur2:
-    // Code
-    break;
-  default:
-    // Par défaut
+ case valeur1:
+  // Code
+  break;
+ case valeur2:
+  // Code
+  break;
+ default:
+  // Par défaut
 }
 ```
 
 ---
 
-## 💭 Ce que Cela Signifie pour Flutter
+## Ce que Cela Signifie pour Flutter
 
-### Tout ce que vous avez appris s'applique directement ! 📱
+### Tout ce que vous avez appris s'applique directement ! 
 
 **If/else → Conditional Rendering**
 ```dart
@@ -73,21 +73,21 @@ if (estConnecte) print('Bienvenue');
 
 // Flutter
 if (estConnecte) 
-  Text('Bienvenue')
+ Text('Bienvenue')
 ```
 
 **Switch → Navigation**
 ```dart
 // Console
 switch (page) {
-  case 1: afficherAccueil();
-  case 2: afficherProfil();
+ case 1: afficherAccueil();
+ case 2: afficherProfil();
 }
 
 // Flutter
 switch (pageActuelle) {
-  case 'accueil': return PageAccueil();
-  case 'profil': return PageProfil();
+ case 'accueil': return PageAccueil();
+ case 'profil': return PageProfil();
 }
 ```
 
@@ -98,9 +98,9 @@ bool isValid = nom.isNotEmpty && age > 0;
 
 // Flutter
 validator: (value) {
-  if (value == null || value.isEmpty) 
-    return 'Requis';
-  return null;
+ if (value == null || value.isEmpty) 
+  return 'Requis';
+ return null;
 }
 ```
 
@@ -115,26 +115,26 @@ if (condition) { } else { }
 if (cond1) { } else if (cond2) { } else { }
 
 // OPÉRATEURS
-age >= 18          // Comparaison
-age >= 18 && haPermis   // ET
-age < 18 || isEmancipé  // OU
-!estMineur         // NON
+age >= 18     // Comparaison
+age >= 18 && haPermis  // ET
+age < 18 || isEmancipé // OU
+!estMineur     // NON
 
 // SWITCH
 switch (variable) {
-  case valeur: /* code */ break;
-  default: /* code */
+ case valeur: /* code */ break;
+ default: /* code */
 }
 
 // TERNAIRE
 var x = condition ? valeurVrai : valeurFaux;
 
 // RÈGLES
-✓ Condition entre ( )
-✓ Code entre { }
-✓ == pour comparer (pas =)
-✓ break dans switch
-✓ Tester tous les cas
+ Condition entre ( )
+ Code entre { }
+ == pour comparer (pas =)
+ break dans switch
+ Tester tous les cas
 ```
 
 ---
@@ -152,9 +152,9 @@ var x = condition ? valeurVrai : valeurFaux;
 **2. Vérificateur de Mot de Passe**
 - Demander mot de passe
 - Vérifier :
-  * Longueur >= 8
-  * Contient un chiffre
-  * Contient une majuscule
+ * Longueur >= 8
+ * Contient un chiffre
+ * Contient une majuscule
 - Afficher si valide
 
 **3. Convertisseur de Notes**
@@ -217,27 +217,27 @@ var x = condition ? valeurVrai : valeurFaux;
 import 'dart:io';
 
 void main() {
-  print('Poids (kg):');
-  double poids = double.parse(stdin.readLineSync() ?? '0');
-  
-  print('Taille (m):');
-  double taille = double.parse(stdin.readLineSync() ?? '0');
-  
-  double imc = poids / (taille * taille);
-  
-  String interpretation;
-  if (imc < 18.5) {
-    interpretation = 'Insuffisance pondérale';
-  } else if (imc < 25) {
-    interpretation = 'Poids normal';
-  } else if (imc < 30) {
-    interpretation = 'Surpoids';
-  } else {
-    interpretation = 'Obésité';
-  }
-  
-  print('IMC: ${imc.toStringAsFixed(1)}');
-  print('Interprétation: $interpretation');
+ print('Poids (kg):');
+ double poids = double.parse(stdin.readLineSync() ?? '0');
+ 
+ print('Taille (m):');
+ double taille = double.parse(stdin.readLineSync() ?? '0');
+ 
+ double imc = poids / (taille * taille);
+ 
+ String interpretation;
+ if (imc < 18.5) {
+  interpretation = 'Insuffisance pondérale';
+ } else if (imc < 25) {
+  interpretation = 'Poids normal';
+ } else if (imc < 30) {
+  interpretation = 'Surpoids';
+ } else {
+  interpretation = 'Obésité';
+ }
+ 
+ print('IMC: ${imc.toStringAsFixed(1)}');
+ print('Interprétation: $interpretation');
 }
 ```
 
@@ -270,13 +270,13 @@ void main() {
 
 Avec Dart Semaines 1-2, vous pouvez créer :
 
-✅ **Programmes de validation** (âge, connexion)  
-✅ **Calculateurs** (notes, prix, IMC)  
-✅ **Systèmes de menu** (navigation)  
-✅ **Jeux simples** (quiz, devinettes)  
-✅ **Outils** (convertisseurs)  
+ **Programmes de validation** (âge, connexion) 
+ **Calculateurs** (notes, prix, IMC) 
+ **Systèmes de menu** (navigation) 
+ **Jeux simples** (quiz, devinettes) 
+ **Outils** (convertisseurs) 
 
-**Base solide pour Flutter !** 📱
+**Base solide pour Flutter !** 
 
 ---
 
@@ -298,8 +298,8 @@ En Flutter, vous utiliserez des **Lists** PARTOUT :
 - Liste d'utilisateurs → `GridView`
 - Données API → `List<Map>`
 
-**Semaines 1-2 = Logique**  
-**Semaine 3 = Données**  
+**Semaines 1-2 = Logique** 
+**Semaine 3 = Données** 
 **→ Combinés = Apps complètes !**
 
 ---
@@ -308,16 +308,16 @@ En Flutter, vous utiliserez des **Lists** PARTOUT :
 
 Vous venez d'apprendre à **donner de l'intelligence** à vos programmes !
 
-**Avant :** Programmes linéaires, toujours pareils  
+**Avant :** Programmes linéaires, toujours pareils 
 **Maintenant :** Programmes adaptatifs qui prennent des décisions !
 
-**C'est ÉNORME !** 💪
+**C'est ÉNORME !** 
 
 Les conditions sont au **cœur de TOUS les programmes**.
 
 Chaque app que vous utilisez (Instagram, Netflix, etc.) utilise des **millions** de conditions !
 
-**Vous maîtrisez maintenant ce concept fondamental !** 🎯
+**Vous maîtrisez maintenant ce concept fondamental !** 
 
 ---
 
@@ -327,17 +327,17 @@ Chaque app que vous utilisez (Instagram, Netflix, etc.) utilise des **millions**
 
 ```
 ┌─────────────────────────┐
-│  📱 VOTRE PREMIÈRE APP  │
-│                         │
-│  [Photo de profil]      │
-│                         │
-│  Nom: Marie             │
-│  ┌─────────────────┐    │
-│  │ if (age >= 18)  │    │ ← Votre logique !
-│  │   Majeur        │    │
-│  └─────────────────┘    │
-│                         │
-│  [Modifier] [Partager]  │
+│  VOTRE PREMIÈRE APP │
+│             │
+│ [Photo de profil]   │
+│             │
+│ Nom: Marie       │
+│ ┌─────────────────┐  │
+│ │ if (age >= 18) │  │ ← Votre logique !
+│ │  Majeur    │  │
+│ └─────────────────┘  │
+│             │
+│ [Modifier] [Partager] │
 └─────────────────────────┘
 ```
 
@@ -345,18 +345,18 @@ Chaque app que vous utilisez (Instagram, Netflix, etc.) utilise des **millions**
 
 ---
 
-## Restez Motivé ! 🔥
+## Restez Motivé ! 
 
 **Timeline :**
-- ✅ Semaine 1 : Bases Dart
-- ✅ Semaine 2 : Conditions (Vous êtes ici!)
-- 📝 Semaine 3 : Collections
-- 📝 Semaine 4 : Boucles
-- 📝 Semaine 5 : POO
-- 📝 Semaine 6 : Async
-- 🚀 Semaine 7 : **FLUTTER !**
+- Semaine 1 : Bases Dart
+- Semaine 2 : Conditions (Vous êtes ici!)
+- Semaine 3 : Collections
+- Semaine 4 : Boucles
+- Semaine 5 : POO
+- Semaine 6 : Async
+- Semaine 7 : **FLUTTER !**
 
-**Plus que 4 semaines avant Flutter !** 📱
+**Plus que 4 semaines avant Flutter !** 
 
 ---
 
@@ -392,43 +392,43 @@ Avant de continuer, assurez-vous de maîtriser :
 - [ ] Imbriquer des conditions
 - [ ] Débugger des erreurs de logique
 
-**TOUT EST ✓ ? Parfait ! Passez à la Semaine 3 !**
+**TOUT EST ? Parfait ! Passez à la Semaine 3 !**
 
 ---
 
-## 🎉 Certificat de Compétence 🎉
+## Certificat de Compétence 
 
 ```
 ╔════════════════════════════════════════════╗
-║                                            ║
-║         CERTIFICAT DE RÉUSSITE             ║
-║                                            ║
-║  [ VOTRE NOM ]                             ║
-║                                            ║
-║  A terminé avec succès :                   ║
-║  DART SEMAINE 2 - STRUCTURES DE CONTRÔLE   ║
-║                                            ║
-║  Compétences acquises :                    ║
-║  • Conditions if/else                      ║
-║  • Opérateurs logiques                     ║
-║  • Switch/case                             ║
-║  • Logique conditionnelle                  ║
-║                                            ║
-║  Date : 2025                               ║
-║                                            ║
+║                      ║
+║     CERTIFICAT DE RÉUSSITE       ║
+║                      ║
+║ [ VOTRE NOM ]               ║
+║                      ║
+║ A terminé avec succès :          ║
+║ DART SEMAINE 2 - STRUCTURES DE CONTRÔLE  ║
+║                      ║
+║ Compétences acquises :          ║
+║ • Conditions if/else           ║
+║ • Opérateurs logiques           ║
+║ • Switch/case               ║
+║ • Logique conditionnelle         ║
+║                      ║
+║ Date : 2025                ║
+║                      ║
 ╚════════════════════════════════════════════╝
 ```
 
-**Soyez fier de vous !** 🎊
+**Soyez fier de vous !** 
 
 ---
 
-## Merci et à Bientôt ! 👋
+## Merci et à Bientôt ! 
 
 Vous progressez **excellemment** bien !
 
-**Continuez comme ça !** 💪
+**Continuez comme ça !** 
 
-**À la Semaine 3 : Collections (Lists, Maps) !** 🚀
+**À la Semaine 3 : Collections (Lists, Maps) !** 
 
 

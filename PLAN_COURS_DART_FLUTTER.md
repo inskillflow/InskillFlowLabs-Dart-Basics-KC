@@ -16,7 +16,7 @@
 
 ## ANALYSE TECHNIQUE
 
-### ✅ CE QUI FONCTIONNE
+### CE QUI FONCTIONNE
 
 #### Dart en ligne de commande: OUI
 - Installation possible dans Ubuntu/Linux
@@ -33,25 +33,25 @@
 
 ---
 
-### ❌ CE QUI NE FONCTIONNE PAS
+### CE QUI NE FONCTIONNE PAS
 
 #### Flutter UI: NON
 **Raison:** KillerCoda = Terminal Linux uniquement (pas d'interface graphique)
 
 **Problèmes:**
 1. **Pas d'affichage visuel**
-   - Impossible d'afficher des widgets
-   - Pas d'émulateur Android/iOS
-   - Pas de navigateur pour Flutter Web
+  - Impossible d'afficher des widgets
+  - Pas d'émulateur Android/iOS
+  - Pas de navigateur pour Flutter Web
 
 2. **Ressources limitées**
-   - Flutter gourmand en RAM/CPU
-   - Environnement KillerCoda restreint
+  - Flutter gourmand en RAM/CPU
+  - Environnement KillerCoda restreint
 
 3. **Pas d'outils de développement**
-   - Pas de hot reload visuel
-   - Pas d'inspecteur de widgets
-   - Pas de preview
+  - Pas de hot reload visuel
+  - Pas d'inspecteur de widgets
+  - Pas de preview
 
 ---
 
@@ -66,11 +66,11 @@ apt-get install -y apt-transport-https wget gnupg
 
 # ÉTAPE 2: Ajouter la clé GPG de Dart
 wget -qO- https://dl-ssl.google.com/linux/linux_signing_key.pub | \
-  gpg --dearmor -o /usr/share/keyrings/dart.gpg
+ gpg --dearmor -o /usr/share/keyrings/dart.gpg
 
 # ÉTAPE 3: Ajouter le repository Dart
 echo 'deb [signed-by=/usr/share/keyrings/dart.gpg arch=amd64] https://storage.googleapis.com/download.dartlang.org/linux/debian stable main' | \
-  tee /etc/apt/sources.list.d/dart_stable.list
+ tee /etc/apt/sources.list.d/dart_stable.list
 
 # ÉTAPE 4: Installer Dart
 apt-get update
@@ -104,29 +104,29 @@ cd mon_projet_dart
 
 ```
 KillerCoda = Terminal Linux pur
-              |
-              v
-      Pas d'interface graphique
-              |
-              v
-      Flutter ne peut rien afficher
-              |
-              v
-         Impossible à utiliser
+       |
+       v
+   Pas d'interface graphique
+       |
+       v
+   Flutter ne peut rien afficher
+       |
+       v
+     Impossible à utiliser
 ```
 
 ### Ce qu'on ne peut PAS faire:
-- ❌ Voir l'UI des widgets
-- ❌ Tester des layouts
-- ❌ Développer des apps mobiles
-- ❌ Utiliser MaterialApp/CupertinoApp
-- ❌ Hot reload visuel
-- ❌ Débugger visuellement
+- Voir l'UI des widgets
+- Tester des layouts
+- Développer des apps mobiles
+- Utiliser MaterialApp/CupertinoApp
+- Hot reload visuel
+- Débugger visuellement
 
 ### Ce qu'on POURRAIT faire (mais pas pratique):
-- ⚠️ Compiler sans voir le résultat
-- ⚠️ Écrire du code Flutter "à l'aveugle"
-- ⚠️ Théorie pure sans pratique
+- Compiler sans voir le résultat
+- Écrire du code Flutter "à l'aveugle"
+- Théorie pure sans pratique
 
 **Conclusion:** Pas adapté pour l'apprentissage!
 
@@ -134,24 +134,24 @@ KillerCoda = Terminal Linux pur
 
 ## ALTERNATIVES RECOMMANDÉES
 
-### 1. DartPad ⭐⭐⭐⭐⭐ (MEILLEUR CHOIX)
+### 1. DartPad (MEILLEUR CHOIX)
 
 **URL:** https://dartpad.dev
 
 **Avantages:**
-- ✅ Officiel (Google/Dart team)
-- ✅ Dart ET Flutter Web
-- ✅ Exécution instantanée
-- ✅ Voir l'UI immédiatement
-- ✅ Partage facile (URL unique)
-- ✅ 100% gratuit
-- ✅ Aucune installation
-- ✅ Examples intégrés
+- Officiel (Google/Dart team)
+- Dart ET Flutter Web
+- Exécution instantanée
+- Voir l'UI immédiatement
+- Partage facile (URL unique)
+- 100% gratuit
+- Aucune installation
+- Examples intégrés
 
 **Inconvénients:**
-- ❌ Pas de terminal Linux
-- ❌ Pas de gestion de packages complexe
-- ❌ Un seul fichier à la fois
+- Pas de terminal Linux
+- Pas de gestion de packages complexe
+- Un seul fichier à la fois
 
 **Idéal pour:**
 - Apprendre Dart syntaxe
@@ -161,23 +161,23 @@ KillerCoda = Terminal Linux pur
 
 ---
 
-### 2. Replit ⭐⭐⭐⭐
+### 2. Replit 
 
 **URL:** https://replit.com
 
 **Avantages:**
-- ✅ Environnement complet
-- ✅ Terminal inclus
-- ✅ Support Flutter Web
-- ✅ Plusieurs fichiers
-- ✅ Collaboration en temps réel
-- ✅ Templates prêts à l'emploi
-- ✅ Gestion de packages
+- Environnement complet
+- Terminal inclus
+- Support Flutter Web
+- Plusieurs fichiers
+- Collaboration en temps réel
+- Templates prêts à l'emploi
+- Gestion de packages
 
 **Inconvénients:**
-- ⚠️ Gratuit limité (ensuite payant)
-- ⚠️ Plus lent que DartPad
-- ❌ Pas Android/iOS natif
+- Gratuit limité (ensuite payant)
+- Plus lent que DartPad
+- Pas Android/iOS natif
 
 **Idéal pour:**
 - Projets multi-fichiers
@@ -186,19 +186,19 @@ KillerCoda = Terminal Linux pur
 
 ---
 
-### 3. Installation Locale ⭐⭐⭐⭐⭐
+### 3. Installation Locale 
 
 **Avantages:**
-- ✅ Toutes les fonctionnalités
-- ✅ Android/iOS/Web/Desktop
-- ✅ Hot reload complet
-- ✅ Toutes les tools
-- ✅ Vitesse maximale
+- Toutes les fonctionnalités
+- Android/iOS/Web/Desktop
+- Hot reload complet
+- Toutes les tools
+- Vitesse maximale
 
 **Inconvénients:**
-- ❌ Installation complexe
-- ❌ Requiert un bon PC
-- ❌ Chaque étudiant doit installer
+- Installation complexe
+- Requiert un bon PC
+- Chaque étudiant doit installer
 
 **Idéal pour:**
 - Développement professionnel
@@ -207,18 +207,18 @@ KillerCoda = Terminal Linux pur
 
 ---
 
-### 4. Zapp! ⭐⭐⭐
+### 4. Zapp! 
 
 **URL:** https://zapp.run
 
 **Avantages:**
-- ✅ Flutter sur mobile
-- ✅ Preview en temps réel
-- ✅ Partage facile
+- Flutter sur mobile
+- Preview en temps réel
+- Partage facile
 
 **Inconvénients:**
-- ⚠️ Nouveau, parfois buggy
-- ⚠️ Limitations
+- Nouveau, parfois buggy
+- Limitations
 
 **Idéal pour:**
 - Prototypes rapides
@@ -230,15 +230,15 @@ KillerCoda = Terminal Linux pur
 
 | Critère | KillerCoda | DartPad | Replit | Local |
 |---------|------------|---------|--------|-------|
-| **Dart CLI** | ✅ Oui (setup long) | ✅ Oui | ✅ Oui | ✅ Oui |
-| **Flutter UI** | ❌ NON | ✅ Web | ✅ Web | ✅ Tout |
-| **Terminal** | ✅ Oui | ❌ Non | ✅ Oui | ✅ Oui |
-| **Multi-fichiers** | ✅ Oui | ❌ Non | ✅ Oui | ✅ Oui |
-| **Gratuit** | ✅ Oui | ✅ Oui | ⚠️ Limité | ✅ Oui |
-| **Installation** | ⚠️ Complexe | ✅ Aucune | ✅ Aucune | ❌ Complexe |
-| **Pédagogie** | ⚠️ Moyenne | ✅ Excellente | ✅ Très bonne | ✅ Complète |
-| **Hot Reload** | ❌ Non | ✅ Oui | ✅ Oui | ✅ Oui |
-| **Android/iOS** | ❌ Non | ❌ Non | ❌ Non | ✅ Oui |
+| **Dart CLI** | Oui (setup long) | Oui | Oui | Oui |
+| **Flutter UI** | NON | Web | Web | Tout |
+| **Terminal** | Oui | Non | Oui | Oui |
+| **Multi-fichiers** | Oui | Non | Oui | Oui |
+| **Gratuit** | Oui | Oui | Limité | Oui |
+| **Installation** | Complexe | Aucune | Aucune | Complexe |
+| **Pédagogie** | Moyenne | Excellente | Très bonne | Complète |
+| **Hot Reload** | Non | Oui | Oui | Oui |
+| **Android/iOS** | Non | Non | Non | Oui |
 
 ---
 
@@ -289,7 +289,7 @@ KillerCoda = Terminal Linux pur
 
 ---
 
-### OPTION 2: Dart dans DartPad (RECOMMANDÉ ⭐)
+### OPTION 2: Dart dans DartPad (RECOMMANDÉ )
 
 **Durée:** 4-5 semaines
 
@@ -321,7 +321,7 @@ KillerCoda = Terminal Linux pur
 
 ---
 
-### OPTION 3: Hybride (OPTIMAL ⭐⭐⭐)
+### OPTION 3: Hybride (OPTIMAL )
 
 **Durée:** 8-10 semaines
 
@@ -391,9 +391,9 @@ KillerCoda = Terminal Linux pur
 
 ```
 Mois 1-2: Python (KillerCoda)
-    ↓
+  ↓
 Mois 3: Dart (DartPad)
-    ↓
+  ↓
 Mois 4-5: Flutter (DartPad + Installation locale optionnelle)
 ```
 
@@ -401,9 +401,9 @@ Mois 4-5: Flutter (DartPad + Installation locale optionnelle)
 
 ```
 Semaine 1-2: Dart (DartPad)
-    ↓
+  ↓
 Semaine 3-8: Flutter (DartPad ou Replit)
-    ↓
+  ↓
 Projet final (Installation locale)
 ```
 
@@ -477,10 +477,10 @@ Vous êtes sur DartPad (dartpad.dev).
 
 ```dart
 // Commentaires avec // au lieu de #
-void main() {  // Fonction main obligatoire
-  // Point-virgule obligatoire ;
-  var nom = "Julie";
-  print(nom);
+void main() { // Fonction main obligatoire
+ // Point-virgule obligatoire ;
+ var nom = "Julie";
+ print(nom);
 }
 
 // Types explicites
@@ -491,7 +491,7 @@ bool estEtudiant = true;
 
 // Fonctions typées
 int addition(int a, int b) {
-  return a + b;
+ return a + b;
 }
 ```
 
@@ -510,7 +510,7 @@ En Dart, TOUT programme commence par `main()`.
 
 ```dart
 void main() {
-  // Votre code ici
+ // Votre code ici
 }
 ```
 
@@ -589,36 +589,36 @@ void main() {
 ### Pour créer le cours Dart:
 
 1. **Décider de la plateforme:**
-   - KillerCoda (Dart CLI uniquement)
-   - DartPad (Dart + Flutter)
-   - Hybride (Python → Dart → Flutter)
+  - KillerCoda (Dart CLI uniquement)
+  - DartPad (Dart + Flutter)
+  - Hybride (Python → Dart → Flutter)
 
 2. **Adapter le prompt:**
-   - Prendre PROMPT_CREATION_COURS_COMPLET.md
-   - Modifier la section environnement
-   - Ajuster pour syntaxe Dart
+  - Prendre PROMPT_CREATION_COURS_COMPLET.md
+  - Modifier la section environnement
+  - Ajuster pour syntaxe Dart
 
 3. **Créer la structure:**
-   - Définir les semaines
-   - Lister les concepts
-   - Préparer les exercices
+  - Définir les semaines
+  - Lister les concepts
+  - Préparer les exercices
 
 4. **Générer le contenu:**
-   - Utiliser le prompt adapté
-   - Même qualité ultra-pédagogique
-   - Style "prof de 50 ans"
+  - Utiliser le prompt adapté
+  - Même qualité ultra-pédagogique
+  - Style "prof de 50 ans"
 
 ---
 
 ## CONCLUSION
 
 ### Pour Dart:
-**✅ Possible dans KillerCoda** mais pas optimal
-**⭐ Mieux dans DartPad** pour inclure Flutter
+** Possible dans KillerCoda** mais pas optimal
+** Mieux dans DartPad** pour inclure Flutter
 
 ### Pour Flutter:
-**❌ Impossible dans KillerCoda** (pas d'UI)
-**⭐ Parfait dans DartPad** ou Replit
+** Impossible dans KillerCoda** (pas d'UI)
+** Parfait dans DartPad** ou Replit
 
 ### Recommandation finale:
 **Termine Python dans KillerCoda** (excellent choix!)
@@ -626,7 +626,7 @@ void main() {
 
 ---
 
-**Ce document est prêt à être utilisé pour planifier ton cours Dart/Flutter!** 🎯
+**Ce document est prêt à être utilisé pour planifier ton cours Dart/Flutter!** 
 
 **Date de création:** October 2025
 **Statut:** Plan complet et actionnable

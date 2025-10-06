@@ -12,26 +12,26 @@
 
 ---
 
-## Qu'est-ce que If/Else ? 🔀
+## Qu'est-ce que If/Else ? 
 
 ### Analogie du Quotidien
 
 **Situation réelle :**
 
-☔ **S'il pleut** → Je prends un parapluie  
-🌞 **Sinon** → Je ne prends rien
+ **S'il pleut** → Je prends un parapluie 
+ **Sinon** → Je ne prends rien
 
 **En programmation Dart :**
 
 ```dart
 if (il_pleut) {
-  prendreParapluie();
+ prendreParapluie();
 } else {
-  // Rien à faire
+ // Rien à faire
 }
 ```
 
-**C'est exactement pareil !** Le programme **prend une décision** ! 🧠
+**C'est exactement pareil !** Le programme **prend une décision** ! 
 
 ---
 
@@ -41,7 +41,7 @@ if (il_pleut) {
 
 ```dart
 if (condition) {
-  // Code exécuté si condition VRAIE
+ // Code exécuté si condition VRAIE
 }
 ```
 
@@ -49,18 +49,18 @@ if (condition) {
 
 ```dart
 void main() {
-  int age = 20;
-  
-  if (age >= 18) {
-    print('Vous êtes majeur');
-  }
+ int age = 20;
+ 
+ if (age >= 18) {
+  print('Vous êtes majeur');
+ }
 }
 ```
 
 **Explication :**
 1. `age` vaut 20
 2. Dart vérifie : `age >= 18` ?
-3. 20 >= 18 → **VRAI** ✓
+3. 20 >= 18 → **VRAI** 
 4. Dart exécute le code dans les `{ }`
 5. Affiche "Vous êtes majeur"
 
@@ -76,14 +76,14 @@ void main() {
 
 ```dart
 void main() {
-  int temperature = 35;
-  
-  if (temperature > 30) {
-    print('Il fait très chaud !');
-    print('Pensez à boire de l\'eau.');
-  }
-  
-  print('Programme terminé.');
+ int temperature = 35;
+ 
+ if (temperature > 30) {
+  print('Il fait très chaud !');
+  print('Pensez à boire de l\'eau.');
+ }
+ 
+ print('Programme terminé.');
 }
 ```
 
@@ -110,18 +110,18 @@ Programme terminé.
 
 ```dart
 if (condition) {
-  // Code si condition VRAIE
+ // Code si condition VRAIE
 } else {
-  // Code si condition FAUSSE
+ // Code si condition FAUSSE
 }
 ```
 
 **Analogie :**
 ```
 SI j'ai de l'argent
-  ALORS j'achète le produit
+ ALORS j'achète le produit
 SINON
-  je ne l'achète pas
+ je ne l'achète pas
 ```
 
 ---
@@ -138,19 +138,19 @@ SINON
 import 'dart:io';
 
 void main() {
-  print('=== VÉRIFICATEUR D\'ÂGE ===');
-  print('Entrez votre âge:');
-  
-  String? input = stdin.readLineSync();
-  int age = int.parse(input ?? '0');
-  
-  if (age >= 18) {
-    print('✓ Vous êtes majeur');
-    print('Vous pouvez voter');
-  } else {
-    print('✗ Vous êtes mineur');
-    print('Vous ne pouvez pas encore voter');
-  }
+ print('=== VÉRIFICATEUR D\'ÂGE ===');
+ print('Entrez votre âge:');
+ 
+ String? input = stdin.readLineSync();
+ int age = int.parse(input ?? '0');
+ 
+ if (age >= 18) {
+  print(' Vous êtes majeur');
+  print('Vous pouvez voter');
+ } else {
+  print(' Vous êtes mineur');
+  print('Vous ne pouvez pas encore voter');
+ }
 }
 ```
 
@@ -167,31 +167,31 @@ void main() {
 
 ---
 
-## 💭 Préparation Flutter
+## Préparation Flutter
 
 ### En Flutter : Conditional Rendering
 
 **Console (aujourd'hui) :**
 ```dart
 if (age >= 18) {
-  print('Majeur');
+ print('Majeur');
 } else {
-  print('Mineur');
+ print('Mineur');
 }
 ```
 
 **Flutter (bientôt) :**
 ```dart
 Widget build(BuildContext context) {
-  return age >= 18
-    ? Text('Majeur',       // ← Si vrai
-        style: TextStyle(color: Colors.green))
-    : Text('Mineur',       // ← Si faux
-        style: TextStyle(color: Colors.red));
+ return age >= 18
+  ? Text('Majeur',    // ← Si vrai
+    style: TextStyle(color: Colors.green))
+  : Text('Mineur',    // ← Si faux
+    style: TextStyle(color: Colors.red));
 }
 ```
 
-**Même logique, juste affiché dans un widget !** 📱
+**Même logique, juste affiché dans un widget !** 
 
 ---
 
@@ -201,13 +201,13 @@ Widget build(BuildContext context) {
 
 ```dart
 if (condition1) {
-  // Si condition1 vraie
+ // Si condition1 vraie
 } else if (condition2) {
-  // Si condition1 fausse ET condition2 vraie
+ // Si condition1 fausse ET condition2 vraie
 } else if (condition3) {
-  // Si condition1 et 2 fausses ET condition3 vraie
+ // Si condition1 et 2 fausses ET condition3 vraie
 } else {
-  // Si TOUTES fausses
+ // Si TOUTES fausses
 }
 ```
 
@@ -225,28 +225,28 @@ if (condition1) {
 import 'dart:io';
 
 void main() {
-  print('=== CALCULATEUR DE MENTION ===');
-  print('Entrez votre note sur 20:');
-  
-  String? input = stdin.readLineSync();
-  double note = double.parse(input ?? '0');
-  
-  if (note >= 16) {
-    print('🏆 Mention: Très bien');
-    print('Félicitations ! Excellent travail !');
-  } else if (note >= 14) {
-    print('👍 Mention: Bien');
-    print('Très bon travail !');
-  } else if (note >= 12) {
-    print('✓ Mention: Assez bien');
-    print('Bon travail !');
-  } else if (note >= 10) {
-    print('✓ Mention: Passable');
-    print('Vous avez validé !');
-  } else {
-    print('✗ Échec');
-    print('Courage, vous ferez mieux la prochaine fois !');
-  }
+ print('=== CALCULATEUR DE MENTION ===');
+ print('Entrez votre note sur 20:');
+ 
+ String? input = stdin.readLineSync();
+ double note = double.parse(input ?? '0');
+ 
+ if (note >= 16) {
+  print(' Mention: Très bien');
+  print('Félicitations ! Excellent travail !');
+ } else if (note >= 14) {
+  print(' Mention: Bien');
+  print('Très bon travail !');
+ } else if (note >= 12) {
+  print(' Mention: Assez bien');
+  print('Bon travail !');
+ } else if (note >= 10) {
+  print(' Mention: Passable');
+  print('Vous avez validé !');
+ } else {
+  print(' Échec');
+  print('Courage, vous ferez mieux la prochaine fois !');
+ }
 }
 ```
 
@@ -255,16 +255,16 @@ void main() {
 **Comment Dart évalue :**
 
 1. **Note 17 :**
-   - `17 >= 16` ? → **VRAI** ✓ → Affiche "Très bien" → **STOP**
+  - `17 >= 16` ? → **VRAI** → Affiche "Très bien" → **STOP**
 
 2. **Note 13 :**
-   - `13 >= 16` ? → FAUX → Continue
-   - `13 >= 14` ? → FAUX → Continue
-   - `13 >= 12` ? → **VRAI** ✓ → Affiche "Assez bien" → **STOP**
+  - `13 >= 16` ? → FAUX → Continue
+  - `13 >= 14` ? → FAUX → Continue
+  - `13 >= 12` ? → **VRAI** → Affiche "Assez bien" → **STOP**
 
 3. **Note 8 :**
-   - Toutes les conditions fausses
-   - Exécute `else` → Affiche "Échec"
+  - Toutes les conditions fausses
+  - Exécute `else` → Affiche "Échec"
 
 **Important :** Dès qu'une condition est vraie, Dart **arrête** !
 
@@ -284,10 +284,10 @@ void main() {
 
 ```dart
 if (conditionA) {
-  // Code A
-  if (conditionB) {
-    // Code B (exécuté si A ET B vrais)
-  }
+ // Code A
+ if (conditionB) {
+  // Code B (exécuté si A ET B vrais)
+ }
 }
 ```
 
@@ -305,35 +305,35 @@ if (conditionA) {
 import 'dart:io';
 
 void main() {
-  print('=== SYSTÈME DE CONNEXION ===');
+ print('=== SYSTÈME DE CONNEXION ===');
+ 
+ // Identifiants corrects (simulés)
+ String usernameCorrect = 'admin';
+ String passwordCorrect = '1234';
+ 
+ // Demander username
+ print('Nom d\'utilisateur:');
+ String? username = stdin.readLineSync();
+ 
+ // Vérifier username
+ if (username == usernameCorrect) {
+  // Username correct, demander password
+  print('Mot de passe:');
+  String? password = stdin.readLineSync();
   
-  // Identifiants corrects (simulés)
-  String usernameCorrect = 'admin';
-  String passwordCorrect = '1234';
-  
-  // Demander username
-  print('Nom d\'utilisateur:');
-  String? username = stdin.readLineSync();
-  
-  // Vérifier username
-  if (username == usernameCorrect) {
-    // Username correct, demander password
-    print('Mot de passe:');
-    String? password = stdin.readLineSync();
-    
-    // Vérifier password
-    if (password == passwordCorrect) {
-      print('');
-      print('✓ Accès autorisé !');
-      print('Bienvenue $username !');
-    } else {
-      print('');
-      print('✗ Mot de passe incorrect');
-    }
+  // Vérifier password
+  if (password == passwordCorrect) {
+   print('');
+   print(' Accès autorisé !');
+   print('Bienvenue $username !');
   } else {
-    print('');
-    print('✗ Nom d\'utilisateur incorrect');
+   print('');
+   print(' Mot de passe incorrect');
   }
+ } else {
+  print('');
+  print(' Nom d\'utilisateur incorrect');
+ }
 }
 ```
 
@@ -342,15 +342,15 @@ void main() {
 **Logique :**
 ```
 SI username correct
-  ALORS
-    SI password correct
-      ALORS → Accès autorisé
-      SINON → Password incorrect
+ ALORS
+  SI password correct
+   ALORS → Accès autorisé
+   SINON → Password incorrect
 SINON
-  → Username incorrect
+ → Username incorrect
 ```
 
-**2 niveaux de vérification !** 🔐
+**2 niveaux de vérification !** 
 
 ### ÉTAPE 4.4 - Exécuter
 
@@ -379,9 +379,9 @@ variable = condition ? valeurSiVrai : valeurSiFaux;
 // Avec if/else classique
 String statut;
 if (age >= 18) {
-  statut = 'Majeur';
+ statut = 'Majeur';
 } else {
-  statut = 'Mineur';
+ statut = 'Mineur';
 }
 
 // Avec opérateur ternaire (plus court)
@@ -404,27 +404,27 @@ String statut = age >= 18 ? 'Majeur' : 'Mineur';
 import 'dart:io';
 
 void main() {
-  print('=== CALCULATEUR DE PRIX ===');
-  print('Prix du produit:');
+ print('=== CALCULATEUR DE PRIX ===');
+ print('Prix du produit:');
+ 
+ String? input = stdin.readLineSync();
+ double prix = double.parse(input ?? '0');
+ 
+ // Si prix > 100€, réduction de 10%
+ if (prix > 100) {
+  double reduction = prix * 0.10;
+  double prixFinal = prix - reduction;
   
-  String? input = stdin.readLineSync();
-  double prix = double.parse(input ?? '0');
-  
-  // Si prix > 100€, réduction de 10%
-  if (prix > 100) {
-    double reduction = prix * 0.10;
-    double prixFinal = prix - reduction;
-    
-    print('');
-    print('Prix initial: $prix €');
-    print('Réduction 10%: -$reduction €');
-    print('Prix final: $prixFinal €');
-    print('Vous économisez $reduction € !');
-  } else {
-    print('');
-    print('Prix: $prix €');
-    print('(Pas de réduction pour les achats < 100€)');
-  }
+  print('');
+  print('Prix initial: $prix €');
+  print('Réduction 10%: -$reduction €');
+  print('Prix final: $prixFinal €');
+  print('Vous économisez $reduction € !');
+ } else {
+  print('');
+  print('Prix: $prix €');
+  print('(Pas de réduction pour les achats < 100€)');
+ }
 }
 ```
 
@@ -438,56 +438,56 @@ void main() {
 
 ---
 
-## 💭 Préparation Flutter : E-Commerce App
+## Préparation Flutter : E-Commerce App
 
 ### Console (aujourd'hui)
 ```dart
 if (prix > 100) {
-  appliquerReduction();
+ appliquerReduction();
 }
 ```
 
 ### Flutter (bientôt)
 ```dart
 class ProduitCard extends StatelessWidget {
-  final double prix;
-  
-  Widget build(context) {
-    return Card(
-      child: Column(
-        children: [
-          Text('Prix: $prix€'),
-          if (prix > 100)  // ← Même condition !
-            Chip(
-              label: Text('Réduction -10%'),
-              backgroundColor: Colors.green,
-            ),
-        ],
+ final double prix;
+ 
+ Widget build(context) {
+  return Card(
+   child: Column(
+    children: [
+     Text('Prix: $prix€'),
+     if (prix > 100) // ← Même condition !
+      Chip(
+       label: Text('Réduction -10%'),
+       backgroundColor: Colors.green,
       ),
-    );
-  }
+    ],
+   ),
+  );
+ }
 }
 ```
 
-**La réduction s'affiche seulement si prix > 100 !** 🛍️
+**La réduction s'affiche seulement si prix > 100 !** 
 
 ---
 
-## ⚠️ ATTENTION: Erreurs Courantes
+## ATTENTION: Erreurs Courantes
 
 ### Erreur #1 : Confondre `=` et `==`
 
 **FAUX :**
 ```dart
-if (age = 18) {  // ❌ Assignation !
-  print('Majeur');
+if (age = 18) { // Assignation !
+ print('Majeur');
 }
 ```
 
 **CORRECT :**
 ```dart
-if (age == 18) {  // ✅ Comparaison !
-  print('Majeur');
+if (age == 18) { // Comparaison !
+ print('Majeur');
 }
 ```
 
@@ -502,15 +502,15 @@ if (age == 18) {  // ✅ Comparaison !
 **FAUX :**
 ```dart
 if (age >= 18)
-  print('Majeur');
-  print('Peut voter');  // ❌ Toujours exécuté !
+ print('Majeur');
+ print('Peut voter'); // Toujours exécuté !
 ```
 
 **CORRECT :**
 ```dart
 if (age >= 18) {
-  print('Majeur');
-  print('Peut voter');  // ✅ Dans le bloc if
+ print('Majeur');
+ print('Peut voter'); // Dans le bloc if
 }
 ```
 
@@ -523,9 +523,9 @@ if (age >= 18) {
 **PROBLÈME :**
 ```dart
 if (note >= 10) {
-  print('Passable');
+ print('Passable');
 } else if (note >= 16) {
-  print('Très bien');  // ❌ Jamais atteint !
+ print('Très bien'); // Jamais atteint !
 }
 ```
 
@@ -536,10 +536,10 @@ Si note = 17 :
 
 **CORRECT :**
 ```dart
-if (note >= 16) {      // ✅ Plus restrictif d'abord
-  print('Très bien');
+if (note >= 16) {   // Plus restrictif d'abord
+ print('Très bien');
 } else if (note >= 10) {
-  print('Passable');
+ print('Passable');
 }
 ```
 
@@ -552,14 +552,14 @@ if (note >= 16) {      // ✅ Plus restrictif d'abord
 **PROBLÈME :**
 ```dart
 if (age < 18) {
-  print('Majeur');  // ❌ Logique inverse !
+ print('Majeur'); // Logique inverse !
 }
 ```
 
 **CORRECT :**
 ```dart
-if (age >= 18) {  // ✅ Logique correcte
-  print('Majeur');
+if (age >= 18) { // Logique correcte
+ print('Majeur');
 }
 ```
 
@@ -572,36 +572,36 @@ if (age >= 18) {  // ✅ Logique correcte
 ### If Simple
 ```dart
 if (condition) {
-  // Code si vrai
+ // Code si vrai
 }
 ```
 
 ### If/Else
 ```dart
 if (condition) {
-  // Si vrai
+ // Si vrai
 } else {
-  // Si faux
+ // Si faux
 }
 ```
 
 ### If/Else If/Else
 ```dart
 if (condition1) {
-  // Si condition1 vraie
+ // Si condition1 vraie
 } else if (condition2) {
-  // Si condition2 vraie
+ // Si condition2 vraie
 } else {
-  // Si toutes fausses
+ // Si toutes fausses
 }
 ```
 
 ### If Imbriqué
 ```dart
 if (conditionA) {
-  if (conditionB) {
-    // Si A ET B vrais
-  }
+ if (conditionB) {
+  // Si A ET B vrais
+ }
 }
 ```
 
@@ -617,25 +617,25 @@ variable = condition ? valeurVrai : valeurFaux;
 ```dart
 // STRUCTURE DE BASE
 if (condition) {
-  // Code
+ // Code
 }
 
 // RÈGLES
-✅ Condition entre ( )
-✅ Code entre { }
-✅ == pour comparer (pas =)
-✅ Plus restrictif en premier
-✅ Toujours tester tous les cas
+ Condition entre ( )
+ Code entre { }
+ == pour comparer (pas =)
+ Plus restrictif en premier
+ Toujours tester tous les cas
 
 // OPÉRATEURS
-age >= 18    // Plus grand ou égal
-prix == 100  // Égal
-nom != ""    // Différent de
+age >= 18  // Plus grand ou égal
+prix == 100 // Égal
+nom != ""  // Différent de
 ```
 
 ---
 
-## Conseil de Professeur
+## Conseil
 
 ### Tester Tous les Cas !
 
@@ -648,8 +648,8 @@ Pour une condition sur l'âge :
 - Extrême bas : 0
 - Négatif : -5 (erreur ?)
 
-**Ne présumez jamais qu'une condition fonctionne !**  
-**Testez, testez, testez !** 🧪
+**Ne présumez jamais qu'une condition fonctionne !** 
+**Testez, testez, testez !** 
 
 ---
 
@@ -661,7 +661,7 @@ Pour une condition sur l'âge :
 ```dart
 int x = 10;
 if (x > 5) {
-  x = x + 5;
+ x = x + 5;
 }
 print(x);
 ```
@@ -677,11 +677,11 @@ print(x);
 
 ```dart
 if (age = 18) {
-  print('Majeur');
+ print('Majeur');
 }
 ```
 
-**Réponse:** `=` au lieu de `==`  
+**Réponse:** `=` au lieu de `==` 
 Correction : `if (age == 18)`
 </details>
 
@@ -691,14 +691,14 @@ Correction : `if (age == 18)`
 ```dart
 int note = 15;
 if (note >= 10) {
-  print('Réussi');
+ print('Réussi');
 } else if (note >= 14) {
-  print('Bien');
+ print('Bien');
 }
 ```
 
-**Réponse:** "Réussi" seulement  
-15 >= 10 → vrai → affiche et s'arrête  
+**Réponse:** "Réussi" seulement 
+15 >= 10 → vrai → affiche et s'arrête 
 Ne teste jamais >= 14
 </details>
 
@@ -710,25 +710,25 @@ Créez un programme qui :
 1. Demande poids et taille
 2. Calcule IMC
 3. Affiche l'interprétation avec if/else if/else :
-   - < 18.5 : Insuffisance
-   - 18.5-25 : Normal
-   - 25-30 : Surpoids
-   - > 30 : Obésité
+  - < 18.5 : Insuffisance
+  - 18.5-25 : Normal
+  - 25-30 : Surpoids
+  - > 30 : Obésité
 
-**Utilisez ce que vous avez appris !** 💪
+**Utilisez ce que vous avez appris !** 
 
 ---
 
 ## Prêt pour les Opérateurs ?
 
 Vous savez maintenant :
-- ✅ If simple
-- ✅ If/else
-- ✅ If/else if/else
-- ✅ Conditions imbriquées
-- ✅ Opérateur ternaire
+- If simple
+- If/else
+- If/else if/else
+- Conditions imbriquées
+- Opérateur ternaire
 
-**PROCHAINE ÉTAPE :** Tous les opérateurs de comparaison et logiques ! 🔧
+**PROCHAINE ÉTAPE :** Tous les opérateurs de comparaison et logiques ! 
 
 **Cliquez sur "Continuer" pour l'Étape 2 !** →
 

@@ -1,6 +1,6 @@
 # Étape 0 : Installer Dart sur Linux
 
-## Bienvenue dans l'Installation de Dart! 🎯
+## Bienvenue dans l'Installation de Dart! 
 
 Cette étape est **OBLIGATOIRE** avant de programmer en Dart.
 
@@ -40,7 +40,7 @@ Dart, lui, doit être **téléchargé et installé**.
 
 ## IMPORTANT: Commandes Interactives
 
-Vous allez voir des commandes avec un fond gris et un symbole ▶️.
+Vous allez voir des commandes avec un fond gris et un symbole ️.
 
 **VOUS N'AVEZ PAS BESOIN DE LES TAPER!**
 
@@ -62,8 +62,8 @@ Vous allez voir des commandes avec un fond gris et un symbole ▶️.
 - Si ça marche, vous verrez "2 packets transmitted, 2 received"
 
 **VÉRIFICATION:**
-✅ Vous devez voir: `2 packets received`
-❌ Si erreur: Vérifiez votre connexion
+ Vous devez voir: `2 packets received`
+ Si erreur: Vérifiez votre connexion
 
 ---
 
@@ -113,7 +113,7 @@ Ces outils sont nécessaires pour installer Dart en toute sécurité.
 C'est comme vérifier le sceau de sécurité sur un médicament.
 
 **RÉSULTAT ATTENDU:**
-Aucun message d'erreur = c'est bon! ✓
+Aucun message d'erreur = c'est bon! 
 
 ---
 
@@ -150,7 +150,7 @@ Parce qu'on vient d'ajouter une nouvelle source (Dart).
 
 ---
 
-### Commande 7 : INSTALLER DART! 🎉
+### Commande 7 : INSTALLER DART! 
 
 `apt-get install -y dart`{{execute}}
 
@@ -170,7 +170,7 @@ Cette commande télécharge ~150 MB de données.
 Setting up dart (x.x.x-x) ...
 ```
 
-**SI VOUS VOYEZ ÇA:** 🎉 Dart est installé!
+**SI VOUS VOYEZ ÇA:** Dart est installé!
 
 ---
 
@@ -203,7 +203,7 @@ C'est comme enregistrer un favori dans votre navigateur.
 
 ---
 
-### Commande 10 : Vérifier que Dart est bien installé! ✅
+### Commande 10 : Vérifier que Dart est bien installé! 
 
 `dart --version`{{execute}}
 
@@ -215,7 +215,7 @@ On demande à Dart: "Quelle est ta version?"
 Dart SDK version: 3.x.x (stable)
 ```
 
-**SI VOUS VOYEZ ÇA:** 🎊 **BRAVO! DART EST INSTALLÉ!**
+**SI VOUS VOYEZ ÇA:** **Bien. DART EST INSTALLÉ!**
 
 **SI ERREUR "command not found":**
 - Attendez quelques secondes
@@ -252,11 +252,11 @@ Votre ligne de commande devrait maintenant montrer:
 root@host:~/mon_projet_dart#
 ```
 
-**Vous voyez "mon_projet_dart"?** ✓ Parfait!
+**Vous voyez "mon_projet_dart"?** Parfait!
 
 ---
 
-### Commande 13 : Créer votre premier programme Dart! 🎯
+### Commande 13 : Créer votre premier programme Dart! 
 
 `nano premier.dart`{{execute}}
 
@@ -276,8 +276,8 @@ root@host:~/mon_projet_dart#
 
 ```dart
 void main() {
-  print('Bonjour Dart!');
-  print('Je viens d\'installer Dart avec succès!');
+ print('Bonjour Dart!');
+ print('Je viens d\'installer Dart avec succès!');
 }
 ```
 
@@ -313,7 +313,7 @@ void main() {
 **RÉSULTAT:**
 Vous voyez: `[ Wrote 4 lines ]`
 
-**SI VOUS VOYEZ ÇA:** ✓ Le fichier est sauvegardé!
+**SI VOUS VOYEZ ÇA:** Le fichier est sauvegardé!
 
 ---
 
@@ -334,7 +334,7 @@ Vous voyez: `[ Wrote 4 lines ]`
 
 ---
 
-### Commande 14 : EXÉCUTER VOTRE PREMIER PROGRAMME! 🚀
+### Commande 14 : EXÉCUTER VOTRE PREMIER PROGRAMME! 
 
 `dart premier.dart`{{execute}}
 
@@ -351,15 +351,15 @@ Je viens d'installer Dart avec succès!
 
 ---
 
-## 🎉 FÉLICITATIONS! 🎉
+## Félicitations. 
 
 ### Vous venez de:
 
-✅ Installer Dart complètement
-✅ Configurer votre environnement
-✅ Créer votre premier programme
-✅ Exécuter du code Dart
-✅ Afficher des messages
+ Installer Dart complètement
+ Configurer votre environnement
+ Créer votre premier programme
+ Exécuter du code Dart
+ Afficher des messages
 
 **VOUS ÊTES OFFICIELLEMENT UN PROGRAMMEUR DART!**
 
@@ -371,8 +371,8 @@ Je viens d'installer Dart avec succès!
 
 ```dart
 void main() {
-  print('Bonjour Dart!');
-  print('Je viens d\'installer Dart avec succès!');
+ print('Bonjour Dart!');
+ print('Je viens d\'installer Dart avec succès!');
 }
 ```
 
@@ -426,7 +426,7 @@ dart nomfichier.dart
 
 ---
 
-## ⚠️ Erreurs Courantes et Solutions
+## Erreurs Courantes et Solutions
 
 ### Erreur #1: "dart: command not found"
 
@@ -473,10 +473,10 @@ dart --version
 ### Structure d'un Programme Dart:
 
 ```dart
-void main() {          ← Fonction principale (OBLIGATOIRE)
-  print('texte');      ← Instruction 1 (avec ;)
-  print('autre');      ← Instruction 2 (avec ;)
-}                      ← Fin de la fonction
+void main() {     ← Fonction principale (OBLIGATOIRE)
+ print('texte');   ← Instruction 1 (avec ;)
+ print('autre');   ← Instruction 2 (avec ;)
+}           ← Fin de la fonction
 ```
 
 **RÈGLES:**
@@ -487,7 +487,7 @@ void main() {          ← Fonction principale (OBLIGATOIRE)
 
 ---
 
-## Conseil de Professeur Expérimenté
+## Conseil professionnel
 
 ### Pourquoi le point-virgule `;` est-il obligatoire?
 
@@ -500,8 +500,8 @@ d = e + f
 ```
 
 Dart pourrait comprendre:
-- `a = b + c` puis `d = e + f` ✓
-- OU `a = b + c d = e + f` ✗ (erreur!)
+- `a = b + c` puis `d = e + f` 
+- OU `a = b + c d = e + f` (erreur!)
 
 **Avec `;` (clair):**
 ```
@@ -519,9 +519,9 @@ Aucune ambiguïté possible!
 
 | Aspect | Python | Dart |
 |--------|--------|------|
-| Point-virgule | ❌ Pas nécessaire | ✅ OBLIGATOIRE |
-| Fonction principale | ❌ Pas obligatoire | ✅ `main()` obligatoire |
-| Accolades | ❌ Indentation | ✅ `{ }` obligatoires |
+| Point-virgule | Pas nécessaire | OBLIGATOIRE |
+| Fonction principale | Pas obligatoire | `main()` obligatoire |
+| Accolades | Indentation | `{ }` obligatoires |
 | Affichage | `print()` | `print()` (pareil!) |
 | Types | Optionnels | Optionnels mais recommandés |
 
@@ -548,27 +548,27 @@ Vous devez voir: `/root/mon_projet_dart`
 
 Vous devez voir: `premier.dart`
 
-**TOUT EST BON?** 🎊 **Parfait! Vous êtes prêt pour la suite!**
+**TOUT EST BON?** **Parfait! Vous êtes prêt pour la suite!**
 
 ---
 
 ## Ce que vous avez appris
 
 ### Compétences Techniques:
-✅ Installer un SDK (Dart)
-✅ Configurer un environnement de développement
-✅ Utiliser le terminal Linux
-✅ Utiliser nano (éditeur de texte)
-✅ Créer un fichier `.dart`
-✅ Exécuter un programme Dart
-✅ Comprendre `main()`
-✅ Utiliser `print()`
+ Installer un SDK (Dart)
+ Configurer un environnement de développement
+ Utiliser le terminal Linux
+ Utiliser nano (éditeur de texte)
+ Créer un fichier `.dart`
+ Exécuter un programme Dart
+ Comprendre `main()`
+ Utiliser `print()`
 
 ### Compétences Conceptuelles:
-✅ Comprendre ce qu'est un SDK
-✅ Comprendre la syntaxe de base de Dart
-✅ Comprendre la structure d'un programme
-✅ Savoir débugger des erreurs simples
+ Comprendre ce qu'est un SDK
+ Comprendre la syntaxe de base de Dart
+ Comprendre la structure d'un programme
+ Savoir débugger des erreurs simples
 
 **C'EST ÉNORME POUR UNE PREMIÈRE ÉTAPE!**
 
@@ -584,7 +584,7 @@ Maintenant que Dart est installé, vous allez apprendre:
 
 **Le plus dur est fait! L'installation!**
 
-**Maintenant, on va s'amuser!** 🎮
+**Maintenant, on va s'amuser!** 
 
 ---
 
@@ -598,7 +598,7 @@ export PATH="$PATH:/usr/lib/dart/bin"
 cd mon_projet_dart
 ```
 
-**NE VOUS INQUIÉTEZ PAS!** On vous le rappellera! 😊
+**NE VOUS INQUIÉTEZ PAS!** On vous le rappellera! 
 
 ---
 
@@ -606,6 +606,6 @@ cd mon_projet_dart
 
 **Étape 1: Variables et Types de Données** vous attend!
 
-**Vous allez apprendre à stocker des informations en mémoire!** 📦
+**Vous allez apprendre à stocker des informations en mémoire!** 
 
 

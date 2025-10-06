@@ -1,6 +1,6 @@
 # Étape 0 : Rappel et Préparation
 
-## Bienvenue dans la Semaine 2 ! 🎯
+## Bienvenue dans la Semaine 2 ! 
 
 Avant de commencer, vérifions que tout est prêt !
 
@@ -8,13 +8,13 @@ Avant de commencer, vérifions que tout est prêt !
 
 ## Vérification : Avez-vous Fait la Semaine 1 ?
 
-### ⚠️ IMPORTANT
+### IMPORTANT
 
 Cette semaine suppose que vous connaissez :
-- ✅ Variables (`int`, `String`, `double`, `bool`)
-- ✅ Fonctions (avec paramètres et retour)
-- ✅ Entrées/sorties (`print`, `stdin`)
-- ✅ nano (éditeur)
+- Variables (`int`, `String`, `double`, `bool`)
+- Fonctions (avec paramètres et retour)
+- Entrées/sorties (`print`, `stdin`)
+- nano (éditeur)
 
 **Si vous ne savez PAS faire ça : retournez à la Semaine 1 !**
 
@@ -90,18 +90,18 @@ root@host:~/semaine2_dart#
 
 ```dart
 void main() {
-  // Variables de base
-  int age = 25;
-  String nom = 'Julie';
-  double prix = 19.99;
-  bool estActif = true;
-  
-  // Affichage
-  print('=== RÉVISION SEMAINE 1 ===');
-  print('Nom: $nom');
-  print('Age: $age ans');
-  print('Prix: $prix €');
-  print('Actif: $estActif');
+ // Variables de base
+ int age = 25;
+ String nom = 'Julie';
+ double prix = 19.99;
+ bool estActif = true;
+ 
+ // Affichage
+ print('=== RÉVISION SEMAINE 1 ===');
+ print('Nom: $nom');
+ print('Age: $age ans');
+ print('Prix: $prix €');
+ print('Actif: $estActif');
 }
 ```
 
@@ -112,7 +112,7 @@ void main() {
 **Exécuter :**
 `dart revision_variables.dart`{{execute}}
 
-**SI ÇA MARCHE :** ✅ Vous vous souvenez des variables !
+**SI ÇA MARCHE :** Vous vous souvenez des variables !
 
 ---
 
@@ -127,22 +127,22 @@ void main() {
 ```dart
 // Fonction qui additionne deux nombres
 int additionner(int a, int b) {
-  return a + b;
+ return a + b;
 }
 
 // Fonction qui salue
 void saluer(String nom) {
-  print('Bonjour $nom!');
+ print('Bonjour $nom!');
 }
 
 void main() {
-  print('=== RÉVISION FONCTIONS ===');
-  
-  // Utiliser les fonctions
-  saluer('Marie');
-  
-  int resultat = additionner(10, 5);
-  print('10 + 5 = $resultat');
+ print('=== RÉVISION FONCTIONS ===');
+ 
+ // Utiliser les fonctions
+ saluer('Marie');
+ 
+ int resultat = additionner(10, 5);
+ print('10 + 5 = $resultat');
 }
 ```
 
@@ -150,7 +150,7 @@ void main() {
 2. `Ctrl+X`
 3. `dart revision_fonctions.dart`{{execute}}
 
-**SI ÇA MARCHE :** ✅ Vous vous souvenez des fonctions !
+**SI ÇA MARCHE :** Vous vous souvenez des fonctions !
 
 ---
 
@@ -166,16 +166,16 @@ void main() {
 import 'dart:io';
 
 void main() {
-  print('=== RÉVISION I/O ===');
-  print('Quel est votre prénom?');
-  
-  String? prenom = stdin.readLineSync();
-  print('Bonjour $prenom!');
-  
-  print('Entrez un nombre:');
-  String? texte = stdin.readLineSync();
-  int nombre = int.parse(texte ?? '0');
-  print('Le double de $nombre est ${nombre * 2}');
+ print('=== RÉVISION I/O ===');
+ print('Quel est votre prénom?');
+ 
+ String? prenom = stdin.readLineSync();
+ print('Bonjour $prenom!');
+ 
+ print('Entrez un nombre:');
+ String? texte = stdin.readLineSync();
+ int nombre = int.parse(texte ?? '0');
+ print('Le double de $nombre est ${nombre * 2}');
 }
 ```
 
@@ -188,7 +188,7 @@ void main() {
 - Tapez un nombre
 - Le programme répond
 
-**SI ÇA MARCHE :** ✅ Vous vous souvenez des I/O !
+**SI ÇA MARCHE :** Vous vous souvenez des I/O !
 
 ---
 
@@ -196,16 +196,16 @@ void main() {
 
 ### Variables et Types
 ```dart
-int age = 25;              // Nombre entier
-double prix = 19.99;       // Nombre décimal
-String nom = 'Julie';      // Texte
-bool actif = true;         // Vrai/Faux
+int age = 25;       // Nombre entier
+double prix = 19.99;    // Nombre décimal
+String nom = 'Julie';   // Texte
+bool actif = true;     // Vrai/Faux
 ```
 
 ### Fonctions
 ```dart
 int calculer(int a, int b) {
-  return a + b;
+ return a + b;
 }
 ```
 
@@ -228,17 +228,17 @@ print('Résultat: $nombre');
 **Analogie :**
 ```
 SI il pleut
-  ALORS prendre un parapluie
+ ALORS prendre un parapluie
 SINON
-  laisser le parapluie
+ laisser le parapluie
 ```
 
 **En Dart :**
 ```dart
 if (il_pleut) {
-  prendreParapluie();
+ prendreParapluie();
 } else {
-  laisserParapluie();
+ laisserParapluie();
 }
 ```
 
@@ -254,13 +254,13 @@ if (il_pleut) {
 
 ```dart
 void main() {
-  int age = 20;
-  
-  if (age >= 18) {
-    print('Vous êtes majeur');
-  } else {
-    print('Vous êtes mineur');
-  }
+ int age = 20;
+ 
+ if (age >= 18) {
+  print('Vous êtes majeur');
+ } else {
+  print('Vous êtes mineur');
+ }
 }
 ```
 
@@ -276,7 +276,7 @@ Vous êtes majeur
 **CE QUI SE PASSE :**
 1. `age` vaut 20
 2. Dart vérifie : `age >= 18` ?
-3. 20 >= 18 → **VRAI** ✓
+3. 20 >= 18 → **VRAI** 
 4. Donc : exécute le code dans `if`
 5. Affiche "Vous êtes majeur"
 
@@ -288,9 +288,9 @@ Vous êtes majeur
 
 ```dart
 if (condition) {
-  // Code si condition VRAIE
+ // Code si condition VRAIE
 } else {
-  // Code si condition FAUSSE
+ // Code si condition FAUSSE
 }
 ```
 
@@ -313,13 +313,13 @@ if (condition) {
 | `>=` | Plus grand ou égal | `10 >= 10` | `true` |
 | `<=` | Plus petit ou égal | `5 <= 5` | `true` |
 
-**⚠️ ATTENTION :**
+** ATTENTION :**
 - `==` (deux égals) = comparaison
 - `=` (un égal) = assignation
 
 ```dart
-if (age = 18) { ... }     // ❌ ERREUR ! Assignation
-if (age == 18) { ... }    // ✅ CORRECT ! Comparaison
+if (age = 18) { ... }   // ERREUR ! Assignation
+if (age == 18) { ... }  // CORRECT ! Comparaison
 ```
 
 ---
@@ -337,13 +337,13 @@ if (age == 18) { ... }    // ✅ CORRECT ! Comparaison
 
 ```dart
 void main() {
-  int temperature = 35;
-  
-  if (temperature >= 30) {
-    print('Il fait très chaud !');
-  } else {
-    print('Température agréable');
-  }
+ int temperature = 35;
+ 
+ if (temperature >= 30) {
+  print('Il fait très chaud !');
+ } else {
+  print('Température agréable');
+ }
 }
 ```
 
@@ -361,30 +361,30 @@ void main() {
 
 **Condition :** Expression qui donne `true` ou `false`
 ```dart
-age >= 18    // C'est une condition
+age >= 18  // C'est une condition
 ```
 
 **Bloc de code :** Code entre `{ }`
 ```dart
 {
-  print('Ceci');
-  print('Est un bloc');
+ print('Ceci');
+ print('Est un bloc');
 }
 ```
 
 **Branche :** Chemin que peut prendre le programme
 ```dart
 if (condition) {
-  // Branche 1 (si vrai)
+ // Branche 1 (si vrai)
 } else {
-  // Branche 2 (si faux)
+ // Branche 2 (si faux)
 }
 ```
 
 **Expression booléenne :** Expression qui donne un `bool`
 ```dart
-5 > 3        // true
-'a' == 'b'   // false
+5 > 3    // true
+'a' == 'b'  // false
 ```
 
 ---
@@ -427,7 +427,7 @@ Avant de continuer, vérifiez :
 - [ ] Révision I/O : OK
 - [ ] Premier if/else testé
 
-**TOUT EST ✓ ? Parfait ! Allons-y !** 🚀
+**TOUT EST ? Parfait ! Allons-y !** 
 
 ---
 
@@ -435,10 +435,10 @@ Avant de continuer, vérifiez :
 
 **Les conditions sont un tournant dans votre apprentissage !**
 
-Avant : Vos programmes étaient "bêtes" (toujours la même chose)  
+Avant : Vos programmes étaient "bêtes" (toujours la même chose) 
 Après : Vos programmes seront "intelligents" (s'adaptent aux situations)
 
-**C'est excitant ! Prenez votre temps et amusez-vous !** 🎉
+**C'est excitant ! Prenez votre temps et amusez-vous !** 
 
 ---
 
@@ -446,6 +446,6 @@ Après : Vos programmes seront "intelligents" (s'adaptent aux situations)
 
 **Cliquez sur "Continuer" pour l'Étape 1 !** →
 
-**Vous allez maîtriser if/else comme un pro !** 💪
+**Vous allez maîtriser if/else comme un pro !** 
 
 

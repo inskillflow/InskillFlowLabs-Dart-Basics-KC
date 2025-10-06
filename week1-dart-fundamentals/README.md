@@ -1,19 +1,19 @@
 # Dart Semaine 1 - Fondamentaux du Langage
 
-## 🎯 Vue d'Ensemble
+## Vue d'Ensemble
 
 Ce lab interactif vous apprend les bases du langage Dart, créé par Google. Idéal pour les débutants complets en programmation !
 
-**Durée estimée :** 1h30 - 2h  
-**Langue :** 100% Français  
-**Niveau :** Débutant  
+**Durée estimée :** 1h30 - 2h 
+**Langue :** 100% Français 
+**Niveau :** Débutant 
 **Plateforme :** KillerCoda (Terminal Linux)
 
 ---
 
-## 📚 Contenu du Cours
+## Contenu du Cours
 
-### Étape 0 : Installation de Dart ⚙️
+### Étape 0 : Installation de Dart ️
 - Installer Dart SDK sur Ubuntu/Linux
 - Configurer l'environnement PATH
 - Créer et exécuter votre premier programme
@@ -23,7 +23,7 @@ Ce lab interactif vous apprend les bases du langage Dart, créé par Google. Id�
 
 ---
 
-### Étape 1 : Variables et Types de Données 📦
+### Étape 1 : Variables et Types de Données 
 - Comprendre ce qu'est une variable
 - Les types : `int`, `double`, `String`, `bool`, `var`
 - Déclaration et assignation
@@ -34,7 +34,7 @@ Ce lab interactif vous apprend les bases du langage Dart, créé par Google. Id�
 
 ---
 
-### Étape 2 : Fonctions en Dart 🔧
+### Étape 2 : Fonctions en Dart 
 - Créer des fonctions réutilisables
 - Paramètres et arguments
 - Types de retour (`void`, `int`, `String`, etc.)
@@ -45,7 +45,7 @@ Ce lab interactif vous apprend les bases du langage Dart, créé par Google. Id�
 
 ---
 
-### Étape 3 : Entrées et Sorties Console 💬
+### Étape 3 : Entrées et Sorties Console 
 - Utiliser `print()` pour afficher
 - Lire des entrées avec `stdin.readLineSync()`
 - Convertir les types : `int.parse()`, `double.parse()`
@@ -56,7 +56,7 @@ Ce lab interactif vous apprend les bases du langage Dart, créé par Google. Id�
 
 ---
 
-### Étape 4 : Défi Pratique - Calculateur Personnel 🏆
+### Étape 4 : Défi Pratique - Calculateur Personnel 
 **Projet complet combinant toutes les compétences !**
 
 Créez un calculateur qui :
@@ -70,7 +70,7 @@ Créez un calculateur qui :
 
 ---
 
-### Conclusion : Résumé et Ressources 📖
+### Conclusion : Résumé et Ressources 
 - Récapitulatif complet
 - Solutions des exercices
 - Aide-mémoire Dart
@@ -82,43 +82,43 @@ Créez un calculateur qui :
 
 ---
 
-## 🎓 Compétences Acquises
+## Compétences Acquises
 
 À la fin de ce cours, vous saurez :
 
-✅ Installer et configurer Dart  
-✅ Créer des variables de différents types  
-✅ Effectuer des calculs mathématiques  
-✅ Créer des fonctions réutilisables  
-✅ Interagir avec l'utilisateur  
-✅ Structurer un programme complet  
-✅ Débugger les erreurs courantes  
-✅ Suivre les bonnes pratiques Dart  
+ Installer et configurer Dart 
+ Créer des variables de différents types 
+ Effectuer des calculs mathématiques 
+ Créer des fonctions réutilisables 
+ Interagir avec l'utilisateur 
+ Structurer un programme complet 
+ Débugger les erreurs courantes 
+ Suivre les bonnes pratiques Dart 
 
 ---
 
-## 📂 Structure des Fichiers
+## Structure des Fichiers
 
 ```
 week1-dart-fundamentals/
-├── index.json                  # Configuration KillerCoda
-├── README.md                   # Ce fichier
-├── intro.md                    # Introduction engageante
-├── step0.md                    # Installation de Dart
-├── step1.md                    # Variables et types
-├── step2.md                    # Fonctions
-├── step3.md                    # Entrées/sorties
-├── step4.md                    # Défi pratique
-├── finish.md                   # Conclusion et ressources
-└── assets/                     # Fichiers d'exemple
-    ├── example_hello.dart      # Premier programme
-    ├── example_variables.dart  # Exemples de variables
-    └── example_functions.dart  # Exemples de fonctions
+├── index.json         # Configuration KillerCoda
+├── README.md          # Ce fichier
+├── intro.md          # Introduction engageante
+├── step0.md          # Installation de Dart
+├── step1.md          # Variables et types
+├── step2.md          # Fonctions
+├── step3.md          # Entrées/sorties
+├── step4.md          # Défi pratique
+├── finish.md          # Conclusion et ressources
+└── assets/           # Fichiers d'exemple
+  ├── example_hello.dart   # Premier programme
+  ├── example_variables.dart # Exemples de variables
+  └── example_functions.dart # Exemples de fonctions
 ```
 
 ---
 
-## 🚀 Comment Utiliser ce Lab
+## Comment Utiliser ce Lab
 
 ### Sur KillerCoda
 
@@ -144,40 +144,40 @@ dart /root/example_functions.dart
 
 ---
 
-## 💡 Pré-requis
+## Pré-requis
 
 **Aucune connaissance en programmation nécessaire !**
 
 Ce cours est conçu pour les **débutants complets**.
 
 **Vous avez besoin de :**
-- ✅ Motivation pour apprendre
-- ✅ Un navigateur web
-- ✅ 1-2 heures de disponibilité
-- ✅ Patience et curiosité
+- Motivation pour apprendre
+- Un navigateur web
+- 1-2 heures de disponibilité
+- Patience et curiosité
 
 **Vous N'avez PAS besoin de :**
-- ❌ Expérience en programmation
-- ❌ Installer quoi que ce soit localement
-- ❌ Connaissances Linux avancées
-- ❌ Matériel puissant
+- Expérience en programmation
+- Installer quoi que ce soit localement
+- Connaissances Linux avancées
+- Matériel puissant
 
 ---
 
-## 🎯 Public Cible
+## Public Cible
 
 Ce cours est parfait pour :
 
-- 🔰 **Débutants absolus** en programmation
-- 🇫🇷 **Francophones** cherchant un cours en français
-- 📱 Futurs développeurs **Flutter** (mobiles)
-- 🎓 **Étudiants** en informatique
-- 👨‍💼 Professionnels en **reconversion**
-- 🧠 Personnes **curieuses** de la tech
+- **Débutants absolus** en programmation
+- **Francophones** cherchant un cours en français
+- Futurs développeurs **Flutter** (mobiles)
+- **Étudiants** en informatique
+- ‍ Professionnels en **reconversion**
+- Personnes **curieuses** de la tech
 
 ---
 
-## 🔧 Environnement Technique
+## Environnement Technique
 
 ### Plateforme : KillerCoda
 - Terminal Linux (Ubuntu 22.04)
@@ -205,7 +205,7 @@ nano nomfichier.dart
 
 ---
 
-## 📊 Statistiques du Cours
+## Statistiques du Cours
 
 | Métrique | Valeur |
 |----------|--------|
@@ -218,7 +218,7 @@ nano nomfichier.dart
 
 ---
 
-## 🎓 Après ce Cours
+## Après ce Cours
 
 ### Immédiatement Après
 Vous pourrez créer des programmes console Dart simples :
@@ -236,27 +236,27 @@ Vous pourrez créer des programmes console Dart simples :
 
 ---
 
-## 💎 Points Forts de ce Cours
+## Points Forts de ce Cours
 
-### ✨ Pédagogie Ultra-Détaillée
+### Pédagogie Ultra-Détaillée
 - Explications étape par étape
 - Analogies du quotidien
 - Exemples concrets
 - Erreurs courantes expliquées
 
-### 🎯 Approche Pratique
+### Approche Pratique
 - "Learning by doing"
 - Exercices progressifs
 - Défi final complet
 - Code commenté
 
-### 🇫🇷 100% Français
+### 100% Français
 - Instructions en français
 - Commentaires en français
 - Exemples contextualisés
 - Vocabulaire adapté
 
-### 🔄 Progression Logique
+### Progression Logique
 - Du plus simple au plus complexe
 - Concepts introduits progressivement
 - Révisions régulières
@@ -264,7 +264,7 @@ Vous pourrez créer des programmes console Dart simples :
 
 ---
 
-## 🤝 Support et Aide
+## Support et Aide
 
 ### Pendant le Lab
 - Instructions très détaillées
@@ -280,7 +280,7 @@ Vous pourrez créer des programmes console Dart simples :
 
 ---
 
-## 📝 Notes Importantes
+## Notes Importantes
 
 ### Utilisation de `nano`
 Ce lab utilise `nano`, un éditeur en ligne de commande :
@@ -300,7 +300,7 @@ C'est normal ! Laissez les commandes se terminer.
 
 ---
 
-## 🏆 Exercices Bonus
+## Exercices Bonus
 
 Si vous finissez rapidement, essayez :
 
@@ -313,18 +313,18 @@ Si vous finissez rapidement, essayez :
 
 ---
 
-## 📜 Licence et Attribution
+## Licence et Attribution
 
 Ce cours est fourni à des fins éducatives.
 
-**Dart** est une marque de Google LLC.  
+**Dart** est une marque de Google LLC. 
 **KillerCoda** est une plateforme d'apprentissage interactive.
 
-Cours créé avec ❤️ pour la communauté francophone.
+Cours créé avec ️ pour la communauté francophone.
 
 ---
 
-## 🌟 Commencez Maintenant !
+## Commencez Maintenant !
 
 **Prêt à apprendre Dart ?**
 
@@ -333,11 +333,11 @@ Cours créé avec ❤️ pour la communauté francophone.
 3. Suivez les étapes dans l'ordre
 4. Amusez-vous !
 
-**Bon apprentissage ! 🚀**
+**Bon apprentissage ! **
 
 ---
 
-*Dernière mise à jour : 2025*  
+*Dernière mise à jour : 2025* 
 *Version : 1.0*
 
 

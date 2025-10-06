@@ -12,7 +12,7 @@
 
 ---
 
-## Qu'est-ce que l'Entrée/Sortie? 💬
+## Qu'est-ce que l'Entrée/Sortie? 
 
 ### Analogie Simple
 
@@ -26,7 +26,7 @@ Imaginez une **conversation**:
 
 **Jusqu'à maintenant, on a fait que des SORTIES!**
 
-**Maintenant, on va créer des programmes INTERACTIFS!** 🎮
+**Maintenant, on va créer des programmes INTERACTIFS!** 
 
 ---
 
@@ -36,12 +36,12 @@ Imaginez une **conversation**:
 
 ```dart
 void main() {
-  print('Bonjour!');
-  print('Ceci est une sortie.');
+ print('Bonjour!');
+ print('Ceci est une sortie.');
 }
 ```
 
-**Vous savez déjà faire ça!** ✅
+**Vous savez déjà faire ça!** 
 
 ---
 
@@ -51,11 +51,11 @@ void main() {
 
 **Syntaxe complète:**
 ```dart
-import 'dart:io';  // Obligatoire pour stdin!
+import 'dart:io'; // Obligatoire pour stdin!
 
 void main() {
-  String? reponse = stdin.readLineSync();
-  print('Vous avez tapé: $reponse');
+ String? reponse = stdin.readLineSync();
+ print('Vous avez tapé: $reponse');
 }
 ```
 
@@ -67,7 +67,7 @@ void main() {
 
 ---
 
-## EXERCICE 1 : Votre Premier Programme Interactif 🎯
+## EXERCICE 1 : Votre Premier Programme Interactif 
 
 ### ÉTAPE 1.1 - Créer le fichier
 
@@ -81,12 +81,12 @@ void main() {
 import 'dart:io';
 
 void main() {
-  // Demander le nom
-  print('Comment vous appelez-vous?');
-  String? nom = stdin.readLineSync();
-  
-  // Afficher un message personnalisé
-  print('Bonjour $nom! Enchanté de vous rencontrer!');
+ // Demander le nom
+ print('Comment vous appelez-vous?');
+ String? nom = stdin.readLineSync();
+ 
+ // Afficher un message personnalisé
+ print('Bonjour $nom! Enchanté de vous rencontrer!');
 }
 ```
 
@@ -132,7 +132,7 @@ Julie
 Bonjour Julie! Enchanté de vous rencontrer!
 ```
 
-**SI ÇA MARCHE:** 🎉 Votre premier programme interactif!
+**SI ÇA MARCHE:** Votre premier programme interactif!
 
 ---
 
@@ -150,13 +150,13 @@ Bonjour Julie! Enchanté de vous rencontrer!
 import 'dart:io';
 
 void main() {
-  print('Entrez votre âge:');
-  String? ageTexte = stdin.readLineSync();
-  
-  // Convertir String → int
-  int age = int.parse(ageTexte ?? '0');
-  
-  print('Dans 5 ans, vous aurez ${age + 5} ans.');
+ print('Entrez votre âge:');
+ String? ageTexte = stdin.readLineSync();
+ 
+ // Convertir String → int
+ int age = int.parse(ageTexte ?? '0');
+ 
+ print('Dans 5 ans, vous aurez ${age + 5} ans.');
 }
 ```
 
@@ -167,7 +167,7 @@ void main() {
 
 ---
 
-## EXERCICE 2 : Calculateur d'Âge 🎯
+## EXERCICE 2 : Calculateur d'Âge 
 
 ### ÉTAPE 2.1 - Créer le fichier
 
@@ -181,22 +181,22 @@ void main() {
 import 'dart:io';
 
 void main() {
-  print('=== CALCULATEUR D\'ÂGE ===');
-  print('');
-  
-  // Demander l'année de naissance
-  print('En quelle année êtes-vous né(e)?');
-  String? anneeTexte = stdin.readLineSync();
-  int annee = int.parse(anneeTexte ?? '2000');
-  
-  // Calculer l'âge
-  int anneeActuelle = 2025;
-  int age = anneeActuelle - annee;
-  
-  // Afficher le résultat
-  print('');
-  print('Vous avez $age ans (ou aurez $age ans cette année).');
-  print('Dans 10 ans, vous aurez ${age + 10} ans.');
+ print('=== CALCULATEUR D\'ÂGE ===');
+ print('');
+ 
+ // Demander l'année de naissance
+ print('En quelle année êtes-vous né(e)?');
+ String? anneeTexte = stdin.readLineSync();
+ int annee = int.parse(anneeTexte ?? '2000');
+ 
+ // Calculer l'âge
+ int anneeActuelle = 2025;
+ int age = anneeActuelle - annee;
+ 
+ // Afficher le résultat
+ print('');
+ print('Vous avez $age ans (ou aurez $age ans cette année).');
+ print('Dans 10 ans, vous aurez ${age + 10} ans.');
 }
 ```
 
@@ -218,11 +218,11 @@ Vous avez 25 ans (ou aurez 25 ans cette année).
 Dans 10 ans, vous aurez 35 ans.
 ```
 
-**TESTEZ avec différentes années!** 📅
+**TESTEZ avec différentes années!** 
 
 ---
 
-## EXERCICE 3 : Calculateur de Prix avec TVA 💰
+## EXERCICE 3 : Calculateur de Prix avec TVA 
 
 ### ÉTAPE 3.1 - Créer le fichier
 
@@ -236,29 +236,29 @@ Dans 10 ans, vous aurez 35 ans.
 import 'dart:io';
 
 void main() {
-  print('=== CALCULATEUR DE PRIX TTC ===');
-  print('');
-  
-  // Demander le prix HT
-  print('Entrez le prix HT (hors taxes):');
-  String? prixTexte = stdin.readLineSync();
-  double prixHT = double.parse(prixTexte ?? '0');
-  
-  // Demander le taux de TVA
-  print('Entrez le taux de TVA (en %, ex: 20):');
-  String? tvaTexte = stdin.readLineSync();
-  double tauxTVA = double.parse(tvaTexte ?? '20');
-  
-  // Calculer le prix TTC
-  double montantTVA = prixHT * tauxTVA / 100;
-  double prixTTC = prixHT + montantTVA;
-  
-  // Afficher les résultats
-  print('');
-  print('--- RÉSULTATS ---');
-  print('Prix HT:     $prixHT €');
-  print('TVA ($tauxTVA%): $montantTVA €');
-  print('Prix TTC:    $prixTTC €');
+ print('=== CALCULATEUR DE PRIX TTC ===');
+ print('');
+ 
+ // Demander le prix HT
+ print('Entrez le prix HT (hors taxes):');
+ String? prixTexte = stdin.readLineSync();
+ double prixHT = double.parse(prixTexte ?? '0');
+ 
+ // Demander le taux de TVA
+ print('Entrez le taux de TVA (en %, ex: 20):');
+ String? tvaTexte = stdin.readLineSync();
+ double tauxTVA = double.parse(tvaTexte ?? '20');
+ 
+ // Calculer le prix TTC
+ double montantTVA = prixHT * tauxTVA / 100;
+ double prixTTC = prixHT + montantTVA;
+ 
+ // Afficher les résultats
+ print('');
+ print('--- RÉSULTATS ---');
+ print('Prix HT:   $prixHT €');
+ print('TVA ($tauxTVA%): $montantTVA €');
+ print('Prix TTC:  $prixTTC €');
 }
 ```
 
@@ -269,7 +269,7 @@ void main() {
 **Ligne 10:** `double prixHT = double.parse(prixTexte ?? '0');`
 - `double.parse()` convertit String → double
 - Accepte les nombres décimaux: "19.99"
-- ⚠️ Utiliser un **POINT** pas une virgule!
+- Utiliser un **POINT** pas une virgule!
 
 **Opérateur `??` (null-coalescing):**
 - `valeur ?? 'défaut'`
@@ -294,14 +294,14 @@ Entrez le taux de TVA (en %, ex: 20):
 20
 
 --- RÉSULTATS ---
-Prix HT:     100.0 €
+Prix HT:   100.0 €
 TVA (20.0%): 20.0 €
-Prix TTC:    120.0 €
+Prix TTC:  120.0 €
 ```
 
 ---
 
-## EXERCICE 4 : Quiz Interactif 🧠
+## EXERCICE 4 : Quiz Interactif 
 
 ### ÉTAPE 4.1 - Créer le fichier
 
@@ -315,56 +315,56 @@ Prix TTC:    120.0 €
 import 'dart:io';
 
 void main() {
-  print('=== QUIZ DART ===');
-  print('Répondez aux questions suivantes:');
-  print('');
-  
-  int score = 0;
-  
-  // Question 1
-  print('Question 1: Quelle est la capitale de la France?');
-  String? reponse1 = stdin.readLineSync();
-  if (reponse1?.toLowerCase() == 'paris') {
-    print('✓ Correct!');
-    score++;
-  } else {
-    print('✗ Faux. La bonne réponse est Paris.');
-  }
-  print('');
-  
-  // Question 2
-  print('Question 2: Combien font 7 × 8?');
-  String? reponse2 = stdin.readLineSync();
-  if (reponse2 == '56') {
-    print('✓ Correct!');
-    score++;
-  } else {
-    print('✗ Faux. La bonne réponse est 56.');
-  }
-  print('');
-  
-  // Question 3
-  print('Question 3: Quel est le langage de ce cours? (indice: commence par D)');
-  String? reponse3 = stdin.readLineSync();
-  if (reponse3?.toLowerCase() == 'dart') {
-    print('✓ Correct!');
-    score++;
-  } else {
-    print('✗ Faux. La bonne réponse est Dart!');
-  }
-  print('');
-  
-  // Score final
-  print('=== RÉSULTAT FINAL ===');
-  print('Vous avez obtenu $score / 3');
-  
-  if (score == 3) {
-    print('🏆 Parfait! Vous êtes un champion!');
-  } else if (score >= 2) {
-    print('👍 Bien joué!');
-  } else {
-    print('💪 Continuez à apprendre!');
-  }
+ print('=== QUIZ DART ===');
+ print('Répondez aux questions suivantes:');
+ print('');
+ 
+ int score = 0;
+ 
+ // Question 1
+ print('Question 1: Quelle est la capitale de la France?');
+ String? reponse1 = stdin.readLineSync();
+ if (reponse1?.toLowerCase() == 'paris') {
+  print(' Correct!');
+  score++;
+ } else {
+  print(' Faux. La bonne réponse est Paris.');
+ }
+ print('');
+ 
+ // Question 2
+ print('Question 2: Combien font 7 × 8?');
+ String? reponse2 = stdin.readLineSync();
+ if (reponse2 == '56') {
+  print(' Correct!');
+  score++;
+ } else {
+  print(' Faux. La bonne réponse est 56.');
+ }
+ print('');
+ 
+ // Question 3
+ print('Question 3: Quel est le langage de ce cours? (indice: commence par D)');
+ String? reponse3 = stdin.readLineSync();
+ if (reponse3?.toLowerCase() == 'dart') {
+  print(' Correct!');
+  score++;
+ } else {
+  print(' Faux. La bonne réponse est Dart!');
+ }
+ print('');
+ 
+ // Score final
+ print('=== RÉSULTAT FINAL ===');
+ print('Vous avez obtenu $score / 3');
+ 
+ if (score == 3) {
+  print(' Parfait! Vous êtes un champion!');
+ } else if (score >= 2) {
+  print(' Bien joué!');
+ } else {
+  print(' Continuez à apprendre!');
+ }
 }
 ```
 
@@ -395,7 +395,7 @@ void main() {
 2. `Ctrl + X`
 3. `dart quiz.dart`{{execute}}
 
-**JOUEZ ET AMUSEZ-VOUS!** 🎮
+**JOUEZ ET AMUSEZ-VOUS!** 
 
 ---
 
@@ -408,23 +408,23 @@ import 'dart:io';
 
 // Fonction qui demande et retourne une réponse
 String demanderTexte(String question) {
-  print(question);
-  String? reponse = stdin.readLineSync();
-  return reponse ?? '';
+ print(question);
+ String? reponse = stdin.readLineSync();
+ return reponse ?? '';
 }
 
 // Fonction qui demande un nombre entier
 int demanderEntier(String question) {
-  print(question);
-  String? reponse = stdin.readLineSync();
-  return int.parse(reponse ?? '0');
+ print(question);
+ String? reponse = stdin.readLineSync();
+ return int.parse(reponse ?? '0');
 }
 
 void main() {
-  String nom = demanderTexte('Quel est votre nom?');
-  int age = demanderEntier('Quel est votre âge?');
-  
-  print('Bonjour $nom, vous avez $age ans.');
+ String nom = demanderTexte('Quel est votre nom?');
+ int age = demanderEntier('Quel est votre âge?');
+ 
+ print('Bonjour $nom, vous avez $age ans.');
 }
 ```
 
@@ -432,7 +432,7 @@ void main() {
 
 ---
 
-## EXERCICE 5 : Convertisseur de Devises 💱
+## EXERCICE 5 : Convertisseur de Devises 
 
 ### À Vous de Jouer!
 
@@ -447,19 +447,19 @@ Créez `convertisseur.dart` qui:
 import 'dart:io';
 
 void main() {
-  print('=== CONVERTISSEUR DE DEVISES ===');
-  
-  // TODO: Demander le montant en euros
-  
-  // TODO: Demander le taux de change
-  
-  // TODO: Calculer le montant converti
-  
-  // TODO: Afficher le résultat
+ print('=== CONVERTISSEUR DE DEVISES ===');
+ 
+ // TODO: Demander le montant en euros
+ 
+ // TODO: Demander le taux de change
+ 
+ // TODO: Calculer le montant converti
+ 
+ // TODO: Afficher le résultat
 }
 ```
 
-**Solution cachée ci-dessous** ⬇️
+**Solution cachée ci-dessous** ️
 
 <details>
 <summary>Cliquez pour voir la solution</summary>
@@ -468,39 +468,39 @@ void main() {
 import 'dart:io';
 
 void main() {
-  print('=== CONVERTISSEUR DE DEVISES ===');
-  print('');
-  
-  // Demander le montant
-  print('Montant en euros (€):');
-  String? montantTexte = stdin.readLineSync();
-  double euros = double.parse(montantTexte ?? '0');
-  
-  // Demander le taux
-  print('Taux de change (ex: 1.10 pour USD):');
-  String? tauxTexte = stdin.readLineSync();
-  double taux = double.parse(tauxTexte ?? '1');
-  
-  // Calculer
-  double montantConverti = euros * taux;
-  
-  // Afficher
-  print('');
-  print('$euros € = $montantConverti');
+ print('=== CONVERTISSEUR DE DEVISES ===');
+ print('');
+ 
+ // Demander le montant
+ print('Montant en euros (€):');
+ String? montantTexte = stdin.readLineSync();
+ double euros = double.parse(montantTexte ?? '0');
+ 
+ // Demander le taux
+ print('Taux de change (ex: 1.10 pour USD):');
+ String? tauxTexte = stdin.readLineSync();
+ double taux = double.parse(tauxTexte ?? '1');
+ 
+ // Calculer
+ double montantConverti = euros * taux;
+ 
+ // Afficher
+ print('');
+ print('$euros € = $montantConverti');
 }
 ```
 </details>
 
 ---
 
-## ⚠️ ATTENTION: Erreurs Courantes
+## ATTENTION: Erreurs Courantes
 
 ### Erreur #1: Oublier `import 'dart:io';`
 
 **CODE AVEC ERREUR:**
 ```dart
 void main() {
-  String? reponse = stdin.readLineSync();  // ❌
+ String? reponse = stdin.readLineSync(); // 
 }
 ```
 
@@ -511,10 +511,10 @@ Error: Undefined name 'stdin'.
 
 **SOLUTION:**
 ```dart
-import 'dart:io';  // ✅ En haut du fichier!
+import 'dart:io'; // En haut du fichier!
 
 void main() {
-  String? reponse = stdin.readLineSync();
+ String? reponse = stdin.readLineSync();
 }
 ```
 
@@ -527,9 +527,9 @@ void main() {
 import 'dart:io';
 
 void main() {
-  print('Entrez un nombre:');
-  String? texte = stdin.readLineSync();
-  int nombre = int.parse(texte);  // ❌ Si l'utilisateur tape "abc"?
+ print('Entrez un nombre:');
+ String? texte = stdin.readLineSync();
+ int nombre = int.parse(texte); // Si l'utilisateur tape "abc"?
 }
 ```
 
@@ -541,7 +541,7 @@ FormatException: Invalid radix-10 number (at character 1)
 
 **SOLUTION: Utiliser try-catch (niveau avancé) OU vérifier:**
 ```dart
-int nombre = int.parse(texte ?? '0');  // ✅ Défaut si null
+int nombre = int.parse(texte ?? '0'); // Défaut si null
 ```
 
 ---
@@ -550,8 +550,8 @@ int nombre = int.parse(texte ?? '0');  // ✅ Défaut si null
 
 **PROBLÈME:**
 ```dart
-if (reponse == 'Paris') {  // ❌ N'accepte que "Paris" exactement
-  print('Correct');
+if (reponse == 'Paris') { // N'accepte que "Paris" exactement
+ print('Correct');
 }
 ```
 
@@ -559,29 +559,29 @@ if (reponse == 'Paris') {  // ❌ N'accepte que "Paris" exactement
 
 **SOLUTION:**
 ```dart
-if (reponse?.toLowerCase() == 'paris') {  // ✅ Accepte toutes les variantes
-  print('Correct');
+if (reponse?.toLowerCase() == 'paris') { // Accepte toutes les variantes
+ print('Correct');
 }
 ```
 
 ---
 
-## Récapitulatif : Ce que Vous Avez Appris 📚
+## Récapitulatif : Ce que Vous Avez Appris 
 
 ### Concepts Clés:
-✅ **Sortie (Output)** = `print()` - afficher du texte
-✅ **Entrée (Input)** = `stdin.readLineSync()` - lire du texte
-✅ **Import** = `import 'dart:io';` - bibliothèque nécessaire
-✅ **Conversion** = `int.parse()`, `double.parse()` - texte → nombre
-✅ **Nullable** = `String?` - peut être null
-✅ **Null-coalescing** = `??` - valeur par défaut si null
+ **Sortie (Output)** = `print()` - afficher du texte
+ **Entrée (Input)** = `stdin.readLineSync()` - lire du texte
+ **Import** = `import 'dart:io';` - bibliothèque nécessaire
+ **Conversion** = `int.parse()`, `double.parse()` - texte → nombre
+ **Nullable** = `String?` - peut être null
+ **Null-coalescing** = `??` - valeur par défaut si null
 
 ### Fonctions Importantes:
-✅ `print(texte)` - afficher
-✅ `stdin.readLineSync()` - lire une ligne
-✅ `int.parse(texte)` - texte → int
-✅ `double.parse(texte)` - texte → double
-✅ `texte.toLowerCase()` - convertir en minuscules
+ `print(texte)` - afficher
+ `stdin.readLineSync()` - lire une ligne
+ `int.parse(texte)` - texte → int
+ `double.parse(texte)` - texte → double
+ `texte.toLowerCase()` - convertir en minuscules
 
 ### Pattern d'Interaction:
 ```dart
@@ -597,34 +597,34 @@ if (reponse?.toLowerCase() == 'paris') {  // ✅ Accepte toutes les variantes
 ## Aide-Mémoire Visuel
 
 ```dart
-import 'dart:io';  // OBLIGATOIRE!
+import 'dart:io'; // OBLIGATOIRE!
 
 void main() {
-  // DEMANDER UN TEXTE
-  print('Question?');
-  String? reponse = stdin.readLineSync();
-  print('Vous avez dit: $reponse');
-  
-  // DEMANDER UN NOMBRE ENTIER
-  print('Entrez un nombre:');
-  String? texte = stdin.readLineSync();
-  int nombre = int.parse(texte ?? '0');
-  
-  // DEMANDER UN NOMBRE DÉCIMAL
-  print('Entrez un prix:');
-  String? prixTexte = stdin.readLineSync();
-  double prix = double.parse(prixTexte ?? '0');
-  
-  // COMPARER (insensible à la casse)
-  if (reponse?.toLowerCase() == 'oui') {
-    print('Vous avez dit oui!');
-  }
+ // DEMANDER UN TEXTE
+ print('Question?');
+ String? reponse = stdin.readLineSync();
+ print('Vous avez dit: $reponse');
+ 
+ // DEMANDER UN NOMBRE ENTIER
+ print('Entrez un nombre:');
+ String? texte = stdin.readLineSync();
+ int nombre = int.parse(texte ?? '0');
+ 
+ // DEMANDER UN NOMBRE DÉCIMAL
+ print('Entrez un prix:');
+ String? prixTexte = stdin.readLineSync();
+ double prix = double.parse(prixTexte ?? '0');
+ 
+ // COMPARER (insensible à la casse)
+ if (reponse?.toLowerCase() == 'oui') {
+  print('Vous avez dit oui!');
+ }
 }
 ```
 
 ---
 
-## Conseil de Professeur Expérimenté
+## Conseil professionnel
 
 ### Toujours valider les entrées utilisateur!
 
@@ -643,8 +643,8 @@ int age = int.parse(ageTexte ?? '0');
 
 // Valider
 if (age <= 0 || age > 120) {
-  print('Âge invalide!');
-  return;  // Quitter le programme
+ print('Âge invalide!');
+ return; // Quitter le programme
 }
 
 // Continuer avec un âge valide
@@ -655,7 +655,7 @@ print('Âge valide: $age');
 
 ---
 
-## Exercice Bonus : Mini-Calculatrice 🧮
+## Exercice Bonus : Mini-Calculatrice 
 
 Créez une calculatrice qui:
 1. Demande le premier nombre
@@ -676,7 +676,7 @@ Vous savez maintenant:
 - Créer des programmes interactifs
 - Combiner tout ce que vous avez appris!
 
-**PROCHAINE ÉTAPE:** Un défi pratique qui combine TOUT! 🏆
+**PROCHAINE ÉTAPE:** Un défi pratique qui combine TOUT! 
 
 **Cliquez sur "Continuer" pour l'Étape 4!** →
 

@@ -1,23 +1,23 @@
-# 🎉 Félicitations! Vous Avez Terminé Dart Semaine 1! 🎉
+# Félicitations! Vous Avez Terminé Dart Semaine 1! 
 
 ---
 
-## Vous Avez Réussi! 🏆
+## Vous Avez Réussi! 
 
 **Regardez tout ce que vous avez accompli:**
 
-✅ Installé Dart sur Linux  
-✅ Créé votre premier programme  
-✅ Maîtrisé les variables et types  
-✅ Créé des fonctions réutilisables  
-✅ Interagi avec l'utilisateur  
-✅ Construit un programme complet  
+ Installé Dart sur Linux 
+ Créé votre premier programme 
+ Maîtrisé les variables et types 
+ Créé des fonctions réutilisables 
+ Interagi avec l'utilisateur 
+ Construit un programme complet 
 
 **EN UNE SEULE SEMAINE!**
 
 ---
 
-## Récapitulatif Complet 📚
+## Récapitulatif Complet 
 
 ### Étape 0 : Installation de Dart
 
@@ -68,11 +68,11 @@ print('Bonjour $nom, vous avez $age ans.');
 **Syntaxe clé:**
 ```dart
 int additionner(int a, int b) {
-  return a + b;
+ return a + b;
 }
 
 void direBonjour(String nom) {
-  print('Bonjour $nom!');
+ print('Bonjour $nom!');
 }
 ```
 
@@ -92,9 +92,9 @@ void direBonjour(String nom) {
 import 'dart:io';
 
 void main() {
-  print('Question?');
-  String? reponse = stdin.readLineSync();
-  int nombre = int.parse(reponse ?? '0');
+ print('Question?');
+ String? reponse = stdin.readLineSync();
+ int nombre = int.parse(reponse ?? '0');
 }
 ```
 
@@ -118,7 +118,7 @@ void main() {
 
 ---
 
-## Statistiques de Votre Apprentissage 📊
+## Statistiques de Votre Apprentissage 
 
 ### Concepts Maîtrisés: **25+**
 - Variables, types, fonctions, I/O, etc.
@@ -140,21 +140,21 @@ void main() {
 
 ```dart
 void main() {
-  String prenom = 'Marie';
-  int age = 23;
-  String ville = 'Lyon';
-  double taille = 1.65;
-  bool aimeProgammer = true;
-  
-  int annee = 2025 - age;
-  
-  print('=== MON PROFIL ===');
-  print('Prénom: $prenom');
-  print('Age: $age ans');
-  print('Année de naissance: $annee');
-  print('Ville: $ville');
-  print('Taille: $taille m');
-  print('Aime programmer: $aimeProgammer');
+ String prenom = 'Marie';
+ int age = 23;
+ String ville = 'Lyon';
+ double taille = 1.65;
+ bool aimeProgammer = true;
+ 
+ int annee = 2025 - age;
+ 
+ print('=== MON PROFIL ===');
+ print('Prénom: $prenom');
+ print('Age: $age ans');
+ print('Année de naissance: $annee');
+ print('Ville: $ville');
+ print('Taille: $taille m');
+ print('Aime programmer: $aimeProgammer');
 }
 ```
 
@@ -164,21 +164,21 @@ void main() {
 
 ```dart
 bool estMajeur(int age) {
-  return age >= 18;
+ return age >= 18;
 }
 
 void afficherStatut(String nom, int age) {
-  if (estMajeur(age)) {
-    print('$nom ($age ans) est majeur.');
-  } else {
-    print('$nom ($age ans) est mineur.');
-  }
+ if (estMajeur(age)) {
+  print('$nom ($age ans) est majeur.');
+ } else {
+  print('$nom ($age ans) est mineur.');
+ }
 }
 
 void main() {
-  afficherStatut('Julie', 25);
-  afficherStatut('Marc', 17);
-  afficherStatut('Sophie', 18);
+ afficherStatut('Julie', 25);
+ afficherStatut('Marc', 17);
+ afficherStatut('Sophie', 18);
 }
 ```
 
@@ -190,35 +190,35 @@ void main() {
 import 'dart:io';
 
 void main() {
-  print('=== CONVERTISSEUR DE DEVISES ===');
-  print('');
-  
-  print('Montant en euros (€):');
-  String? montantTexte = stdin.readLineSync();
-  double euros = double.parse(montantTexte ?? '0');
-  
-  print('Taux de change (ex: 1.10 pour USD):');
-  String? tauxTexte = stdin.readLineSync();
-  double taux = double.parse(tauxTexte ?? '1');
-  
-  double montantConverti = euros * taux;
-  
-  print('');
-  print('$euros € = $montantConverti');
+ print('=== CONVERTISSEUR DE DEVISES ===');
+ print('');
+ 
+ print('Montant en euros (€):');
+ String? montantTexte = stdin.readLineSync();
+ double euros = double.parse(montantTexte ?? '0');
+ 
+ print('Taux de change (ex: 1.10 pour USD):');
+ String? tauxTexte = stdin.readLineSync();
+ double taux = double.parse(tauxTexte ?? '1');
+ 
+ double montantConverti = euros * taux;
+ 
+ print('');
+ print('$euros € = $montantConverti');
 }
 ```
 
 ---
 
-## Aide-Mémoire Dart - Version Complète 📋
+## Aide-Mémoire Dart - Version Complète 
 
 ### Structure d'un Programme
 
 ```dart
-import 'dart:io';  // Pour stdin
+import 'dart:io'; // Pour stdin
 
 void main() {
-  // Votre code ici
+ // Votre code ici
 }
 ```
 
@@ -232,10 +232,10 @@ int age = 25;
 double prix = 19.99;
 String nom = 'Julie';
 bool actif = true;
-var automatique = 42;  // Dart devine le type
+var automatique = 42; // Dart devine le type
 
 // Modification
-age = 26;  // Pas besoin de 'int' à nouveau
+age = 26; // Pas besoin de 'int' à nouveau
 ```
 
 ---
@@ -244,25 +244,25 @@ age = 26;  // Pas besoin de 'int' à nouveau
 
 ```dart
 // Mathématiques
-+    // Addition
--    // Soustraction
-*    // Multiplication
-/    // Division (retourne double)
-~/   // Division entière
-%    // Modulo (reste)
++  // Addition
+-  // Soustraction
+*  // Multiplication
+/  // Division (retourne double)
+~/  // Division entière
+%  // Modulo (reste)
 
 // Comparaison
-==   // Égal
-!=   // Différent
-<    // Plus petit
->    // Plus grand
-<=   // Plus petit ou égal
->=   // Plus grand ou égal
+==  // Égal
+!=  // Différent
+<  // Plus petit
+>  // Plus grand
+<=  // Plus petit ou égal
+>=  // Plus grand ou égal
 
 // Logiques
-&&   // ET
-||   // OU
-!    // NON
+&&  // ET
+||  // OU
+!  // NON
 ```
 
 ---
@@ -272,17 +272,17 @@ age = 26;  // Pas besoin de 'int' à nouveau
 ```dart
 // Sans retour
 void afficher() {
-  print('Hello');
+ print('Hello');
 }
 
 // Avec retour
 int calculer(int a, int b) {
-  return a + b;
+ return a + b;
 }
 
 // Paramètres nommés
 void creer({required String nom, int age = 0}) {
-  print('$nom, $age ans');
+ print('$nom, $age ans');
 }
 
 // Appels
@@ -313,11 +313,11 @@ double decimal = double.parse(texte ?? '0.0');
 
 ```dart
 if (condition) {
-  // Si vrai
+ // Si vrai
 } else if (autreCondition) {
-  // Sinon si vrai
+ // Sinon si vrai
 } else {
-  // Sinon
+ // Sinon
 }
 ```
 
@@ -327,32 +327,32 @@ if (condition) {
 
 ```dart
 // String
-texte.toLowerCase()       // Minuscules
-texte.toUpperCase()       // Majuscules
-texte.length              // Longueur
+texte.toLowerCase()    // Minuscules
+texte.toUpperCase()    // Majuscules
+texte.length       // Longueur
 
 // Nombre
 nombre.toStringAsFixed(2) // Format avec 2 décimales
-nombre.toString()         // Convertir en String
+nombre.toString()     // Convertir en String
 
 // Null-coalescing
-valeur ?? 'défaut'        // Si null, utilise 'défaut'
+valeur ?? 'défaut'    // Si null, utilise 'défaut'
 ```
 
 ---
 
-## Erreurs Courantes et Solutions 🔧
+## Erreurs Courantes et Solutions 
 
 ### 1. Oublier le point-virgule
 
 **Erreur:**
 ```dart
-var age = 25    // ❌
+var age = 25  // 
 ```
 
 **Solution:**
 ```dart
-var age = 25;   // ✅
+var age = 25;  // 
 ```
 
 ---
@@ -366,7 +366,7 @@ Error: Undefined name 'stdin'.
 
 **Solution:**
 ```dart
-import 'dart:io';  // ✅ En haut du fichier
+import 'dart:io'; // En haut du fichier
 ```
 
 ---
@@ -376,14 +376,14 @@ import 'dart:io';  // ✅ En haut du fichier
 **Erreur:**
 ```dart
 int diviser(int a, int b) {
-  return a / b;  // ❌ Division retourne double
+ return a / b; // Division retourne double
 }
 ```
 
 **Solution:**
 ```dart
-double diviser(int a, int b) {  // ✅
-  return a / b;
+double diviser(int a, int b) { // 
+ return a / b;
 }
 ```
 
@@ -393,38 +393,38 @@ double diviser(int a, int b) {  // ✅
 
 **Erreur:**
 ```dart
-int.parse('abc')  // ❌ FormatException
+int.parse('abc') // FormatException
 ```
 
 **Solution:**
 ```dart
-int.parse(texte ?? '0')  // ✅ Valeur par défaut
+int.parse(texte ?? '0') // Valeur par défaut
 ```
 
 ---
 
-## Bonnes Pratiques à Retenir 🌟
+## Bonnes Pratiques à Retenir 
 
 ### 1. Nommage
-✅ **camelCase** pour les variables et fonctions
-✅ Noms **descriptifs** (`age` plutôt que `a`)
-✅ Verbes pour les fonctions (`calculer`, `afficher`)
+ **camelCase** pour les variables et fonctions
+ Noms **descriptifs** (`age` plutôt que `a`)
+ Verbes pour les fonctions (`calculer`, `afficher`)
 
 ### 2. Organisation
-✅ Imports en haut
-✅ Fonctions avant `main()`
-✅ Commentaires pour expliquer
-✅ Lignes vides pour aérer
+ Imports en haut
+ Fonctions avant `main()`
+ Commentaires pour expliquer
+ Lignes vides pour aérer
 
 ### 3. Code Propre
-✅ Indentation cohérente (2 espaces)
-✅ Une fonction = une tâche
-✅ Éviter la répétition (DRY)
-✅ Valider les entrées utilisateur
+ Indentation cohérente (2 espaces)
+ Une fonction = une tâche
+ Éviter la répétition (DRY)
+ Valider les entrées utilisateur
 
 ---
 
-## Prochaines Étapes dans Votre Parcours Dart 🚀
+## Prochaines Étapes dans Votre Parcours Dart 
 
 ### Semaine 2 : Control Flow (À venir)
 - If/else avancé
@@ -457,19 +457,19 @@ int.parse(texte ?? '0')  // ✅ Valeur par défaut
 
 ---
 
-## Et Après? Flutter! 📱
+## Et Après? Flutter! 
 
 Une fois que vous maîtrisez Dart, vous pouvez apprendre **Flutter** pour créer:
-- 📱 Applications mobiles (Android + iOS)
-- 🌐 Applications web
-- 💻 Applications desktop
-- 🎮 Jeux 2D
+- Applications mobiles (Android + iOS)
+- Applications web
+- Applications desktop
+- Jeux 2D
 
 **Un seul code = toutes les plateformes!**
 
 ---
 
-## Ressources pour Continuer 📖
+## Ressources pour Continuer 
 
 ### Documentation Officielle
 - **Dart:** https://dart.dev/guides
@@ -488,7 +488,7 @@ Une fois que vous maîtrisez Dart, vous pouvez apprendre **Flutter** pour créer
 
 ---
 
-## Exercices Supplémentaires (Pour Pratiquer) 🎯
+## Exercices Supplémentaires (Pour Pratiquer) 
 
 ### Niveau 1 : Débutant
 
@@ -546,7 +546,7 @@ Expérience et niveau
 
 ---
 
-## Code Template pour Vos Projets 🛠️
+## Code Template pour Vos Projets 
 
 ```dart
 import 'dart:io';
@@ -556,32 +556,32 @@ import 'dart:io';
 // ============================================
 
 String demanderTexte(String question) {
-  print(question);
-  return stdin.readLineSync() ?? '';
+ print(question);
+ return stdin.readLineSync() ?? '';
 }
 
 int demanderEntier(String question) {
-  print(question);
-  String? reponse = stdin.readLineSync();
-  return int.parse(reponse ?? '0');
+ print(question);
+ String? reponse = stdin.readLineSync();
+ return int.parse(reponse ?? '0');
 }
 
 double demanderDecimal(String question) {
-  print(question);
-  String? reponse = stdin.readLineSync();
-  return double.parse(reponse ?? '0.0');
+ print(question);
+ String? reponse = stdin.readLineSync();
+ return double.parse(reponse ?? '0.0');
 }
 
 void afficherTitre(String titre) {
-  print('');
-  print('═' * 40);
-  print(titre.toUpperCase().padLeft(20 + titre.length ~/ 2));
-  print('═' * 40);
-  print('');
+ print('');
+ print('═' * 40);
+ print(titre.toUpperCase().padLeft(20 + titre.length ~/ 2));
+ print('═' * 40);
+ print('');
 }
 
 void afficherSeparateur() {
-  print('-' * 40);
+ print('-' * 40);
 }
 
 // ============================================
@@ -595,12 +595,12 @@ void afficherSeparateur() {
 // ============================================
 
 void main() {
-  afficherTitre('Mon Programme');
-  
-  // Votre code ici
-  
-  print('');
-  print('Programme terminé!');
+ afficherTitre('Mon Programme');
+ 
+ // Votre code ici
+ 
+ print('');
+ print('Programme terminé!');
 }
 ```
 
@@ -608,63 +608,63 @@ void main() {
 
 ---
 
-## Message Final de Votre Instructeur 💬
+## Message Final de Votre Instructeur 
 
-Bravo pour avoir terminé ce cours! 🎉
+Bravo pour avoir terminé ce cours! 
 
 **Vous n'êtes plus un débutant.**
 
 Vous avez:
-- ✅ Les bases solides
-- ✅ La capacité de créer des programmes
-- ✅ La logique de programmation
-- ✅ Les bonnes pratiques
+- Les bases solides
+- La capacité de créer des programmes
+- La logique de programmation
+- Les bonnes pratiques
 
 **Ce qui compte maintenant: PRATIQUER!**
 
-**Conseil #1:** Codez un peu chaque jour (même 15 minutes)  
-**Conseil #2:** Créez vos propres projets (pas juste des tutoriels)  
-**Conseil #3:** N'ayez pas peur de faire des erreurs  
-**Conseil #4:** Partagez votre code et demandez des retours  
-**Conseil #5:** Amusez-vous! La programmation doit être un plaisir!  
+**Conseil #1:** Codez un peu chaque jour (même 15 minutes) 
+**Conseil #2:** Créez vos propres projets (pas juste des tutoriels) 
+**Conseil #3:** N'ayez pas peur de faire des erreurs 
+**Conseil #4:** Partagez votre code et demandez des retours 
+**Conseil #5:** Amusez-vous! La programmation doit être un plaisir! 
 
 **Vous avez le potentiel pour devenir un excellent développeur.**
 
-**Je crois en vous! Continuez! 💪**
+**Je crois en vous! Continuez! **
 
 ---
 
-## Certificat de Compétence (Auto-décerné) 📜
+## Certificat de Compétence (Auto-décerné) 
 
 ```
 ╔════════════════════════════════════════════════════════════╗
-║                                                            ║
-║              CERTIFICAT DE RÉUSSITE                        ║
-║                                                            ║
-║  Ce document certifie que:                                 ║
-║                                                            ║
-║         [ VOTRE NOM ICI ]                                  ║
-║                                                            ║
-║  A terminé avec succès:                                    ║
-║  DART SEMAINE 1 - FONDAMENTAUX DU LANGAGE                  ║
-║                                                            ║
-║  Compétences acquises:                                     ║
-║  • Variables et Types de Données                           ║
-║  • Fonctions et Paramètres                                 ║
-║  • Entrées/Sorties Interactives                            ║
-║  • Logique de Programmation                                ║
-║  • Résolution de Problèmes                                 ║
-║                                                            ║
-║  Date: 2025                                                ║
-║                                                            ║
+║                              ║
+║       CERTIFICAT DE RÉUSSITE            ║
+║                              ║
+║ Ce document certifie que:                 ║
+║                              ║
+║     [ VOTRE NOM ICI ]                 ║
+║                              ║
+║ A terminé avec succès:                  ║
+║ DART SEMAINE 1 - FONDAMENTAUX DU LANGAGE         ║
+║                              ║
+║ Compétences acquises:                   ║
+║ • Variables et Types de Données              ║
+║ • Fonctions et Paramètres                 ║
+║ • Entrées/Sorties Interactives              ║
+║ • Logique de Programmation                ║
+║ • Résolution de Problèmes                 ║
+║                              ║
+║ Date: 2025                        ║
+║                              ║
 ╚════════════════════════════════════════════════════════════╝
 ```
 
-**Imprimez-le (mentalement) et soyez fier de vous!** 😄
+**Imprimez-le (mentalement) et soyez fier de vous!** 
 
 ---
 
-## Avant de Partir... 🎁
+## Avant de Partir... 
 
 ### Quiz Final (Juste pour le fun!)
 
@@ -698,11 +698,11 @@ Vous avez:
 **Réponse:** La fonction ne retourne aucune valeur.
 </details>
 
-**Si vous avez tout bon: VOUS ÊTES PRÊT POUR LA SEMAINE 2!** 🎯
+**Si vous avez tout bon: VOUS ÊTES PRÊT POUR LA SEMAINE 2!** 
 
 ---
 
-## Remerciements 🙏
+## Remerciements 
 
 Merci d'avoir suivi ce cours jusqu'au bout!
 
@@ -712,25 +712,25 @@ Merci d'avoir suivi ce cours jusqu'au bout!
 
 ---
 
-## Restez en Contact! 📧
+## Restez en Contact! 
 
-Partagez vos créations!  
-Posez vos questions!  
-Continuez à apprendre!  
+Partagez vos créations! 
+Posez vos questions! 
+Continuez à apprendre! 
 
-**La communauté Dart vous accueille à bras ouverts!** 🤗
+**La communauté Dart vous accueille à bras ouverts!** 
 
 ---
 
-## 🎉 FÉLICITATIONS ENCORE UNE FOIS! 🎉
+## FÉLICITATIONS ENCORE UNE FOIS! 
 
 **Vous avez tout donné et vous avez réussi!**
 
-**Rendez-vous dans Dart Semaine 2!** 🚀
+**Rendez-vous dans Dart Semaine 2!** 
 
 ---
 
-*Cours créé avec ❤️ pour les apprenants francophones*  
+*Cours créé avec ️ pour les apprenants francophones* 
 *Version 1.0 - 2025*
 
 

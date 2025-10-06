@@ -1,14 +1,14 @@
-# Bienvenue dans Dart Semaine 2 - Structures de Contrôle ! 🎯
+# Bienvenue dans Dart Semaine 2 - Structures de Contrôle ! 
 
-## Félicitations pour Avoir Terminé la Semaine 1 ! 🎉
+## Félicitations pour Avoir Terminé la Semaine 1 ! 
 
 Vous savez maintenant :
-- ✅ Installer et utiliser Dart
-- ✅ Créer des variables et types
-- ✅ Créer des fonctions
-- ✅ Interagir avec l'utilisateur
+- Installer et utiliser Dart
+- Créer des variables et types
+- Créer des fonctions
+- Interagir avec l'utilisateur
 
-**C'est une base solide ! Maintenant, on passe au niveau supérieur !** 🚀
+**C'est une base solide ! Maintenant, on passe au niveau supérieur !** 
 
 ---
 
@@ -27,18 +27,18 @@ Au revoir !
 **Avec conditions :**
 ```
 SI l'utilisateur a moins de 18 ans
-  → Afficher "Vous êtes mineur"
+ → Afficher "Vous êtes mineur"
 SINON
-  → Afficher "Vous êtes majeur"
+ → Afficher "Vous êtes majeur"
 
 SI la note est >= 10
-  → Afficher "Réussi !"
+ → Afficher "Réussi !"
 SINON
-  → Afficher "Échec"
+ → Afficher "Échec"
 ```
 → **Intelligent, adaptatif, utile !**
 
-**Les conditions rendent vos programmes INTELLIGENTS !** 🧠
+**Les conditions rendent vos programmes INTELLIGENTS !** 
 
 ---
 
@@ -48,14 +48,14 @@ SINON
 
 **Vous utilisez des conditions tous les jours :**
 
-☔ **S'il pleut** → Prendre un parapluie  
-🌞 **Sinon** → Laisser le parapluie à la maison
+ **S'il pleut** → Prendre un parapluie 
+ **Sinon** → Laisser le parapluie à la maison
 
-🚦 **Si le feu est rouge** → S'arrêter  
-🚦 **Si le feu est vert** → Avancer
+ **Si le feu est rouge** → S'arrêter 
+ **Si le feu est vert** → Avancer
 
-💰 **Si j'ai assez d'argent** → Acheter le produit  
-💰 **Sinon** → Économiser encore
+ **Si j'ai assez d'argent** → Acheter le produit 
+ **Sinon** → Économiser encore
 
 ### En Programmation
 
@@ -63,19 +63,19 @@ SINON
 
 ```dart
 if (il_pleut) {
-  prendreParapluie();
+ prendreParapluie();
 } else {
-  laisserParapluie();
+ laisserParapluie();
 }
 ```
 
-**Vos programmes vont pouvoir "réfléchir" et s'adapter !** 🤔
+**Vos programmes vont pouvoir "réfléchir" et s'adapter !** 
 
 ---
 
 ## Ce que Vous Allez Apprendre Cette Semaine
 
-### Étape 0 : Rappel et Préparation ⚙️
+### Étape 0 : Rappel et Préparation ️
 - Révision rapide de la Semaine 1
 - Réinstaller Dart si nécessaire
 - Préparer l'environnement
@@ -84,7 +84,7 @@ if (il_pleut) {
 
 ---
 
-### Étape 1 : If/Else - Prendre des Décisions 🔀
+### Étape 1 : If/Else - Prendre des Décisions 
 - Structure if/else
 - Conditions simples
 - If/else if/else multiples
@@ -95,7 +95,7 @@ if (il_pleut) {
 
 ---
 
-### Étape 2 : Opérateurs de Comparaison et Logiques 🔧
+### Étape 2 : Opérateurs de Comparaison et Logiques 
 - Tous les opérateurs de comparaison (==, !=, <, >, <=, >=)
 - Opérateurs logiques (&&, ||, !)
 - Combiner plusieurs conditions
@@ -106,7 +106,7 @@ if (il_pleut) {
 
 ---
 
-### Étape 3 : Switch - Choix Multiples 🎛️
+### Étape 3 : Switch - Choix Multiples 
 - Structure switch/case
 - Quand utiliser switch vs if/else
 - Cas multiples
@@ -117,7 +117,7 @@ if (il_pleut) {
 
 ---
 
-### Étape 4 : Défi - Système de Notes Interactif 🏆
+### Étape 4 : Défi - Système de Notes Interactif 
 **Projet complet !**
 
 Créez un système qui :
@@ -133,13 +133,13 @@ Créez un système qui :
 
 ## À Qui S'Adresse Cette Semaine ?
 
-✅ **Vous avez terminé la Semaine 1** (obligatoire !)  
-✅ Vous connaissez les variables et fonctions  
-✅ Vous voulez rendre vos programmes plus intelligents  
-✅ Vous êtes prêt pour des concepts plus avancés  
+ **Vous avez terminé la Semaine 1** (obligatoire !) 
+ Vous connaissez les variables et fonctions 
+ Vous voulez rendre vos programmes plus intelligents 
+ Vous êtes prêt pour des concepts plus avancés 
 
-**Si vous n'avez PAS fait la Semaine 1 : STOP !**  
-Faites d'abord la Semaine 1, sinon vous serez perdu ! ⚠️
+**Si vous n'avez PAS fait la Semaine 1 : STOP !** 
+Faites d'abord la Semaine 1, sinon vous serez perdu ! 
 
 ---
 
@@ -148,40 +148,40 @@ Faites d'abord la Semaine 1, sinon vous serez perdu ! ⚠️
 ### 1. Conditions (`if`/`else`)
 ```dart
 if (condition) {
-  // Code si vrai
+ // Code si vrai
 } else {
-  // Code si faux
+ // Code si faux
 }
 ```
 
 ### 2. Opérateurs de Comparaison
 ```dart
-age == 18    // Égal
-age != 18    // Différent
-age < 18     // Plus petit
-age > 18     // Plus grand
-age <= 18    // Plus petit ou égal
-age >= 18    // Plus grand ou égal
+age == 18  // Égal
+age != 18  // Différent
+age < 18   // Plus petit
+age > 18   // Plus grand
+age <= 18  // Plus petit ou égal
+age >= 18  // Plus grand ou égal
 ```
 
 ### 3. Opérateurs Logiques
 ```dart
-age >= 18 && haPermis    // ET (les deux conditions)
-age < 18 || isEmancipé   // OU (au moins une condition)
-!estMineur               // NON (inverse)
+age >= 18 && haPermis  // ET (les deux conditions)
+age < 18 || isEmancipé  // OU (au moins une condition)
+!estMineur        // NON (inverse)
 ```
 
 ### 4. Switch
 ```dart
 switch (jour) {
-  case 'lundi':
-    print('Début de semaine');
-    break;
-  case 'vendredi':
-    print('Presque le weekend!');
-    break;
-  default:
-    print('Jour normal');
+ case 'lundi':
+  print('Début de semaine');
+  break;
+ case 'vendredi':
+  print('Presque le weekend!');
+  break;
+ default:
+  print('Jour normal');
 }
 ```
 
@@ -220,7 +220,7 @@ Quel mois? (1-12): 7
 → Période de vacances !
 ```
 
-**Tous ces programmes utilisent des conditions !** 🎯
+**Tous ces programmes utilisent des conditions !** 
 
 ---
 
@@ -236,13 +236,13 @@ Toujours le même chemin, ennuyeux !
 ### Avec Conditions
 Vos programmes sont **adaptatifs** :
 ```
-              → Chemin A (si condition 1)
+       → Chemin A (si condition 1)
 Début → Choix → Chemin B (si condition 2)
-              → Chemin C (sinon)
+       → Chemin C (sinon)
 ```
 Différents chemins selon les situations !
 
-**C'est ce qui rend les programmes UTILES dans la vraie vie !** 💡
+**C'est ce qui rend les programmes UTILES dans la vraie vie !** 
 
 ---
 
@@ -250,23 +250,23 @@ Différents chemins selon les situations !
 
 ### Où Utilise-t-on les Conditions ?
 
-**🏦 Banque :**
+** Banque :**
 - SI solde > 0 → Autoriser le retrait
 - SI solde < 0 → Bloquer le compte
 
-**🛒 E-commerce :**
+** E-commerce :**
 - SI panier > 50€ → Livraison gratuite
 - SI article en stock → Permettre l'achat
 
-**🎮 Jeux Vidéo :**
+** Jeux Vidéo :**
 - SI vie > 0 → Continuer à jouer
 - SI score > highscore → Nouveau record
 
-**🚗 GPS :**
+** GPS :**
 - SI embouteillage → Proposer itinéraire alternatif
 - SI vitesse > limite → Alerter
 
-**PARTOUT !** Les conditions sont au cœur de TOUS les programmes ! 🌍
+**PARTOUT !** Les conditions sont au cœur de TOUS les programmes ! 
 
 ---
 
@@ -275,32 +275,32 @@ Différents chemins selon les situations !
 ### À la Fin de Cette Semaine, Vous Saurez :
 
 **Techniques :**
-✅ Écrire des conditions if/else  
-✅ Utiliser tous les opérateurs de comparaison  
-✅ Combiner des conditions avec &&, ||, !  
-✅ Utiliser switch pour des choix multiples  
-✅ Imbriquer des conditions  
-✅ Débugger des erreurs de logique  
+ Écrire des conditions if/else 
+ Utiliser tous les opérateurs de comparaison 
+ Combiner des conditions avec &&, ||, ! 
+ Utiliser switch pour des choix multiples 
+ Imbriquer des conditions 
+ Débugger des erreurs de logique 
 
 **Conceptuelles :**
-✅ Penser de manière algorithmique  
-✅ Décomposer un problème en conditions  
-✅ Choisir la bonne structure (if vs switch)  
-✅ Anticiper tous les cas possibles  
-✅ Créer des programmes adaptatifs  
+ Penser de manière algorithmique 
+ Décomposer un problème en conditions 
+ Choisir la bonne structure (if vs switch) 
+ Anticiper tous les cas possibles 
+ Créer des programmes adaptatifs 
 
 ---
 
 ## Règles d'Or pour Cette Semaine
 
-### ✅ FAIRE :
+### FAIRE :
 - Tester tous les cas possibles
 - Vérifier chaque condition
 - Utiliser des noms de variables clairs
 - Indenter correctement le code
 - Penser à tous les scénarios
 
-### ❌ NE PAS FAIRE :
+### NE PAS FAIRE :
 - Oublier les accolades `{ }`
 - Confondre `=` (assignation) et `==` (comparaison)
 - Oublier les cas limites (0, négatifs, etc.)
@@ -310,7 +310,7 @@ Différents chemins selon les situations !
 
 ## Temps Total Estimé
 
-**⏱️ Durée totale :** ~1h30
+** Durée totale :** ~1h30
 
 - Étape 0 : 5 min (rappel)
 - Étape 1 : 20 min (if/else)
@@ -327,20 +327,20 @@ Différents chemins selon les situations !
 
 ### Ce que Vous DEVEZ Savoir :
 
-✅ Créer des variables (`int`, `String`, `bool`, etc.)  
-✅ Créer des fonctions  
-✅ Utiliser `print()` et `stdin.readLineSync()`  
-✅ Convertir les types avec `int.parse()`  
-✅ Utiliser `nano` pour éditer  
-✅ Exécuter un programme avec `dart`  
+ Créer des variables (`int`, `String`, `bool`, etc.) 
+ Créer des fonctions 
+ Utiliser `print()` et `stdin.readLineSync()` 
+ Convertir les types avec `int.parse()` 
+ Utiliser `nano` pour éditer 
+ Exécuter un programme avec `dart` 
 
-**Si vous ne savez pas faire ça : retournez à la Semaine 1 ! ⚠️**
+**Si vous ne savez pas faire ça : retournez à la Semaine 1 ! **
 
 ---
 
-## Message de Votre Instructeur
+## Note importante
 
-Bienvenue dans la Semaine 2 ! 👋
+Bienvenue dans la Semaine 2 ! 
 
 **Cette semaine est CRUCIALE !**
 
@@ -355,13 +355,13 @@ Jusqu'à maintenant, vos programmes étaient des "recettes" :
 - SI situation X → Faire A
 - SINON → Faire B
 
-**C'est une révolution dans votre façon de programmer !** 💥
+**C'est une révolution dans votre façon de programmer !** 
 
-**Mon conseil #1 :** Prenez votre temps pour bien comprendre.  
-**Mon conseil #2 :** Testez TOUS les cas (vrai, faux, limite).  
-**Mon conseil #3 :** Dessinez des diagrammes si ça aide !  
+**Conseil :** Prenez votre temps pour bien comprendre. 
+**Conseil :** Testez TOUS les cas (vrai, faux, limite). 
+**Conseil :** Dessinez des diagrammes si ça aide ! 
 
-**Vous êtes prêt ? Let's go !** 🚀
+**Vous êtes prêt ? Let's go !** 
 
 ---
 
@@ -430,7 +430,7 @@ Vous allez apprendre à créer des programmes qui :
 - **Décident** (choisissent un chemin)
 - **S'adaptent** (réagissent différemment)
 
-**C'est excitant ! 🎉**
+**C'est excitant ! **
 
 **Cliquez sur "Continuer" pour commencer !** →
 
