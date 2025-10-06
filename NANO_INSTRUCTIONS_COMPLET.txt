@@ -1,0 +1,349 @@
+================================================================================
+GUIDE COMPLET NANO POUR KILLERCODA
+Instructions pour tous les labs Python
+================================================================================
+
+POURQUOI NANO?
+================================================================================
+
+KillerCoda = Environnement Linux en LIGNE DE COMMANDE
+- PAS d'interface graphique
+- PAS d'éditeur visuel
+- Terminal uniquement
+
+Solution: nano (éditeur de texte en terminal)
+
+================================================================================
+COMMANDES NANO ESSENTIELLES
+================================================================================
+
+OUVRIR / CRÉER un fichier:
+nano nomfichier.py
+
+DANS NANO:
+- Taper normalement comme dans un document
+- Entrée = nouvelle ligne
+- Flèches ← → ↑ ↓ = se déplacer
+- Backspace = effacer
+
+SAUVEGARDER:
+Ctrl + O (la lettre O comme Oscar)
+Puis Entrée
+
+QUITTER:
+Ctrl + X
+
+RACCOURCIS EN BAS:
+^ = Ctrl
+^O = Ctrl+O (sauvegarder)
+^X = Ctrl+X (quitter)
+
+================================================================================
+WORKFLOW STANDARD
+================================================================================
+
+1. Créer/Ouvrir le fichier:
+   nano script.py
+
+2. Taper le code dans nano
+
+3. Sauvegarder:
+   Ctrl + O → Entrée
+
+4. Quitter:
+   Ctrl + X
+
+5. Exécuter:
+   python3 script.py
+
+================================================================================
+INSTRUCTIONS NANO POUR CHAQUE STEP
+================================================================================
+
+STEP 1: Variables et Assignation
+--------------------------------
+
+EXERCICE 1:
+1. nano script.py {{execute}}
+2. Taper le code dans nano
+3. Ctrl+O → Entrée (sauvegarder)
+4. Ctrl+X (quitter)
+5. python3 script.py {{execute}}
+
+EXERCICE 2:
+1. nano script.py {{execute}} (rouvrir)
+2. Flèches ↓ pour aller à la ligne voulue
+3. Entrée pour nouvelle ligne
+4. Taper le nouveau code
+5. Ctrl+O → Entrée
+6. Ctrl+X
+7. python3 script.py {{execute}}
+
+--------------------------------
+
+STEP 2: Types de Données
+--------------------------------
+
+EXERCICE 1:
+1. nano types_donnees.py {{execute}}
+2. Taper tout le code
+3. Ctrl+O → Entrée
+4. Ctrl+X
+5. python3 types_donnees.py {{execute}}
+
+EXERCICE 2:
+1. nano types_donnees.py {{execute}}
+2. Flèches ↓ pour aller en bas
+3. Entrée × 2 (espace)
+4. Taper le nouveau code
+5. Ctrl+O → Entrée
+6. Ctrl+X
+7. python3 types_donnees.py {{execute}}
+
+EXERCICE 3:
+1. nano types_donnees.py {{execute}}
+2. Flèches ↓ pour aller en bas
+3. Taper le code personnalisé
+4. MODIFIER les valeurs (prénom, âge, etc.)
+5. Ctrl+O → Entrée
+6. Ctrl+X
+7. python3 types_donnees.py {{execute}}
+
+--------------------------------
+
+STEP 3: Entrées Utilisateur
+--------------------------------
+
+EXERCICE 1:
+1. nano interactif.py {{execute}}
+2. Taper le code
+3. Ctrl+O → Entrée
+4. Ctrl+X
+5. python3 interactif.py {{execute}}
+
+EXERCICES SUIVANTS:
+Même pattern: ouvrir → modifier → sauvegarder → quitter → exécuter
+
+--------------------------------
+
+STEP 4: Défi Pratique
+--------------------------------
+
+1. nano systeme_etudiant.py {{execute}}
+2. Taper le template (ou le code complet)
+3. REMPLACER les # TODO par le code réel
+4. Ctrl+O → Entrée
+5. Ctrl+X
+6. python3 systeme_etudiant.py {{execute}}
+
+================================================================================
+REMPLACEMENTS À FAIRE DANS LES FICHIERS .md
+================================================================================
+
+AVANT (À NE PLUS UTILISER):
+`nomfichier.py`{{open}}
+"Cliquez dans l'éditeur à droite"
+"Un éditeur s'ouvre à droite de votre écran"
+"Dans l'éditeur (panneau de droite)"
+
+APRÈS (À UTILISER):
+`nano nomfichier.py`{{execute}}
+"Taper dans nano"
+"Nano s'ouvre dans le terminal"
+"Dans nano, utilisez les flèches pour naviguer"
+
+================================================================================
+INSTRUCTIONS ULTRA-CLAIRES À AJOUTER
+================================================================================
+
+Pour CHAQUE fichier à créer/modifier, ajouter:
+
+### ÉTAPE X - Ouvrir le fichier avec nano
+
+Exécutez:
+`nano nomfichier.py`{{execute}}
+
+**CE QUI SE PASSE:**
+- L'écran devient bleu/noir
+- Vous voyez "GNU nano" en haut
+- C'est l'éditeur nano
+- Vous pouvez maintenant taper
+
+---
+
+### ÉTAPE X+1 - Taper le code
+
+**ACTION MANUELLE REQUISE:**
+
+Dans nano, **TAPEZ** ce code:
+
+```python
+[code ici]
+```
+
+**Comment utiliser nano:**
+- Tapez normalement
+- Entrée = nouvelle ligne
+- Flèches = se déplacer
+- Backspace = effacer
+
+---
+
+### ÉTAPE X+2 - Sauvegarder et quitter
+
+**ACTION MANUELLE REQUISE:**
+
+1. **Appuyez sur:** Ctrl + O
+   - En bas: "File Name to Write: nomfichier.py"
+2. **Appuyez sur:** Entrée
+   - Message: "[ Wrote X lines ]"
+3. **Appuyez sur:** Ctrl + X
+   - Retour au terminal
+
+**AIDE-MÉMOIRE:**
+- Ctrl+O = sauvegarder (Write Out)
+- Ctrl+X = quitter (eXit)
+
+Vous verrez ces raccourcis en bas: ^ = Ctrl
+
+---
+
+### ÉTAPE X+3 - Exécuter
+
+Maintenant au terminal:
+
+`python3 nomfichier.py`{{execute}}
+
+================================================================================
+ERREURS COURANTES ET SOLUTIONS
+================================================================================
+
+PROBLÈME: "Nano ne se ferme pas"
+SOLUTION: Ctrl+X (pas Alt+X, pas Esc)
+
+PROBLÈME: "Mon code ne se sauvegarde pas"
+SOLUTION: Ctrl+O puis Entrée (confirmer le nom)
+
+PROBLÈME: "J'ai une erreur de syntaxe Python"
+SOLUTION: Rouvrir nano, vérifier chaque ligne
+
+PROBLÈME: "Le fichier est vide après sauvegarde"
+SOLUTION: Vous avez peut-être quitté sans sauvegarder (Ctrl+X avant Ctrl+O)
+
+PROBLÈME: "Je ne peux pas copier-coller dans nano"
+SOLUTION: 
+- Certains terminaux permettent clic droit → coller
+- Ou Shift+Insert
+- Sinon, taper manuellement (meilleur pour l'apprentissage!)
+
+================================================================================
+COPIER-COLLER DANS LE TERMINAL
+================================================================================
+
+Si le terminal web le permet:
+
+COPIER (depuis les instructions):
+- Sélectionner le code avec la souris
+- Ctrl+C (ou Cmd+C sur Mac)
+
+COLLER (dans nano):
+- Clic droit → Paste
+- OU Shift+Insert
+- OU Ctrl+Shift+V
+
+MAIS ATTENTION:
+Le copier-coller peut ne pas marcher dans tous les terminaux web!
+→ Toujours expliquer comment taper manuellement
+
+================================================================================
+POUR LES DÉBUTANTS ABSOLUS
+================================================================================
+
+Ajouter dans intro.md ou step0.md:
+
+## Introduction à nano
+
+nano est un éditeur de texte qui fonctionne dans le terminal.
+
+**Analogie:** 
+- Notepad/TextEdit = éditeur graphique
+- nano = éditeur dans le terminal (texte uniquement)
+
+**Pourquoi nano?**
+- Simple pour les débutants
+- Raccourcis visibles en bas
+- Pas de modes compliqués (contrairement à vi/vim)
+
+**Les 2 commandes à retenir:**
+1. Ctrl+O puis Entrée = Sauvegarder
+2. Ctrl+X = Quitter
+
+C'est tout! Le reste c'est juste taper du texte.
+
+================================================================================
+CHECKLIST DE VÉRIFICATION
+================================================================================
+
+Pour chaque step, vérifier:
+
+□ Tous les {{open}} remplacés par nano
+□ Instructions "ouvrir nano" ajoutées
+□ Instructions "sauvegarder" (Ctrl+O) explicites
+□ Instructions "quitter" (Ctrl+X) explicites
+□ Mention des flèches pour naviguer
+□ "ACTION MANUELLE REQUISE" clairement indiqué
+□ Pas de mention d'"éditeur à droite"
+□ Pas de mention de "panneau graphique"
+□ Workflow complet: ouvrir → taper → sauver → quitter → exécuter
+
+================================================================================
+TEMPLATE STANDARD À UTILISER
+================================================================================
+
+### ÉTAPE X.1 - Créer le fichier avec nano
+
+`nano nomfichier.py`{{execute}}
+
+L'éditeur nano s'ouvre.
+
+---
+
+### ÉTAPE X.2 - Taper le code
+
+**ACTION MANUELLE:**
+Tapez ce code dans nano:
+
+```python
+[code]
+```
+
+---
+
+### ÉTAPE X.3 - Sauvegarder et quitter
+
+1. Ctrl+O puis Entrée (sauvegarder)
+2. Ctrl+X (quitter)
+
+---
+
+### ÉTAPE X.4 - Exécuter
+
+`python3 nomfichier.py`{{execute}}
+
+================================================================================
+STATS NANO À CORRIGER
+================================================================================
+
+Fichiers à vérifier et corriger:
+- step1.md ✓ (déjà fait partiellement)
+- step2.md ⏳ (en cours)
+- step3.md ❌ (à faire - actuellement en anglais)
+- step4.md ❌ (à faire - actuellement en anglais)
+- finish.md ✓ (pas d'édition de fichiers)
+
+Occurrences {{open}} à remplacer:
+- Probablement 8-10 occurrences totales
+- Toutes à remplacer par nano
+
+================================================================================
+

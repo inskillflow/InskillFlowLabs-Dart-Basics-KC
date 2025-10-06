@@ -1,0 +1,54 @@
+{
+  "title": "Dart Semaine 1 - Fondamentaux du Langage",
+  "description": "Apprenez les bases du langage Dart : variables, types, fonctions et entrées/sorties. Cours 100% en français pour débutants complets.",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Étape 0 : Installer Dart sur Linux",
+        "text": "step0.md"
+      },
+      {
+        "title": "Étape 1 : Variables et Types de Données",
+        "text": "step1.md"
+      },
+      {
+        "title": "Étape 2 : Fonctions en Dart",
+        "text": "step2.md"
+      },
+      {
+        "title": "Étape 3 : Entrées et Sorties Console",
+        "text": "step3.md"
+      },
+      {
+        "title": "Étape 4 : Défi Pratique - Calculateur Personnel",
+        "text": "step4.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "example_hello.dart",
+          "target": "/root/"
+        },
+        {
+          "file": "example_variables.dart",
+          "target": "/root/"
+        },
+        {
+          "file": "example_functions.dart",
+          "target": "/root/"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu:2204"
+  }
+}
+

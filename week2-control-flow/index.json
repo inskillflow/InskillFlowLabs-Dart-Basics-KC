@@ -1,0 +1,54 @@
+{
+  "title": "Dart Semaine 2 - Structures de Contrôle",
+  "description": "Maîtrisez les conditions en Dart : if/else, switch, opérateurs logiques. Créez des programmes qui prennent des décisions ! 100% en français.",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Étape 0 : Rappel et Préparation",
+        "text": "step0.md"
+      },
+      {
+        "title": "Étape 1 : If/Else - Prendre des Décisions",
+        "text": "step1.md"
+      },
+      {
+        "title": "Étape 2 : Opérateurs de Comparaison et Logiques",
+        "text": "step2.md"
+      },
+      {
+        "title": "Étape 3 : Switch - Choix Multiples",
+        "text": "step3.md"
+      },
+      {
+        "title": "Étape 4 : Défi - Système de Notes Interactif",
+        "text": "step4.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "example_conditions.dart",
+          "target": "/root/"
+        },
+        {
+          "file": "example_switch.dart",
+          "target": "/root/"
+        },
+        {
+          "file": "example_logique.dart",
+          "target": "/root/"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu:2204"
+  }
+}
+

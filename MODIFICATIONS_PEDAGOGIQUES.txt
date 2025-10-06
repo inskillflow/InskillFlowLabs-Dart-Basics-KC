@@ -1,0 +1,220 @@
+================================================================================
+MODIFICATIONS PÉDAGOGIQUES - LAB PYTHON SEMAINE 1
+Date: October 5, 2025
+================================================================================
+
+CHANGEMENTS MAJEURS APPORTÉS
+================================================================================
+
+1. TOUT EN FRANÇAIS
+   - Tous les contenus traduits en français
+   - Titre: "Python Semaine 1 - Variables, Entrées & Types de Données"
+   - Instructions 100% en français
+
+2. APPROCHE "MAIN DANS LA MAIN"
+   - Style très guidé, étape par étape
+   - Comme si on tenait un enfant par la main
+   - Aucune étape n'est assumée comme connue
+
+3. AJOUT ÉTAPE 0 : ENVIRONNEMENT VIRTUEL
+   - Nouvelle étape step0.md créée
+   - 10 commandes numérotées et expliquées
+   - Format: "Commande 1", "Commande 2", etc.
+   - Chaque commande avec explication détaillée
+
+4. INSTRUCTIONS ULTRA-DÉTAILLÉES
+   - Chaque action décomposée en micro-étapes
+   - "ÉTAPE 1.1", "ÉTAPE 1.2", etc.
+   - Résultats attendus clairement indiqués
+   - Analogies et exemples concrets
+
+================================================================================
+STRUCTURE MISE À JOUR
+================================================================================
+
+week1-variables-inputs-datatypes/
+├── index.json                  ✓ Mis à jour (en français)
+├── intro.md                    ✓ Traduit en français
+├── step0.md                    ✓ NOUVEAU - Environnement virtuel
+├── step1.md                    ✓ Refait - Variables (très détaillé)
+├── step2.md                    ✓ Refait - Types de données (très détaillé)
+├── step3.md                    ⏳ À refaire
+├── step4.md                    ⏳ À refaire
+├── finish.md                   ⏳ À refaire
+└── assets/                     ✓ Inchangé
+
+================================================================================
+STEP 0 : ENVIRONNEMENT VIRTUEL (NOUVEAU)
+================================================================================
+
+Contenu:
+- Explication simple de ce qu'est un environnement virtuel
+- 10 commandes numérotées avec explications
+- Vérifications à chaque étape
+- Résultats attendus clairement affichés
+- Section dépannage
+
+Commandes couvertes:
+1. python3 --version
+2. mkdir mon_projet_python
+3. cd mon_projet_python
+4. python3 -m venv venv
+5. ls -la
+6. source venv/bin/activate
+7. which python3
+8. which pip
+9. pip install requests (exemple)
+10. pip list
+
+Points forts:
+✓ Chaque commande expliquée en détail
+✓ Analogies simples (sac à dos pour chaque cours)
+✓ Aide-mémoire visuel
+✓ Section problèmes courants
+
+================================================================================
+STEP 1 : VARIABLES (REFAIT)
+================================================================================
+
+Approche pédagogique:
+- Analogie de la boîte avec étiquette
+- Exercice 1 en 3 étapes détaillées
+- Exercice 2 en 4 étapes détaillées
+- Code pré-écrit à copier
+- Instructions "ajoutez APRÈS la ligne X"
+
+Nouveautés:
+✓ Instructions "Copiez exactement..."
+✓ "Que fait ce code?" après chaque exemple
+✓ "RÉSULTAT ATTENDU:" clairement indiqué
+✓ Différence nombres/texte bien expliquée
+✓ Conseil de pro à la fin
+
+================================================================================
+STEP 2 : TYPES DE DONNÉES (REFAIT)
+================================================================================
+
+Approche pédagogique:
+- Analogie des boîtes de rangement
+- 4 types expliqués avec exemples concrets
+- 3 exercices progressifs guidés
+- Test rapide avec réponses cachées
+- Attention aux erreurs courantes
+
+Points forts:
+✓ Chaque type avec plusieurs exemples
+✓ Attention particulière: point vs virgule pour float
+✓ Majuscules pour True/False bien souligné
+✓ Section "ATTENTION: Erreur courante!"
+✓ Mini-quiz avec réponses
+
+================================================================================
+STYLE D'ÉCRITURE
+================================================================================
+
+Avant (English, pro):
+"Variables are containers that store data values."
+
+Après (Français, pédagogique):
+"Une variable est comme une boîte avec une étiquette où vous pouvez 
+ranger des informations. Imaginez que vous avez plusieurs boîtes dans 
+votre chambre..."
+
+Caractéristiques:
+✓ Tutoiement ("vous")
+✓ Analogies du quotidien
+✓ Exemples concrets
+✓ Beaucoup d'encouragements ("BRAVO!", "Parfait!")
+✓ Émojis pédagogiques (⏱️, ✅, ❌, ✓)
+
+================================================================================
+PROCHAINES ÉTAPES À FAIRE
+================================================================================
+
+1. STEP 3 : Entrées Utilisateur (à refaire en français, très détaillé)
+   - Fonction input()
+   - Conversion de types
+   - Programmes interactifs guidés
+
+2. STEP 4 : Défi Pratique (à refaire en français, très guidé)
+   - Template de départ fourni
+   - Instructions ligne par ligne
+   - Solution commentée étape par étape
+
+3. FINISH : Conclusion (à refaire en français)
+   - Résumé des apprentissages
+   - Exercices supplémentaires guidés
+   - Ressources en français
+
+4. ASSETS : Exemples Python
+   - Ajouter des commentaires en français
+   - Rendre les exemples plus guidés
+
+================================================================================
+PHILOSOPHIE PÉDAGOGIQUE
+================================================================================
+
+Principes appliqués:
+1. Ne jamais assumer de connaissances préalables
+2. Décomposer chaque action en micro-étapes
+3. Fournir du feedback constant
+4. Utiliser des analogies du quotidien
+5. Montrer les erreurs courantes AVANT qu'elles arrivent
+6. Encourager à chaque petite victoire
+7. Fournir des vérifications à chaque étape
+
+Public cible:
+- Débutants absolus en programmation
+- Étudiants francophones
+- Personnes qui ont besoin de beaucoup de guidage
+- Apprenants qui préfèrent le "learning by doing"
+
+================================================================================
+STATISTIQUES
+================================================================================
+
+Step 0 (nouveau):      ~200 lignes
+Step 1 (refait):       ~174 lignes  (+100% de détails)
+Step 2 (refait):       ~261 lignes  (+150% de détails)
+
+Détail moyen augmenté de: ~125%
+Nombre d'étapes ajoutées: +1 (step0)
+Langue: 100% français
+
+================================================================================
+RETOUR SUR INVESTISSEMENT
+================================================================================
+
+Avantages:
+✓ Taux de complétion attendu: plus élevé
+✓ Moins de questions aux formateurs
+✓ Confiance des étudiants augmentée
+✓ Accessible à un public plus large
+✓ Meilleure rétention des concepts
+
+Trade-offs:
+- Labs plus longs (mais plus complets)
+- Plus de maintenance (traduction)
+- Nécessite scrolling (mais vaut le coup)
+
+================================================================================
+RECOMMANDATIONS POUR LES SEMAINES SUIVANTES
+================================================================================
+
+Appliquer le même style pour:
+- Semaine 2: Instructions conditionnelles
+- Semaine 3: Listes
+- Semaine 4: Boucles
+- Semaine 5: Fonctions
+- Semaine 6: Jeux défi
+
+Format à maintenir:
+✓ Tout en français
+✓ Commandes numérotées
+✓ Étapes très détaillées
+✓ Analogies systématiques
+✓ Vérifications fréquentes
+✓ Encouragements constants
+
+================================================================================
+
