@@ -1,0 +1,38 @@
+{
+  "title": "Flutter Semaine 8 - UI et Layouts",
+  "description": "Maîtrisez les layouts Flutter : Column, Row, Stack, ListView. Créez des interfaces professionnelles. À exécuter sur DartPad ou localement.",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Étape 0 : Rappel Widgets",
+        "text": "step0.md"
+      },
+      {
+        "title": "Étape 1 : Layouts - Column, Row, Stack",
+        "text": "step1.md"
+      },
+      {
+        "title": "Étape 2 : ListView et ScrollView",
+        "text": "step2.md"
+      },
+      {
+        "title": "Étape 3 : Styling et Theming",
+        "text": "step3.md"
+      },
+      {
+        "title": "Étape 4 : Projet - Page de Profil Complète",
+        "text": "step4.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
+

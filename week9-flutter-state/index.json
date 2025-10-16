@@ -1,0 +1,38 @@
+{
+  "title": "Flutter Semaine 9 - State Management",
+  "description": "Maîtrisez la gestion d'état en Flutter : setState avancé, Provider, navigation. À exécuter sur DartPad ou localement.",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Étape 0 : Révision State Management",
+        "text": "step0.md"
+      },
+      {
+        "title": "Étape 1 : setState Avancé",
+        "text": "step1.md"
+      },
+      {
+        "title": "Étape 2 : Navigation Entre Pages",
+        "text": "step2.md"
+      },
+      {
+        "title": "Étape 3 : Formulaires et Validation",
+        "text": "step3.md"
+      },
+      {
+        "title": "Étape 4 : Projet - App Multi-Pages",
+        "text": "step4.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
+

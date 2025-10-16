@@ -1,0 +1,38 @@
+{
+  "title": "Flutter Semaine 10 - Projet Final Complet",
+  "description": "Créez une application Flutter complète : E-Commerce app avec catalogue, panier, navigation. À exécuter sur DartPad ou localement.",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Étape 0 : Planification du Projet",
+        "text": "step0.md"
+      },
+      {
+        "title": "Étape 1 : Catalogue de Produits",
+        "text": "step1.md"
+      },
+      {
+        "title": "Étape 2 : Panier d'Achat",
+        "text": "step2.md"
+      },
+      {
+        "title": "Étape 3 : Page de Détails",
+        "text": "step3.md"
+      },
+      {
+        "title": "Étape 4 : Finalisation et Déploiement",
+        "text": "step4.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
+

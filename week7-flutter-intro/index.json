@@ -1,0 +1,38 @@
+{
+  "title": "Flutter Semaine 7 - Introduction et Premiers Widgets",
+  "description": "IMPORTANT: Ce cours nécessite un environnement Flutter. KillerCoda fournit les instructions, mais l'exécution se fait sur DartPad ou en local. 100% en français.",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Étape 0 : Choisir Votre Environnement Flutter",
+        "text": "step0.md"
+      },
+      {
+        "title": "Étape 1 : Installation Flutter (Local) ou DartPad",
+        "text": "step1.md"
+      },
+      {
+        "title": "Étape 2 : Premier Widget - StatelessWidget",
+        "text": "step2.md"
+      },
+      {
+        "title": "Étape 3 : StatefulWidget et State",
+        "text": "step3.md"
+      },
+      {
+        "title": "Étape 4 : Projet - Application Compteur",
+        "text": "step4.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
+

@@ -23,6 +23,22 @@
     {
       "path": "week6-async",
       "title": "Dart Semaine 6 - Async/Await"
+    },
+    {
+      "path": "week7-flutter-intro",
+      "title": "Flutter Semaine 7 - Introduction"
+    },
+    {
+      "path": "week8-flutter-ui",
+      "title": "Flutter Semaine 8 - UI et Layouts"
+    },
+    {
+      "path": "week9-flutter-state",
+      "title": "Flutter Semaine 9 - State Management"
+    },
+    {
+      "path": "week10-flutter-project",
+      "title": "Flutter Semaine 10 - Projet Final"
     }
   ]
 }
