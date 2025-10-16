@@ -1,0 +1,54 @@
+{
+  "title": "Dart Semaine 6 - Programmation Asynchrone",
+  "description": "Maîtrisez async/await en Dart : Future, gestion d'erreurs. Préparez-vous pour les API calls Flutter. 100% en français.",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Étape 0 : Introduction à l'Asynchrone",
+        "text": "step0.md"
+      },
+      {
+        "title": "Étape 1 : Future et Async/Await",
+        "text": "step1.md"
+      },
+      {
+        "title": "Étape 2 : Gestion d'Erreurs",
+        "text": "step2.md"
+      },
+      {
+        "title": "Étape 3 : Appels API Simulés",
+        "text": "step3.md"
+      },
+      {
+        "title": "Étape 4 : Défi - Client API Complet",
+        "text": "step4.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "example_future.dart",
+          "target": "/root/"
+        },
+        {
+          "file": "example_async.dart",
+          "target": "/root/"
+        },
+        {
+          "file": "example_errors.dart",
+          "target": "/root/"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
+

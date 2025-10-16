@@ -7,6 +7,22 @@
     {
       "path": "week2-control-flow",
       "title": "Dart Semaine 2 - Control Flow"
+    },
+    {
+      "path": "week3-collections",
+      "title": "Dart Semaine 3 - Collections"
+    },
+    {
+      "path": "week4-loops",
+      "title": "Dart Semaine 4 - Boucles"
+    },
+    {
+      "path": "week5-oop",
+      "title": "Dart Semaine 5 - POO"
+    },
+    {
+      "path": "week6-async",
+      "title": "Dart Semaine 6 - Async/Await"
     }
   ]
 }

@@ -1,0 +1,54 @@
+{
+  "title": "Dart Semaine 4 - Boucles et Itérations",
+  "description": "Maîtrisez les boucles en Dart : for, while, forEach. Automatisez les tâches répétitives. 100% en français.",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Étape 0 : Rappel et Préparation",
+        "text": "step0.md"
+      },
+      {
+        "title": "Étape 1 : Boucle For - Répétitions Contrôlées",
+        "text": "step1.md"
+      },
+      {
+        "title": "Étape 2 : Boucle While - Répétitions Conditionnelles",
+        "text": "step2.md"
+      },
+      {
+        "title": "Étape 3 : Itération sur Collections",
+        "text": "step3.md"
+      },
+      {
+        "title": "Étape 4 : Défi - Générateur de Rapports",
+        "text": "step4.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "example_for.dart",
+          "target": "/root/"
+        },
+        {
+          "file": "example_while.dart",
+          "target": "/root/"
+        },
+        {
+          "file": "example_iteration.dart",
+          "target": "/root/"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
+

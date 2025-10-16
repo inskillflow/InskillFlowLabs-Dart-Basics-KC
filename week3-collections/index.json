@@ -1,0 +1,54 @@
+{
+  "title": "Dart Semaine 3 - Collections de Données",
+  "description": "Maîtrisez les collections en Dart : Lists, Maps et Sets. Stockez et manipulez plusieurs valeurs efficacement. 100% en français.",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Étape 0 : Rappel et Préparation",
+        "text": "step0.md"
+      },
+      {
+        "title": "Étape 1 : Lists - Listes Ordonnées",
+        "text": "step1.md"
+      },
+      {
+        "title": "Étape 2 : Maps - Paires Clé-Valeur",
+        "text": "step2.md"
+      },
+      {
+        "title": "Étape 3 : Sets et Méthodes Avancées",
+        "text": "step3.md"
+      },
+      {
+        "title": "Étape 4 : Défi - Gestionnaire de Tâches",
+        "text": "step4.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "example_lists.dart",
+          "target": "/root/"
+        },
+        {
+          "file": "example_maps.dart",
+          "target": "/root/"
+        },
+        {
+          "file": "example_sets.dart",
+          "target": "/root/"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
+
